@@ -1,0 +1,45 @@
+.spinnerWrapper {
+  background: linear-gradient(
+    320deg,
+    rgba(61, 78, 172, 1) 16%,
+    rgba(183, 51, 174, 1) 46%,
+    rgba(218, 159, 51, 1) 87%
+  );
+  padding: 6px 20px;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(
+      0%
+    ); /* Use -50% to smoothly transition to the duplicate content */
+  }
+}
+
+.spinnerWrapper {
+  overflow: hidden;
+}
+
+.spinnerRow {
+  display: flex;
+  width: 200%; /* Use double the width to accommodate the duplicate content */
+  animation: moveLeft 15s linear infinite;
+}
+
+.spinnerRooter {
+  flex: 0 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.spinnerTitle {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff;
+  font-weight: 500;
+}

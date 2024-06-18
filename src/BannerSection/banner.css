@@ -1,0 +1,49 @@
+.BannerWrapper {
+  position: relative;
+}
+
+.BannerRooter {
+  position: relative;
+  overflow: hidden;
+}
+
+.bannerImager {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-out;
+}
+
+.BannerCaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.BannerRooter:hover .BannerCaption {
+  opacity: 1;
+}
+
+.bannerTitle {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Poppins";
+}
+
+.bannerDesc {
+  font-size: 15px;
+}
+
+.BannerRooter {
+  height: 400px;
+  width: 100%;
+}
+
+img.banner-imager {
+  width: 100%;
+}

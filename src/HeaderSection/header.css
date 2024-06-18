@@ -1,0 +1,127 @@
+/* Top-headerSec */
+.topHeader.row {
+  background-image: url("../ImageSection/headerBanner.webp");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  margin: 0;
+  align-items: center;
+  font-size: 14px;
+  padding: 15px;
+}
+
+span.headertop-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.remover-header {
+  display: flex;
+  justify-content: flex-end;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+a#dropdownMenuButton1 {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Midheader-Sec */
+
+.headerLogo-sec {
+  display: flex;
+  align-items: center;
+}
+
+.logo-imager {
+  height: 60px;
+  padding: 5px;
+  margin: 0px 10px;
+}
+
+img.logoBrand {
+  height: 100%;
+}
+
+.midHeaderSec.row {
+  margin: 0;
+  align-items: center;
+  padding: 15px;
+}
+
+svg.header-toggle {
+  font-size: 24px;
+}
+
+.search-grp {
+  display: flex;
+  align-items: center;
+  border: 3px solid #333;
+  padding: 4px 10px;
+  border-radius: 15px;
+}
+
+.input-group.mb-3 {
+  border: none;
+  margin: 0 !important;
+}
+
+a {
+  cursor: pointer;
+}
+
+a.dropdown-item {
+  font-size: 13px;
+}
+
+input.form-control.searcher {
+  border: none;
+  font-size: 14px;
+  box-shadow: none;
+  background:transparent;
+}
+
+svg {
+  cursor: pointer;
+}
+
+.midHeader-rightSec {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+svg.Mid-Svg {
+  font-size: 24px;
+}
+
+svg.Mid-Svg2 {
+  font-size: 24px;
+  margin: 0px 50px;
+}
+
+.MenuSec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottomHeaderSec.row {
+  justify-content: center;
+  background: #000;
+  padding: 17px 0px;
+}
+
+a.linkMenu {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+svg {
+  cursor: pointer;
+  color: black;
+}

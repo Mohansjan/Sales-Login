@@ -1,0 +1,47 @@
+body{
+     
+     
+    background: #84fab0;
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+    background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+    }
+    .gradient-custom-4 {
+    background: #84fab0;
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+    }
+    .lg-0 {
+        margin-left: 500px;
+        margin-top: 100px;
+        font-family: ui-monospace;
+    }
+    h2.login-1 {
+        margin-bottom: 30px;
+        margin-left: 60px;
+    }
+    input[type="text"] {
+        height: 50px;
+        width: 400px;
+    }
+    input[type="Email"] {
+        height: 50px;
+        width: 400px;
+    }
+    input[type="password"] {
+        height: 50px;
+        width: 400px;
+    }
+    .lg-2,.lg-3,.lg-4{
+     margin-bottom: 20px;   
+    }
+    .lg-0 {
+        background-color: white;
+        width: 500px;
+        display: flex;
+        justify-content: space-around;
+        height: 350px;
+    }
+    .lg-0 {
+        margin-left: 620px;
+        margin-top: 200px;
+    }

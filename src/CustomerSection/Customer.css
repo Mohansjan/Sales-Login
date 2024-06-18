@@ -1,0 +1,55 @@
+.container-1 {
+   width: 600px;
+    margin: 0 auto;
+    margin-top: 150px;
+    font-family: ui-monospace;
+    background-color: powderblue;
+  }
+  
+  .ac-1{
+    margin-left: 500px;
+  }
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 0.5rem;
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  .container-1{
+    background-color: white;
+    width: 600px;
+}
+.ac-1 {
+  margin-left: 190px;
+  margin-bottom: 20px;
+}
+.form-group {
+  width: 500px;
+  margin-left: 40px;
+}
+button.submit-button {
+  margin-top: 40px;
+  width: 600px;
+}
+  

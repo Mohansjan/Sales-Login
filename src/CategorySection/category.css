@@ -1,0 +1,42 @@
+.categoryImager {
+  height: 130px;
+  width: 100%;
+}
+
+.categoryRooter {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 20px;
+}
+
+img.category-Img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.categoryRow.row {
+  margin: 0;
+}
+
+.categoryWrapper {
+  margin: 40px 0px;
+}
+
+.categoryImager {
+  border: 1px solid gainsboro;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+span.categoryCaption {
+  font-family: "Poppins", sans-serif;
+}
+
+span.categoryCaption {
+  line-height: 2.6em;
+}

@@ -1,0 +1,32 @@
+.specialProRooter {
+  height: 570px;
+  position: relative;
+  overflow: hidden;
+}
+
+img.Sp-Imager {
+  width: 100%;
+  height: 100%;
+}
+
+span.special-title {
+  position: absolute;
+  bottom: 10px;
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 24px;
+  left: 20px;
+}
+
+.AllProWrapper {
+  margin: 30px 40px;
+}
+
+.sp-Wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.topAlPro-sec {
+  margin: 20px 10px;
+}

@@ -1,0 +1,125 @@
+.topSellerRow.row {
+  margin: 0;
+}
+
+.top-topSellerRow.row {
+  margin: 0px 20px;
+}
+
+.topSellRightSec {
+  display: flex;
+  justify-content: right;
+}
+
+span.TitleSec {
+  font-family: "Poppins";
+  font-size: 18px;
+}
+
+a.headingTopSeller {
+  text-decoration: none;
+  font-size: 15px;
+  color: gray;
+  margin: 0px 15px;
+  cursor: pointer;
+}
+
+a.headingTopSeller:hover {
+  border-bottom: 2px solid #333;
+}
+
+.productRooter {
+  overflow: hidden;
+  margin: 0px 10px;
+  position: relative;
+}
+
+.productImager {
+  height: 180px;
+  position: relative;
+}
+
+.productImager2 {
+  height: 150px;
+  position: relative;
+}
+
+img.proImager {
+  width: 100%;
+  height: 100%;
+}
+
+.productDetail {
+  margin: 10px 0px;
+}
+
+a.proName {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+a.proPrice {
+  text-decoration: none;
+  font-family: "Poppins";
+  color: #333;
+  font-size: 14px;
+}
+
+.bottom-topSellRow.row {
+  margin: 10px;
+}
+
+a.headingTopSeller.active {
+  color: #333;
+  border-bottom: 2px solid #333;
+}
+
+.eyeSymbol {
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+  display: none;
+}
+
+svg.SvgEye {
+  background: #fff;
+  font-size: 30px;
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.productImager:hover .eyeSymbol {
+  display: flex;
+  justify-content: center;
+}
+
+span.varColor1 {
+  background: violet;
+  height: 12px;
+  display: inline-block;
+  width: 12px;
+  border-radius: 50%;
+  border: 2px solid #333;
+}
+
+span.varColor2 {
+  background: cornflowerblue;
+  height: 12px;
+  display: inline-block;
+  width: 12px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  margin-left: 5px;
+}
+
+span.varColor3 {
+  background: saddlebrown;
+  height: 12px;
+  display: inline-block;
+  width: 12px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  margin-left: 5px;
+}

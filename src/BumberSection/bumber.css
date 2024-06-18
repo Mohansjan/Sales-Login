@@ -1,0 +1,43 @@
+.bumberRooter {
+  overflow: hidden;
+  display: flex;
+  margin: 0px 5px;
+  position: relative;
+  height: 300px;
+}
+
+.bumberImager {
+  width: 100%;
+  height: 100%;
+}
+
+img.bumpImg {
+  height: 100%;
+  width: 100%;
+}
+
+.bumberCaption {
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  color: #fff;
+  width: 100%;
+}
+
+.bumberTitle {
+  font-family: "Poppins";
+  font-size: 20px;
+}
+
+.bumberDesc {
+  font-size: 12px;
+}
+
+.BumberWrapper {
+  margin: 40px;
+}
+
+.bumberRooter:hover img.bumpImg {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}

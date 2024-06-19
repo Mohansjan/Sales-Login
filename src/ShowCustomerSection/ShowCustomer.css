@@ -1,0 +1,63 @@
+.customer-section {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 1000px;
+    margin-left: 420px;
+    margin-top: 50px;
+    
+}
+
+table th, table td {
+    border: 2px solid lightgray;
+    padding: 10px;
+    text-align: left;
+    
+}
+
+table th {
+    background-color: #f2f2f2;
+
+}
+table tbody{
+    height: 300px;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: white;
+}
+table tbody tr:nth-child(odd) {
+    background-color: white;
+}
+td{
+    cursor: pointer;
+}
+table tbody tr:hover {
+    background-color: lightgrey;
+}
+thead {
+    
+    height: 70px;
+}
+h2.CO-1 {
+    font-family: ui-monospace;
+    margin-top: 25px;
+    margin-right: 43px;
+}
+

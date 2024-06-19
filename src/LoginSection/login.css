@@ -45,3 +45,8 @@ body{
         margin-left: 620px;
         margin-top: 200px;
     }
+    button.bt-2 {
+        width: 400px;
+        margin-top: 15px;
+        background-color: beige;
+    }

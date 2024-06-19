@@ -20,7 +20,7 @@ const LoginSection = () => {
   const [formData, setFormData] = useState({
     UserName: '',
     Email:'',
-    Password: 0
+    Password: ''
   });
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
@@ -49,6 +49,8 @@ const LoginSection = () => {
       });
       console.log('Login successful:', response.data);
       alert('login successful');
+      window.location.href = '/home';
+
       // Redirect to dashboard or another page on successful login
 
 
@@ -99,7 +101,7 @@ const LoginSection = () => {
         </div>
         {error && <div style={{ color: 'red' }}>{error}</div>}
         <div className="bt-1">
-        <button className="bt-2"type="submit" disabled={loading}>Submit</button>
+        <a href="/home"><button className="bt-2"type="submit" disabled={loading}>Submit</button></a>
         </div>
       </form>
     </div>

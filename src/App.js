@@ -16,37 +16,45 @@ import CustomerSection from "./CustomerSection/Customer";
 import ShoppingSection from "./ShoppingSection/Shop";
 import OrderSection from "./OrderSection/Order";
 import CustomerOrderSection from "./CustomerOrderSection/CustomerOrder";
+import ShowCustomerSection from "./ShowCustomerSection/ShowCustomer";
+
 
 
 
 function App() {
   return (
     <div className="App">
-<BrowserRouter>
-                    <Routes>
-                        <Route path="/" element={<HomeSection />} />
-                        <Route
-                            path="/login"
-                            element={<LoginSection />}
-                        />
-                        <Route 
-                          path="/Customer"
-                          element={<CustomerSection/>}
-                          />
-                          <Route 
-                          path="/Shop"
-                          element={<ShoppingSection/>}
-                          />
-                          <Route
-                            path="/Order"
-                            element={<OrderSection/>}
-                            />
-                          <Route
-                            path="/CustomerOrder"
-                            element={<CustomerOrderSection/>}
-                            />
-                    </Routes>
-                </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/home" element={<HomeSection />} />
+          <Route
+            path="/login"
+            element={<LoginSection />}
+          />
+          <Route
+            path="/Customer"
+            element={<CustomerSection />}
+          />
+          <Route
+            path="/Shop"
+            element={<ShoppingSection />}
+          />
+          <Route
+            path="/Order"
+            element={<OrderSection />}
+          />
+          <Route
+            path="/CustomerOrder"
+            element={<CustomerOrderSection />}
+          />
+
+          <Route
+            path="/ShowCustomer"
+            element={<ShowCustomerSection />}
+          />
+
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

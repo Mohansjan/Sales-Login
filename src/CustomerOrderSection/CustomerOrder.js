@@ -1,15 +1,16 @@
 import React from "react";
-import axios from 'axios';
+import axios, { formToJSON } from 'axios';
 import "./CustomerOrder.css";
 import { useState } from "react";
+import Add3 from "../ImageSection/add_3.webp";
 
 const CustomerOrderSection = () => {
     const [formData, setFormData] = useState({
         Name: '',
         Email: '',
         Address: '',
-        Pin_Code: 0,
-        Phone_Number:0
+        Pin_Code: '',
+        Phone_Number:''
     });
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
@@ -26,10 +27,10 @@ const CustomerOrderSection = () => {
   
       try {
         const formDataCopy = { ...formData };
-         formDataCopy.Pin_Code = parseInt(formDataCopy.Pin_Code);
-         formDataCopy.Phone_Number = parseInt(formDataCopy.Phone_Number);
+         //formDataCopy.Pin_Code = parseInt(formDataCopy.Pin_Code);
+        //  formDataCopy.Phone_Number = parseInt(formDataCopy.Phone_Number);
         
-        const response = await axios.post(' https://dev-mohansjan.gateway.apiplatform.io/v1/CustomerOrder', JSON.stringify(formDataCopy), {
+        const response = await axios.post(' https://dev-mohansjan.gateway.apiplatform.io/v1/CustomerOrder', formDataCopy, {
           headers: {
             'apikey': 'ZdzwOIDYW0AKYVD6BkZqyBbHcjb3pyGc',
             'pkey': '3fcc20cdc093c0403fc55b721aab6f3c',
@@ -38,6 +39,7 @@ const CustomerOrderSection = () => {
         });
         console.log('Customer created:', response.data);
         alert('Product Ordered');
+        window.location.href = '/ShowCustomer';
         
       } catch (error) {
         console.error('Error creating customer:', error.response.data);
@@ -49,9 +51,12 @@ const CustomerOrderSection = () => {
  
   
     return (
+      <div className="appli">
+      <div className="application">
       <div className="container-1">
+        
         <div className='header-1'>
-        <h2 className='ac-1'>Add Customer</h2>
+        <h2 className='ac-1'>Customer Details</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label>Name:</label>
@@ -100,9 +105,12 @@ const CustomerOrderSection = () => {
             />
            </div>
           {error && <div className="error-message">{error}</div>}
-          <button className="submit-button" type="submit" disabled={loading}>Add Customer</button>
+          <a href="/ShowCustomer"><button className="submit-button" type="submit" disabled={loading}>Submit</button></a>
+          
         </form>
         </div>
+      </div>
+      </div>
       </div>
     );
   };

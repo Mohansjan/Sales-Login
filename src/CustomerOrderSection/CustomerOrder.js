@@ -6,11 +6,13 @@ import Add3 from "../ImageSection/add_3.webp";
 
 const CustomerOrderSection = () => {
     const [formData, setFormData] = useState({
-        Name: '',
-        Email: '',
-        Address: '',
-        Pin_Code: '',
-        Phone_Number:''
+      Product_Name: '',
+      Product_Price: '',
+      Product_category: '',
+      Cus_Name: '',
+      Cus_Address:'',
+      Cus_PNumber:'',
+      Delivary_date:''
     });
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
@@ -30,7 +32,8 @@ const CustomerOrderSection = () => {
          //formDataCopy.Pin_Code = parseInt(formDataCopy.Pin_Code);
         //  formDataCopy.Phone_Number = parseInt(formDataCopy.Phone_Number);
         
-        const response = await axios.post(' https://dev-mohansjan.gateway.apiplatform.io/v1/CustomerOrder', formDataCopy, {
+        const response = await axios.post('https://dev-mohansjan.gateway.apiplatform.io/v1/YuvaStoreOrd', formDataCopy, {
+
           headers: {
             'apikey': 'ZdzwOIDYW0AKYVD6BkZqyBbHcjb3pyGc',
             'pkey': '3fcc20cdc093c0403fc55b721aab6f3c',
@@ -51,64 +54,98 @@ const CustomerOrderSection = () => {
  
   
     return (
-      <div className="appli">
-      <div className="application">
-      <div className="container-1">
+     
+      <div className="application-1">
+        <div className="cds-1">
         
-        <div className='header-1'>
+      <div className="container-1">
+      <div class="row">
+    <div class="col">
+    <div className='header-1'>
         <h2 className='ac-1'>Customer Details</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label>Name:</label>
+
+          <label>Product Name:</label>
             <input
               type="text"
-              name="Name"
-              value={formData.Name}
+              name="Product_Name"
+              placeholder="Enter Product name"
+              value={formData.Product_Name}
+              onChange={handleChange}
+            />
+
+            <label>Product Price:</label>
+            <input
+              type="text"
+              name="Product_Price"
+              placeholder="Enter Product price"
+              value={formData.Product_Price}
               onChange={handleChange}
             />
           </div>
           <div className="form-group">
-            <label>Email:</label>
+            <label>Product category:</label>
             <input
-              type="Email"
-              name="Email"
-              value={formData.Email}
+              type="text"
+              name="Product_category"
+              placeholder="Enter Product category"
+              value={formData.Product_category}
               onChange={handleChange}
             />
           </div>
           <div className="form-group">
-            <label>Address</label>
+            <label>Customer Name:</label>
             <input
               type="text"
-              name="Address"
-              value={formData.Address}
+              name="Cus_Name"
+              placeholder="Enter Name"
+              value={formData.Cus_Name}
               onChange={handleChange}
             />
           </div>
           <div className="form-group">
-            <label>Pin_Code</label>
+            <label>Customer Address:</label>
             <input
               type="text"
-              name="Pin_Code"
-              value={formData.Pin_Code}
+              name="Cus_Address"
+              placeholder="Enter Address"
+              value={formData.Cus_Address}
               onChange={handleChange}
             />
           </div>
 
           <div className="form-group">
-            <label>Phone_Number</label>
+            <label>Mobile number:</label>
             <input
               type="text"
-              name="Phone_Number"
-              value={formData.Phone_Number}
+              name="Cus_PNumber"
+              placeholder="Enter Mobile Number"
+              value={formData.Cus_PNumber}
               onChange={handleChange}
             />
            </div>
+
+           <div className="form-group">
+            <label>Delivary date:</label>
+            <input
+              type="date"
+              name="Delivary_date"
+              placeholder="Pick Delivery Date"
+              value={formData.Delivary_date}
+              onChange={handleChange}
+            />
+           </div>
+
+
           {error && <div className="error-message">{error}</div>}
           <a href="/ShowCustomer"><button className="submit-button" type="submit" disabled={loading}>Submit</button></a>
           
         </form>
         </div>
+    </div>
+    
+      </div>
       </div>
       </div>
       </div>

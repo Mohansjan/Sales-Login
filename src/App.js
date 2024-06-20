@@ -17,6 +17,7 @@ import ShoppingSection from "./ShoppingSection/Shop";
 import OrderSection from "./OrderSection/Order";
 import CustomerOrderSection from "./CustomerOrderSection/CustomerOrder";
 import ShowCustomerSection from "./ShowCustomerSection/ShowCustomer";
+import OrdersViewSection from "./OrdersViewSection/OrdersView";
 
 
 
@@ -26,7 +27,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/home" element={<HomeSection />} />
+          <Route path="/" element={<HomeSection />} />
           <Route
             path="/login"
             element={<LoginSection />}
@@ -53,7 +54,15 @@ function App() {
             element={<ShowCustomerSection />}
           />
 
+          <Route
+            path="/OrdersView"
+            element={<OrdersViewSection />}
+          />
         </Routes>
+
+
+
+
       </BrowserRouter>
     </div>
   );

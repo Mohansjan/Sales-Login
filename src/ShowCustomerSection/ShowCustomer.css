@@ -1,63 +1,49 @@
-.customer-section {
-    font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+.intro {
+  height: 1000px;
 }
 
-h2 {
-    color: #333;
-    text-align: center;
+
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #6a11cb;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to top, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to top, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    width: 1000px;
-    margin-left: 420px;
-    margin-top: 50px;
-    
-}
-
-table th, table td {
-    border: 2px solid lightgray;
-    padding: 10px;
-    text-align: left;
-    
-}
-
+table td,
 table th {
-    background-color: #f2f2f2;
-
-}
-table tbody{
-    height: 300px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-table tbody tr:nth-child(even) {
-    background-color: white;
+thead th,
+tbody th {
+  color: #fff;
 }
-table tbody tr:nth-child(odd) {
-    background-color: white;
+
+tbody td {
+  font-weight: 500;
+  color: rgba(255,255,255,.65);
 }
-td{
-    cursor: pointer;
+.container-12 {
+    margin-left: 300px;
+    margin-bottom: 500px;
+    display: inline-block;
 }
-table tbody tr:hover {
-    background-color: lightgrey;
-}
-thead {
-    
-    height: 70px;
-}
-h2.CO-1 {
+h2 {
+    margin-bottom: 67px;
+    margin-left: 400px;
     font-family: ui-monospace;
-    margin-top: 25px;
-    margin-right: 43px;
 }
-
+h2.sw-1 {
+    margin-bottom: 53px;
+    font-size: 45px;
+    font-family: monospace;
+    color: darkorange;
+}

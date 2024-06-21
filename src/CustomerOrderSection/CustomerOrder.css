@@ -55,6 +55,12 @@
    background-color: darkcyan;
    color: black;
  }
+ button.edit-button {
+  width: 300px;
+  margin-left: 150px;
+  height: 35px;
+  background-color: darksalmon;
+}
 
  
  

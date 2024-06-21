@@ -32,9 +32,11 @@ tbody td {
   color: rgba(255,255,255,.65);
 }
 .container-12 {
-    margin-left: 300px;
-    margin-bottom: 500px;
-    display: inline-block;
+  margin-left: 32px;
+  margin-bottom: 600px;
+  display: inline-block;
+  width: 1775px;
+
 }
 h2 {
     margin-bottom: 67px;
@@ -42,8 +44,10 @@ h2 {
     font-family: ui-monospace;
 }
 h2.sw-1 {
-    margin-bottom: 53px;
-    font-size: 45px;
-    font-family: monospace;
-    color: darkorange;
+  margin-bottom: 53px;
+  font-size: 45px;
+  font-family: monospace;
+  color: darkorange;
+  margin-top: 156px;
+  margin-left: 597px;
 }

@@ -1,67 +1,37 @@
 import React from "react";
 import Slider1 from "../ImageSection/Slider_1.webp";
-import "./Order.css";
+import "./BOrder.css";
 import { SiConvertio } from "react-icons/si";
 import { RiCaravanFill } from "react-icons/ri";
 import { MdOutlineContactPhone } from "react-icons/md";
 import { GiTakeMyMoney } from "react-icons/gi";
 import { GrStatusGood } from "react-icons/gr";
 import { RiCaravanLine } from "react-icons/ri";
-import Add3 from "../ImageSection/add_3.webp";
-import { useState,useEffect } from "react";
-
-    const OrderSection = () => {
-    const [customerOrders, setCustomerOrders] = useState([]);
-    console.log(customerOrders);
-    const fetchData = async () => {
-        const apiUrl = ' https://dev-mohansjan.gateway.apiplatform.io/v1/YuvaStore';
-        try {
-            const response = await fetch(apiUrl, {
-                method: 'GET',
-                headers: {
-                    'pkey': '3fcc20cdc093c0403fc55b721aab6f3c',
-                    'apikey': 'ZdzwOIDYW0AKYVD6BkZqyBbHcjb3pyGc',
-                    'Content-Type': 'application/json',
-                },
-            });
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            const data = await response.json();
-            //console.log(customerOrders);
-            // alert('hi')
-            setCustomerOrders(data);
-        } catch (error) {
-            console.error('Error fetching data:', error);
-        }
-    };
-
-    useEffect(() => {
-        fetchData();
-    }, []);
-
+//import Add3 from "../ImageSection/add_3.webp";
+//import Slider2 from "../ImageSection/Slider_2.webp";
+import Slider3 from "../ImageSection/Slider_3.webp";
+const BOrderSection = () => {
     return (
 
         <div class="order-1">
             <div class="row orderRow-1">
                 <div class="col-4">
-                    <img className="OrdImage-1" src={Add3} />
+                    <img className="OrdImage-1" src={Slider3} />
                     <div className="offer">
                         <div className="offerOff-1">
-                            <p className="off-1">Add To Cart</p>
-                        </div>
-                        <div className="offerOff-2">
-                            <a href="CustomerOrder"> <p className="off-2">Buy Now</p></a>
-                        </div>
+                    <p className="off-1">Add To Cart</p>
+                    </div>
+                    <div className="offerOff-2">
+                   <a href="CustomerOrder"> <p className="off-2">Buy Now</p></a>
+                    </div>
                     </div>
                 </div>
                 <div class="col-8">
                     <section className="dtc-1">
                         <div className="dt">
-                            <p className="dt-1">boAt Airdopes 125 TWS Earbuds with 50 hrs Playtime,Quad Mics with ENxᵀᴹ Tech,ASAPᵀᴹ Charging,IWPᵀᴹ Tech,
-                                BEASTᵀᴹ Mode with 50 ms Low Latency,BTv5.3, IPX5(Mystic Black)</p>
-                            <a href="/shop">  <p className="dt-2">Visit The Boat Store</p></a>
-                            <p className="dt-3">5K+ bought in past month</p>
+                            <p className="dt-1">IBall Sound Melon Bluetooth Portable Speaker</p>
+                            <a href="/shop">  <p className="dt-2">Visit The IBALL Store</p></a>
+                            <p className="dt-3">2K+ bought in past month</p>
                             <hr></hr>
                         </div>
                     </section>
@@ -70,12 +40,8 @@ import { useState,useEffect } from "react";
                             <p className="dd-1">
                                 Limited time deal
                             </p>
-                            {customerOrders.map((order, index) => (
-                                 <p className="ovjs-2" key={index}>
-                            <p className="dd-2">{order.Product_Discount}</p>
-                            <p className="dd-3">{order.Product_Price}</p>
-                            </p>
-                            ))}
+                            <p className="dd-2">-59%</p>
+                            <p className="dd-3">2,999</p>
                             <p className="dd-4">Inclusive of all taxes</p>
                             <p className="dd-5">EMI starts at ₹100 per month</p>
                             <hr className="dpdd"></hr>
@@ -108,28 +74,28 @@ import { useState,useEffect } from "react";
                         <p className="Prds-1">Product Details</p>
                         <div className="ddsp-1">
                             <p className="prds-2">Brand</p>
-                            <p className="prds-3">BOAT</p>
+                            <p className="prds-3">IBALL</p>
                         </div>
 
                         <div className="ddsp-2">
                             <p className="prds-4">Model Name</p>
-                            <p className="prds-5">Airdopes 207</p>
+                            <p className="prds-5">SoundMelon BTH </p>
                         </div>
 
                         <div className="ddsp-3">
                             <p className="prds-6">Item Weight</p>
-                            <p className="prds-7">45g</p>
+                            <p className="prds-7">300g</p>
                         </div>
 
                         <div className="ddsp-4">
-                            <p className="prds-8">Control Method</p>
-                            <p className="prds-9">Voice</p>
+                            <p className="prds-8">Type</p>
+                            <p className="prds-9">PORTABLE WIRELESS BLUETOOTH SPEAKER</p>
                         </div>
 
                         <div className="ddsp-5">
-                            <p className="prds-10">Material</p>
-                            <p className="prds-11">Plastic</p>
-                        </div>
+                        <p className="prds-10">BLUETOOTH</p>
+                        <p className="prds-11">Yes, v4.2 </p>
+                    </div>
 
                     </div>
                 </div>
@@ -139,4 +105,4 @@ import { useState,useEffect } from "react";
     );
 };
 
-export default OrderSection;
+export default BOrderSection;

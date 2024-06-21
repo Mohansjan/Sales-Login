@@ -18,6 +18,9 @@ import OrderSection from "./OrderSection/Order";
 import CustomerOrderSection from "./CustomerOrderSection/CustomerOrder";
 import ShowCustomerSection from "./ShowCustomerSection/ShowCustomer";
 import OrdersViewSection from "./OrdersViewSection/OrdersView";
+import IOrderSection from "./IOrderSection/IOrder.js";
+import BOrderSection from "./BOrderSection/BOrder.js";
+
 
 
 
@@ -57,6 +60,16 @@ function App() {
           <Route
             path="/OrdersView"
             element={<OrdersViewSection />}
+          />
+
+          <Route
+            path="/IOrder"
+            element={<IOrderSection />}
+          />
+
+          <Route
+            path="/BOrder"
+            element={<BOrderSection />}
           />
         </Routes>
 

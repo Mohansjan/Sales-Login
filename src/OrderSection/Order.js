@@ -14,7 +14,7 @@ import { useState,useEffect } from "react";
     const [customerOrders, setCustomerOrders] = useState([]);
     console.log(customerOrders);
     const fetchData = async () => {
-        const apiUrl = ' https://dev-mohansjan.gateway.apiplatform.io/v1/YuvaStore';
+        const apiUrl = ' https://dev-mohansjan.gateway.apiplatform.io/v1/YuvaStore/1';
         try {
             const response = await fetch(apiUrl, {
                 method: 'GET',

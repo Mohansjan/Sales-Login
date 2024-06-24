@@ -9,8 +9,38 @@ import { GrStatusGood } from "react-icons/gr";
 import { RiCaravanLine } from "react-icons/ri";
 //import Add3 from "../ImageSection/add_3.webp";
 //import Slider2 from "../ImageSection/Slider_2.webp";
+import { useState,useEffect } from "react";
 import Slider3 from "../ImageSection/Slider_3.webp";
 const BOrderSection = () => {
+    const [customerOrders, setCustomerOrders] = useState([]);
+    console.log(customerOrders);
+    const fetchData = async () => {
+        const apiUrl = ' https://dev-mohansjan.gateway.apiplatform.io/v1/YuvaStore/3';
+        try {
+            const response = await fetch(apiUrl, {
+                method: 'GET',
+                headers: {
+                    'pkey': '3fcc20cdc093c0403fc55b721aab6f3c',
+                    'apikey': 'ZdzwOIDYW0AKYVD6BkZqyBbHcjb3pyGc',
+                    'Content-Type': 'application/json',
+                },
+            });
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            const data = await response.json();
+            //console.log(customerOrders);
+            // alert('hi')
+            setCustomerOrders(data);
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
+    };
+
+    useEffect(() => {
+        fetchData();
+    }, []);
+
     return (
 
         <div class="order-1">
@@ -40,8 +70,12 @@ const BOrderSection = () => {
                             <p className="dd-1">
                                 Limited time deal
                             </p>
-                            <p className="dd-2">-59%</p>
-                            <p className="dd-3">2,999</p>
+                            {customerOrders.map((order, index) => (
+                                 <p className="ovjs-2" key={index}>
+                            <p className="dd-2">{order.Product_Discount}</p>
+                            <p className="dd-3">{order.Product_Price}</p>
+                            </p>
+                            ))}
                             <p className="dd-4">Inclusive of all taxes</p>
                             <p className="dd-5">EMI starts at ₹100 per month</p>
                             <hr className="dpdd"></hr>

@@ -7,6 +7,7 @@ const OrdersViewSection = () => {
 
     const [customerOrders, setCustomerOrders] = useState([]);
     console.log(customerOrders);
+    
     const fetchData = async () => {
         const apiUrl = ' https://dev-mohansjan.gateway.apiplatform.io/v1/YuvaStore';
         try {
@@ -16,7 +17,9 @@ const OrdersViewSection = () => {
                     'pkey': '3fcc20cdc093c0403fc55b721aab6f3c',
                     'apikey': 'ZdzwOIDYW0AKYVD6BkZqyBbHcjb3pyGc',
                     'Content-Type': 'application/json',
+                    
                 },
+                
             });
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -28,6 +31,7 @@ const OrdersViewSection = () => {
         } catch (error) {
             console.error('Error fetching data:', error);
         }
+        
     };
 
     useEffect(() => {
@@ -53,7 +57,7 @@ const OrdersViewSection = () => {
                                         <h6 className="ovjs-2" key={index}>
                                             <h6 className="ovjs-3">{order.Product_Name}</h6>
                                             <h6 className="ovjs-4">{order.Product_Discount}</h6>
-                                            <h6 className="ovjs-5">{order.ProductPrice}</h6>
+                                            <h6 className="ovjs-5">{order.Product_Price}</h6>
                                             <h6 className="ovjs-6">{order.EMI_Option}</h6>
                                             
                                           

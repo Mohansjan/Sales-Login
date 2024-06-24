@@ -53,7 +53,7 @@ const OrdersViewSection = () => {
                                         <h6 className="ovjs-2" key={index}>
                                             <h6 className="ovjs-3">{order.Product_Name}</h6>
                                             <h6 className="ovjs-4">{order.Product_Discount}</h6>
-                                            <h6 className="ovjs-5">{order.Product_Price}</h6>
+                                            <h6 className="ovjs-5">{order.ProductPrice}</h6>
                                             <h6 className="ovjs-6">{order.EMI_Option}</h6>
                                             
                                           

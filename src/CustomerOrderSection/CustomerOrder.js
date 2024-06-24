@@ -15,9 +15,9 @@ const CustomerOrderSection = () => {
     });
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
-    const [orderId, setOrderId] = useState(null); // Track the order ID for edit mode
+    const [orderId, setOrderId] = useState(null); 
 
-    // Function to handle form submission
+   
     const handleSubmit = async (event) => {
         event.preventDefault();
         setLoading(true);
@@ -26,9 +26,9 @@ const CustomerOrderSection = () => {
             const formDataCopy = { ...formData };
             let url = 'https://dev-mohansjan.gateway.apiplatform.io/v1/YuvaStoreOrd';
             
-            // Determine whether to POST (new order) or PUT (edit existing order)
+            
             if (orderId) {
-                url += `/${orderId}`; // Append orderId for PUT request
+                url += `/${orderId}`; 
                 const response = await axios.put(url, formDataCopy, {
                     headers: {
                         'apikey': 'ZdzwOIDYW0AKYVD6BkZqyBbHcjb3pyGc',
@@ -59,12 +59,11 @@ const CustomerOrderSection = () => {
         setLoading(false);
     };
 
-    // Function to handle edit button click
+    
     const handleEdit = (orderId) => {
-        // Fetch order details based on orderId and populate the form
-        setOrderId(orderId); // Set orderId to enable PUT request in handleSubmit
-        // Simulate fetching data (replace with actual fetch logic if needed)
-        // For demo purposes, setting some example data directly
+      
+        setOrderId(orderId); 
+       
         setFormData({
             Product_Name: 'boAt Airdopes 125 TWS Earbuds ',
             Product_Price: '1299',
@@ -76,7 +75,7 @@ const CustomerOrderSection = () => {
         });
     };
 
-    // Function to handle delete button click
+   
     const handleDelete = async (orderId) => {
         setLoading(true);
         try {
@@ -89,7 +88,7 @@ const CustomerOrderSection = () => {
             });
             console.log('Order deleted:', response.data);
             alert('Order deleted successfully');
-            // Handle any additional logic after deletion (e.g., refresh data, navigate)
+           
         } catch (error) {
             console.error('Error deleting order:', error.response ? error.response.data : error.message);
             setError('Failed to delete order. Please try again.');
@@ -97,7 +96,7 @@ const CustomerOrderSection = () => {
         setLoading(false);
     };
 
-    // Function to handle input changes in the form
+   
     const handleChange = (event) => {
         const { name, value } = event.target;
         setFormData({ ...formData, [name]: value });

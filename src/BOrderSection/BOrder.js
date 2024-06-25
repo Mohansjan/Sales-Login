@@ -123,12 +123,12 @@ const BOrderSection = () => {
 
                         <div className="ddsp-4">
                             <p className="prds-8">Type</p>
-                            <p className="prds-9">PORTABLE WIRELESS BLUETOOTH SPEAKER</p>
+                            <p className="prdss-9">PORTABLE WIRELESS BLUETOOTH SPEAKER</p>
                         </div>
 
                         <div className="ddsp-5">
                         <p className="prds-10">BLUETOOTH</p>
-                        <p className="prds-11">Yes, v4.2 </p>
+                        <p className="prdss-11">Yes, v4.2 </p>
                     </div>
 
                     </div>

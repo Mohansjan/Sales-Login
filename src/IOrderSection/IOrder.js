@@ -122,7 +122,7 @@ const IOrderSection = () => {
 
                         <div className="ddsp-4">
                             <p className="prds-8">charger</p>
-                            <p className="prds-9">Type-C</p>
+                            <p className="prdsl-9">Type-C</p>
                         </div>
 
                         <div className="ddsp-5">

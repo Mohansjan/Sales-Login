@@ -89,7 +89,7 @@ h6.ad-2 {
 }
 .bumberImager-5 {
     display: inline-block;
-    margin-left:30px;
+    margin-left:20px;
 }
 .bumberImager-6 {
     display: inline-block;
@@ -106,7 +106,7 @@ h6.ad-2 {
 }
 .bumberImager-9 {
     display: inline-block;
-    margin-left:30px;
+    margin-left:20px;
 }
 .bumberImager-10 {
     display: inline-block;
@@ -129,4 +129,7 @@ h6.ad-2 {
 }
 .ads-1 :active{
     background-color: blanchedalmond;
+}
+.App{
+    background-color: #fff;
 }

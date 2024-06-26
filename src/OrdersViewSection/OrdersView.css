@@ -6,14 +6,14 @@
     height: 1000px;
 }
 .aod-1 {
-    width: 1000px;
+    width: 1850px;
     height: 700px;
 }
 h2.ovjh-1 {
     margin-left: 800px;
     margin-top: 30px;
     font-size: 40px;
-    color: darkcyan;
+    color: peru;
 }
 img.ovji {
     margin-left: 35px;
@@ -29,31 +29,84 @@ h6.ovjs-2 {
 }
 h6.ovjs-4 {
     display: inline-block;
-    font-size: 30px;
+    font-size: 20px;
     color: brown;
+    margin-top: 0px;
 }
 h6.ovjs-5 {
     display: inline-block;
     margin-left: 75px;
-    margin-top: 13px;
-    font-size: 25px;
+    margin-top: 4px;
+    font-size: 22px;
 }
 h6.ovjs-6 {
-    margin-top: 18px;
+    margin-top: 1px;
     color: darkcyan;
     font-size: 17px;
 }
 h6.ovjs-3 {
-    font-size: 27px;
+    font-size: 23px;
     font-family: ui-monospace;
-    color: cornflowerblue;
+    color: #504d4d;
 }
 .aod-2 {
-    margin-left: 47px;
-    width: 483px;
-    height: 490px;
-    background-color: honeydew;
-    box-shadow: 10px 10px 10px 10px lightslategrey;
+    margin-left: 10px;
+    width: 411px;
+    height: 338px;
+    background-color: snow;
+    box-shadow: 10px 10px  lightgrey;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+.aod-3 {
+    margin-left: 50px;
+    width: 411px;
+    height: 338px;
+    background-color: snow;
+    box-shadow: 10px 10px  lightgrey;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 25px;
 }
 
+.aod-4{
+    margin-left: 50px;
+    width: 411px;
+    height: 338px;
+    background-color: snow;
+    box-shadow: 10px 10px  lightgrey;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 25px;
+}
 
+img.ovji {
+    margin-left: 26px;
+    width: 357px;
+    margin-top: 27px;
+    height: 173px;
+}
+.ovjs-7 {
+    margin-left: 70 px;
+}
+img.ovji-1 {
+    margin-left: 48px;
+    width: 357px;
+    margin-top: 30px;
+    height: 179px;
+}
+.ovjs-7{
+        margin-left: 55px;
+        margin-top: 30px;
+}
+.aod-5{
+    margin-left: 50px;
+    width: 411px;
+    height: 338px;
+    background-color: snow;
+    box-shadow: 10px 10px  lightgrey;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 25px;
+}

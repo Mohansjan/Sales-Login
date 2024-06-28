@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import axios from 'axios';
-import "./CustomerOrder.css";
+import "./CusIOrder.css";
 
-const CustomerOrderSection = () => {
+const CusIOrder = () => {
     const [formData, setFormData] = useState({
-        Product_Name: 'boAt Airdopes 125 TWS Earbuds',  // Fixed product name
-        Product_Price: '₹1299',  // Fixed product price
-        Product_category: 'AirDopes',  // Fixed product category
+        Product_Name: 'IKALL S3 Pro Smartphone ',  
+        Product_Price:'₹10,999',
+        Product_Category: 'Mobiles',  
         Cus_Name: '',
         Cus_Address:'',
         Cus_PNumber:'',
@@ -21,7 +21,7 @@ const CustomerOrderSection = () => {
 
         try {
             const formDataCopy = { ...formData };
-            let url = 'https://dev-mohansjan.gateway.apiplatform.io/v1/YuvaStoreOrd';
+            let url = ' https://dev-mohansjan.gateway.apiplatform.io/v1/IOrder';
 
             const response = await axios.post(url, formDataCopy, {
                 headers: {
@@ -32,8 +32,7 @@ const CustomerOrderSection = () => {
             });
             console.log('Order created:', response.data);
             alert('Product Ordered');
-            // Assuming you want to redirect after successful submission
-            // You can use react-router-dom or window.location.href as you did
+            
             window.location.href = '/ShowCustomer';
 
         } catch (error) {
@@ -63,28 +62,28 @@ const CustomerOrderSection = () => {
                                         <input
                                             type="text"
                                             name="Product_Name"
-                                            value={formData.Product_Name}  // Use value from state
+                                            value={formData.Product_Name}
                                             onChange={handleChange}
-                                            readOnly  // Make it readonly since it's fixed
+                                            readOnly  
                                         />
 
                                         <label>Product Price:</label>
                                         <input
                                             type="text"
                                             name="Product_Price"
-                                            value={formData.Product_Price}  // Use value from state
+                                            value={formData.Product_Price} 
                                             onChange={handleChange}
-                                            readOnly  // Make it readonly since it's fixed
+                                            readOnly 
                                         />
                                     </div>
                                     <div className="form-group">
                                         <label>Product category:</label>
                                         <input
                                             type="text"
-                                            name="Product_category"
-                                            value={formData.Product_category}  // Use value from state
+                                            name="Product_Category"
+                                            value={formData.Product_Category}  
                                             onChange={handleChange}
-                                            readOnly  // Make it readonly since it's fixed
+                                            readOnly  
                                         />
                                     </div>
                                     </div>
@@ -93,7 +92,7 @@ const CustomerOrderSection = () => {
                                         <input
                                             type="text"
                                             name="Cus_Name"
-                                            placeholder="Enter Customer Name"
+                                            placeholder="Enter Name"
                                             value={formData.Cus_Name}
                                             onChange={handleChange}
                                         />
@@ -103,7 +102,7 @@ const CustomerOrderSection = () => {
                                         <input
                                             type="text"
                                             name="Cus_Address"
-                                            placeholder="Enter Customer Address"
+                                            placeholder="Enter Address"
                                             value={formData.Cus_Address}
                                             onChange={handleChange}
                                         />
@@ -146,4 +145,4 @@ const CustomerOrderSection = () => {
     );
 };
 
-export default CustomerOrderSection;
+export default CusIOrder;

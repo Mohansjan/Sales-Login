@@ -9,7 +9,9 @@ import { GrStatusGood } from "react-icons/gr";
 import { RiCaravanLine } from "react-icons/ri";
 //import Add3 from "../ImageSection/add_3.webp";
 import Slider2 from "../ImageSection/Slider_2.webp";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
+
+
 const IOrderSection = () => {
     const [customerOrders, setCustomerOrders] = useState([]);
     console.log(customerOrders);
@@ -48,11 +50,11 @@ const IOrderSection = () => {
                     <img className="OrdImage-1" src={Slider2} />
                     <div className="offer">
                         <div className="offerOff-1">
-                    <p className="off-1">Add To Cart</p>
-                    </div>
-                    <div className="offerOff-2">
-                   <a href="CustomerOrder"> <p className="off-2">Buy Now</p></a>
-                    </div>
+                            <p className="off-1">Add To Cart</p>
+                        </div>
+                        <div className="offerOff-2">
+                            <a href="CusIOrder"> <p className="off-2">Buy Now</p></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-8">
@@ -70,10 +72,10 @@ const IOrderSection = () => {
                                 Limited time deal
                             </p>
                             {customerOrders.map((order, index) => (
-                                 <p className="ovjs-2" key={index}>
-                            <p className="dd-2">{order.Product_Discount}</p>
-                            <p className="dd-3">{order.Product_Price}</p>
-                            </p>
+                                <p className="ovjs-2" key={index}>
+                                    <p className="dd-2">{order.Product_Discount}</p>
+                                    <p className="dd-3">{order.Product_Price}</p>
+                                </p>
                             ))}
                             <p className="dd-4">Inclusive of all taxes</p>
                             <p className="dd-5">EMI starts at ₹100 per month</p>
@@ -126,9 +128,9 @@ const IOrderSection = () => {
                         </div>
 
                         <div className="ddsp-5">
-                        <p className="prds-10">Camera</p>
-                        <p className="prds-11">21MP+5MP+2MP Rear Camera | 8MP Front Camera </p>
-                    </div>
+                            <p className="prds-10">Camera</p>
+                            <p className="prds-11">21MP+5MP+2MP Rear Camera | 8MP Front Camera </p>
+                        </div>
 
                     </div>
                 </div>

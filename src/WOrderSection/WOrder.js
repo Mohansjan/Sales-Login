@@ -1,6 +1,7 @@
 import React from "react";
 import Slider1 from "../ImageSection/Slider_1.webp";
-import "./BOrder.css";
+import Add2 from "../ImageSection/add_2.webp";
+import "./WOrder.css";
 import { SiConvertio } from "react-icons/si";
 import { RiCaravanFill } from "react-icons/ri";
 import { MdOutlineContactPhone } from "react-icons/md";
@@ -8,14 +9,15 @@ import { GiTakeMyMoney } from "react-icons/gi";
 import { GrStatusGood } from "react-icons/gr";
 import { RiCaravanLine } from "react-icons/ri";
 //import Add3 from "../ImageSection/add_3.webp";
-//import Slider2 from "../ImageSection/Slider_2.webp";
-import { useState,useEffect } from "react";
-import Slider3 from "../ImageSection/Slider_3.webp";
-const BOrderSection = () => {
+import Slider2 from "../ImageSection/Slider_2.webp";
+import { useState, useEffect } from "react";
+
+
+const WOrderSection = () => {
     const [customerOrders, setCustomerOrders] = useState([]);
     console.log(customerOrders);
     const fetchData = async () => {
-        const apiUrl = ' https://dev-mohansjan.gateway.apiplatform.io/v1/YuvaStore/3';
+        const apiUrl = ' https://dev-mohansjan.gateway.apiplatform.io/v1/YuvaStore/4';
         try {
             const response = await fetch(apiUrl, {
                 method: 'GET',
@@ -46,22 +48,24 @@ const BOrderSection = () => {
         <div class="order-1">
             <div class="row orderRow-1">
                 <div class="col-4">
-                    <img className="OrdImage-1" src={Slider3} />
+                    <img className="OrdImage-1" src={Add2} alt="add2"/>
                     <div className="offer">
                         <div className="offerOff-1">
-                    <p className="off-1">Add To Cart</p>
-                    </div>
-                    <div className="offerOff-2">
-                   <a href="CustomerBOrder"> <p className="off-2">Buy Now</p></a>
-                    </div>
+                            <p className="off-1">Add To Cart</p>
+                        </div>
+                        <div className="offerOff-2">
+                            <a href="CusIOrder"> <p className="off-2">Buy Now</p></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-8">
                     <section className="dtc-1">
                         <div className="dt">
-                            <p className="dt-1">IBall Sound Melon Bluetooth Portable Speaker</p>
-                            <a href="/shop">  <p className="dt-2">Visit The IBALL Store</p></a>
-                            <p className="dt-3">2K+ bought in past month</p>
+                            <p className="dt-1">Kratos SW18 Smart Watch with 2.01'' Large LCD Display, Wireless Charging, 
+                            AI Voice Assistant, Smart Watch for Men with Metal Body, 50+ Sports Modes, 24/7 Health Tracking, BT Calling, 200+ Watch Faces</p>
+
+                            <a href="/shop">  <p className="dt-2">Visit The Kratos Store</p></a>
+                            <p className="dt-3">3K+ bought in past month</p>
                             <hr></hr>
                         </div>
                     </section>
@@ -71,13 +75,13 @@ const BOrderSection = () => {
                                 Limited time deal
                             </p>
                             {customerOrders.map((order, index) => (
-                                 <p className="ovjs-2" key={index}>
-                            <p className="dd-2">{order.Product_Discount}</p>
-                            <p className="dd-3">{order.Product_Price}</p>
-                            </p>
+                                <p className="ovjs-2" key={index}>
+                                    <p className="dd-2">{order.Product_Discount}</p>
+                                    <p className="dd-3">{order.Product_Price}</p>
+                                </p>
                             ))}
                             <p className="dd-4">Inclusive of all taxes</p>
-                            <p className="dd-5">EMI starts at ₹100 per month</p>
+                            <p className="dd-5">EMI starts at ₹88 per month</p>
                             <hr className="dpdd"></hr>
                         </div>
                     </section>
@@ -108,28 +112,28 @@ const BOrderSection = () => {
                         <p className="Prds-1">Product Details</p>
                         <div className="ddsp-1">
                             <p className="prds-2">Brand</p>
-                            <p className="prds-3">IBALL</p>
+                            <p className="prds-3">Kratos</p>
                         </div>
 
                         <div className="ddsp-2">
                             <p className="prds-4">Model Name</p>
-                            <p className="prds-5">SoundMelon BTH </p>
+                            <p className="prds-5">KR SW18 ORANGE</p>
                         </div>
 
                         <div className="ddsp-3">
-                            <p className="prds-6">Item Weight</p>
-                            <p className="prds-7">300g</p>
+                            <p className="prds-6">Operating System</p>
+                            <p className="prdsl-7">Android</p>
                         </div>
 
                         <div className="ddsp-4">
-                            <p className="prds-8">Type</p>
-                            <p className="prdss-9">PORTABLE WIRELESS BLUETOOTH SPEAKER</p>
+                            <p className="prds-8">connectivity</p>
+                            <p className="prdsa-9">Bluetooth</p>
                         </div>
 
                         <div className="ddsp-5">
-                        <p className="prds-10">BLUETOOTH</p>
-                        <p className="prdss-11">Yes, v4.2 </p>
-                    </div>
+                            <p className="prds-10">Display Type</p>
+                            <p className="prdsl-11">LCD </p>
+                        </div>
 
                     </div>
                 </div>
@@ -139,4 +143,4 @@ const BOrderSection = () => {
     );
 };
 
-export default BOrderSection;
+export default WOrderSection;

@@ -81,7 +81,7 @@ const ShoppingSection = () => {
                     <h6 className="ad-1">Add to Cart</h6>
                   </div>
                   <div className="ads-2">
-                  <a href="/Order"><h6 className="ad-2">Buy Now</h6></a>
+                  <a href="/WOrder"><h6 className="ad-2">Buy Now</h6></a>
                   </div>
                 </div>
             </div>

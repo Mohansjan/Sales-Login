@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import axios from 'axios';
-import "./CustomerOrder.css";
+import "./CustomerBOrder.css";
 
-const CustomerOrderSection = () => {
+const CustomerBOrder = () => {
     const [formData, setFormData] = useState({
-        Product_Name: 'boAt Airdopes 125 TWS Earbuds',  // Fixed product name
-        Product_Price: '₹1299',  // Fixed product price
-        Product_category: 'AirDopes',  // Fixed product category
-        Cus_Name: '',
-        Cus_Address:'',
-        Cus_PNumber:'',
-        Delivery_date:''
+        Product_Name: 'IBall Bluetooth Portable Speaker ',  
+        Product_Price:'₹2,999',
+        Product_Category: 'Speaker',  
+        Customer_Name: '',
+        Customer_Address:'',
+        Customer_PNumber:'',
+        Delivery_Date:''
     });
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
@@ -21,7 +21,7 @@ const CustomerOrderSection = () => {
 
         try {
             const formDataCopy = { ...formData };
-            let url = 'https://dev-mohansjan.gateway.apiplatform.io/v1/YuvaStoreOrd';
+            let url = ' https://dev-mohansjan.gateway.apiplatform.io/v1/BOrder';
 
             const response = await axios.post(url, formDataCopy, {
                 headers: {
@@ -32,8 +32,7 @@ const CustomerOrderSection = () => {
             });
             console.log('Order created:', response.data);
             alert('Product Ordered');
-            // Assuming you want to redirect after successful submission
-            // You can use react-router-dom or window.location.href as you did
+            
             window.location.href = '/ShowCustomer';
 
         } catch (error) {
@@ -63,28 +62,28 @@ const CustomerOrderSection = () => {
                                         <input
                                             type="text"
                                             name="Product_Name"
-                                            value={formData.Product_Name}  // Use value from state
+                                            value={formData.Product_Name}
                                             onChange={handleChange}
-                                            readOnly  // Make it readonly since it's fixed
+                                            readOnly  
                                         />
 
                                         <label>Product Price:</label>
                                         <input
                                             type="text"
                                             name="Product_Price"
-                                            value={formData.Product_Price}  // Use value from state
+                                            value={formData.Product_Price} 
                                             onChange={handleChange}
-                                            readOnly  // Make it readonly since it's fixed
+                                            readOnly 
                                         />
                                     </div>
                                     <div className="form-group">
                                         <label>Product category:</label>
                                         <input
                                             type="text"
-                                            name="Product_category"
-                                            value={formData.Product_category}  // Use value from state
+                                            name="Product_Category"
+                                            value={formData.Product_Category}  
                                             onChange={handleChange}
-                                            readOnly  // Make it readonly since it's fixed
+                                            readOnly  
                                         />
                                     </div>
                                     </div>
@@ -92,9 +91,9 @@ const CustomerOrderSection = () => {
                                         <label>Customer Name:</label>
                                         <input
                                             type="text"
-                                            name="Cus_Name"
-                                            placeholder="Enter Customer Name"
-                                            value={formData.Cus_Name}
+                                            name="Customer_Name"
+                                            placeholder="Enter Name"
+                                            // value={formData.Customer_Name}
                                             onChange={handleChange}
                                         />
                                     </div>
@@ -102,9 +101,9 @@ const CustomerOrderSection = () => {
                                         <label>Customer Address:</label>
                                         <input
                                             type="text"
-                                            name="Cus_Address"
-                                            placeholder="Enter Customer Address"
-                                            value={formData.Cus_Address}
+                                            name="Customer_Address"
+                                            placeholder="Enter Address"
+                                            // value={formData.Customer_Address}
                                             onChange={handleChange}
                                         />
                                     </div>
@@ -113,9 +112,9 @@ const CustomerOrderSection = () => {
                                         <label>Mobile number:</label>
                                         <input
                                             type="text"
-                                            name="Cus_PNumber"
+                                            name="Customer_PNumber"
                                             placeholder="Enter Mobile Number"
-                                            value={formData.Cus_PNumber}
+                                            // value={formData.Customer_PNumber}
                                             onChange={handleChange}
                                         />
                                     </div>
@@ -124,9 +123,9 @@ const CustomerOrderSection = () => {
                                         <label>Delivery date:</label>
                                         <input
                                             type="date"
-                                            name="Delivery_date"
+                                            name="Delivery_Date"
                                             placeholder="Pick Delivery Date"
-                                            value={formData.Delivery_date}
+                                            // value={formData.Delivery_Date}
                                             onChange={handleChange}
                                         />
                                     </div>
@@ -146,4 +145,4 @@ const CustomerOrderSection = () => {
     );
 };
 
-export default CustomerOrderSection;
+export default CustomerBOrder;

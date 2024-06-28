@@ -20,10 +20,10 @@ import ShowCustomerSection from "./ShowCustomerSection/ShowCustomer";
 import OrdersViewSection from "./OrdersViewSection/OrdersView";
 import IOrderSection from "./IOrderSection/IOrder.js";
 import BOrderSection from "./BOrderSection/BOrder.js";
-import ContactSection from "./ContactSection/Contact.js"
-
-
-
+import ContactSection from "./ContactSection/Contact.js";
+import CusIOrder from "./CustomerIOrder/CusIOrder.js";
+import WOrderSection from "./WOrderSection/WOrder.js";
+import CustomerBOrderSection from "./CustomerBOrderSection/CustomerBOrder.js";
 
 
 function App() {
@@ -73,13 +73,28 @@ function App() {
             element={<BOrderSection />}
           />
 
-           <Route
+          <Route
             path="/Contact"
             element={<ContactSection />}
           />
+
+          <Route
+            path="/CusIOrder"
+            element={<CusIOrder />}
+          />
+
+          <Route
+           path="/WOrder"
+           element={<WOrderSection/>}
+           />
+
+           <Route
+           path="/CustomerBOrder"
+           element={<CustomerBOrderSection/>}
+           />
         </Routes>
 
-           
+
 
 
       </BrowserRouter>

@@ -10,6 +10,7 @@
      background-color: powderblue;
      box-shadow: 10px 10px 10px 10px gray;
      background-color:lavenderblush;
+     border-radius: 10px;
    }
    
    .ac-1{
@@ -94,6 +95,12 @@ button.submit-button-1{
   border: 1px solid #ddd;
   border-radius: 4px;
   color: #666;
+}
+.form-groupData input{
+  color: #5a5151;;
+  font-size: 18px;
+  font-family: poppins;
+
 }
  
  

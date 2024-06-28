@@ -130,8 +130,9 @@ const CustomerOrderSection = () => {
 
                                     {error && <div className="error-message">{error}</div>}
 
-                                    <button className="submit-button" type="submit" disabled={loading}>
-                                        Submit
+                                    <button className="submit-button-1" type="submit" disabled={loading}>
+                                    {loading ? 'Submitting...' : 'Submit'}
+                                        
                                     </button>
                                 </form>
                             </div>

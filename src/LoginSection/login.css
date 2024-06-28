@@ -1,4 +1,4 @@
-body{
+/* body{
      
      
     background: #84fab0;
@@ -9,7 +9,7 @@ body{
     background: #84fab0;
     background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
     background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
-    }
+    } */
     .lg-0 {
         margin-left: 500px;
         margin-top: 100px;
@@ -17,7 +17,7 @@ body{
     }
     h2.login-1 {
         margin-bottom: 30px;
-        margin-left: 60px;
+        margin-left: 80px;
     }
     input[type="text"] {
         height: 50px;
@@ -35,7 +35,7 @@ body{
      margin-bottom: 20px;   
     }
     .lg-0 {
-        background-color: white;
+        background-color: darkseagreen;
         width: 500px;
         display: flex;
         justify-content: space-around;
@@ -44,9 +44,10 @@ body{
     .lg-0 {
         margin-left: 620px;
         margin-top: 200px;
+        border-radius: 100px;
     }
     button.bt-2 {
         width: 400px;
         margin-top: 15px;
-        background-color: beige;
+        background-color: moccasin;
     }

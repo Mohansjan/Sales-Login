@@ -49,7 +49,7 @@ const LoginSection = () => {
       });
       console.log('Login successful:', response.data);
       alert('login successful');
-      window.location.href = '/home';
+      window.location.href = '/OrdersView';
 
       // Redirect to dashboard or another page on successful login
 
@@ -72,7 +72,7 @@ const LoginSection = () => {
           <input
             type="text"
             name="UserName"
-            placeholder="UserName"
+            placeholder="Enter UserName"
             value={formData.UserName}
             onChange={handleChange}
           />
@@ -83,7 +83,7 @@ const LoginSection = () => {
           <input
             type="Email"
             name="Email"
-            placeholder="Email"
+            placeholder="Enter Email"
             value={formData.Email}
             onChange={handleChange}
           />
@@ -94,14 +94,14 @@ const LoginSection = () => {
             className="in-1"
             type="password"
             name="Password"
-            placeholder="Password"
+            placeholder="Enter Password"
             value={formData.Password}
             onChange={handleChange}
           />
         </div>
         {error && <div style={{ color: 'red' }}>{error}</div>}
         <div className="bt-1">
-        <a href="/home"><button className="bt-2"type="submit" disabled={loading}>Submit</button></a>
+        <a href="/Order"><button className="bt-2"type="submit" disabled={loading}>Submit</button></a>
         </div>
       </form>
     </div>

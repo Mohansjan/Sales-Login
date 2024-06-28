@@ -20,6 +20,7 @@ import ShowCustomerSection from "./ShowCustomerSection/ShowCustomer";
 import OrdersViewSection from "./OrdersViewSection/OrdersView";
 import IOrderSection from "./IOrderSection/IOrder.js";
 import BOrderSection from "./BOrderSection/BOrder.js";
+import ContactSection from "./ContactSection/Contact.js"
 
 
 
@@ -71,9 +72,14 @@ function App() {
             path="/BOrder"
             element={<BOrderSection />}
           />
+
+           <Route
+            path="/Contact"
+            element={<ContactSection />}
+          />
         </Routes>
 
-
+           
 
 
       </BrowserRouter>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Add3 from '../ImageSection/add_3.webp';
 import Add2 from '../ImageSection/add_2.webp';
+import Add5 from '../ImageSection/add_5.webp';
 import Slider2 from '../ImageSection/Slider_2.webp';
 import Slider3 from "../ImageSection/Slider_3.webp";
 
@@ -12,6 +13,8 @@ const OrdersViewSection = () => {
     const [customerOrders2, setCustomerOrders2] = useState([]);
     const [customerOrders3, setCustomerOrders3] = useState([]);
     const [customerOrders4, setCustomerOrders4] = useState([]);
+    const [customerOrders5, setCustomerOrders5] = useState([]);
+
 
     useEffect(() => {
         const fetchData = async () => {
@@ -84,6 +87,22 @@ const OrdersViewSection = () => {
                 const data4 = await response4.json();
                 setCustomerOrders4(data4);
 
+                const response5 = await fetch('https://dev-mohansjan.gateway.apiplatform.io/v1/YuvaStore/5',{
+                    method:'GET',
+                    headers:{
+                        'pkey' :  '3fcc20cdc093c0403fc55b721aab6f3c',
+                        'apikey':  'ZdzwOIDYW0AKYVD6BkZqyBbHcjb3pyGc',
+                        'Content-Type':'application/json',
+                    },
+                });
+
+                if (!response5.ok){
+                    throw new Error('Network response was not ok');
+                }
+
+                const data5 = await response5.json();
+                setCustomerOrders5(data5);
+
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
@@ -113,7 +132,11 @@ const OrdersViewSection = () => {
                                         <h6 className="ovjs-5">{order.Product_Price}</h6>
                                         <h6 className="ovjs-6">{order.EMI_Option}</h6>
                                     </div>
+                                    
                                 ))}
+                            </div>
+                            <div className='sell-1'>
+                                
                             </div>
                         </div>
                     </div>
@@ -163,6 +186,24 @@ const OrdersViewSection = () => {
                         <div className="ovj-3">
                             <div className="ovjs-7">
                                 {customerOrders4.map((order, index) => (
+                                    <div className="ovjs-8" key={index}>
+                                        <h6 className="ovjs-3">{order.Product_Name}</h6>
+                                        <h6 className="ovjs-4">{order.Product_Discount}</h6>
+                                        <h6 className="ovjs-5">{order.Product_Price}</h6>
+                                        <h6 className="ovjs-6">{order.EMI_Option}</h6>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="aod-6">
+                        <div className="ovj-4">
+                            <img className="ovji" src={Add5} alt="Add5" />
+                        </div>
+                        <div className="ovj-3">
+                            <div className="ovjs-7">
+                                {customerOrders5.map((order, index) => (
                                     <div className="ovjs-8" key={index}>
                                         <h6 className="ovjs-3">{order.Product_Name}</h6>
                                         <h6 className="ovjs-4">{order.Product_Discount}</h6>

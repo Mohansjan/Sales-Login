@@ -23,10 +23,10 @@ const ShoppingSection = () => {
             <a className="linkMenu">Blog</a>
             <a  className="linkMenu">Shop</a>
             <a href="/customer" className="linkMenu">Contact</a>
-            <a className="linkMenu">Home</a>
-            <a className="linkMenu">Blog</a>
+            <a className="linkMenu">Images</a>
+            <a className="linkMenu">Return</a>
             <a href="/OrdersView" className="linkMenu">Orders</a>
-            <a className="linkMenu">Customers</a>
+            <a href="/Contact" className="linkMenu">Customers</a>
             <a className="linkMenu">Cart</a>
           </div>
         </div>
@@ -36,7 +36,7 @@ const ShoppingSection = () => {
                   <img className="bumpImg-1" src={Add3} />
                   <div className="ad">
                     <div className="ads-1">
-                  <h6 className="ad-1">Add to Cart</h6>
+                  <a href="/Contact"><h6 className="ad-1">Add to Cart</h6></a>
                   </div>
                   <div className="ads-2">
                  <a href="/Order"> <h6 className="ad-2">Buy Now</h6></a>
@@ -75,7 +75,7 @@ const ShoppingSection = () => {
 
             <div className="bumberImager-4">
             <div className="bi-1">
-                  <img className="bumpImg-1" src={Slider4} />
+                  <img className="bumpImg-1" src={Add2} alt="Add2" />
                   <div className="ad">
                     <div className="ads-1">
                     <h6 className="ad-1">Add to Cart</h6>
@@ -89,7 +89,7 @@ const ShoppingSection = () => {
 
             <div className="bumberImager-5">
             <div className="bi-1">
-                  <img className="bumpImg-1" src={Slider5} />
+                  <img className="bumpImg-1" src={Add5} alt="Add5" />
                   <div className="ad">
                     <div className="ads-1">
                   <h6 className="ad-1">Add to Cart</h6>
@@ -119,7 +119,7 @@ const ShoppingSection = () => {
 
             <div className="bumberImager-7">
             <div className="bi-1">
-                  <img className="bumpImg-1" src={Add2} />
+                  <img className="bumpImg-1" src={Add4} alt="Add4"/>
                   <div className="ad">
                     <div className="ads-1">
                   <h6 className="ad-1">Add to Cart</h6>
@@ -148,7 +148,7 @@ const ShoppingSection = () => {
 
             <div className="bumberImager-9">
             <div className="bi-1">
-                  <img className="bumpImg-1" src={Add5} />
+                  <img className="bumpImg-1" src={Slider5} alt="Slider5"/>
                   <div className="ad">
                     <div className="ads-1">
                   <h6 className="ad-1">Add to Cart</h6>
@@ -176,7 +176,7 @@ const ShoppingSection = () => {
 
             <div className="bumberImager-11">
             <div className="bi-1">
-                  <img className="bumpImg-1" src={Add4} />
+                  <img className="bumpImg-1" src={Slider4} alt="Slider4" />
                   <div className="ad">
                     <div className="ads-1">
                   <h6 className="ad-1">Add to Cart</h6>

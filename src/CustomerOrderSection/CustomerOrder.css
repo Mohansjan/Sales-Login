@@ -8,7 +8,7 @@
      margin-top: 70px;
      font-family: ui-monospace;
      background-color: powderblue;
-     box-shadow: 10px 10px 50px 10px;
+     box-shadow: 10px 10px 10px 10px gray;
      background-color:lavenderblush;
    }
    
@@ -53,7 +53,7 @@
    width: 500px;
    margin-left: 40px;
  }
- button.submit-button {
+ button.submit-button{
    margin-top: 40px;
    width: 600px;
    background-color: darkcyan;
@@ -65,7 +65,35 @@
   height: 35px;
   background-color: darksalmon;
 }
-
- 
+button.submit-button-1{
+  margin-top: 40px;
+  width: 600px;
+  background-color: darkcyan;
+  color: black;
+  margin-left: 0px;
+}
+.submit-button-1:hover {
+  background-color: #45a049;
+}
+.submit-button-1{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #666;
+}
  
  

@@ -1,5 +1,5 @@
 import React from "react";
-import Slider1 from "../ImageSection/Slider_1.webp";
+//import Slider1 from "../ImageSection/Slider_1.webp";
 import Add2 from "../ImageSection/add_2.webp";
 import "./WOrder.css";
 import { SiConvertio } from "react-icons/si";
@@ -9,7 +9,7 @@ import { GiTakeMyMoney } from "react-icons/gi";
 import { GrStatusGood } from "react-icons/gr";
 import { RiCaravanLine } from "react-icons/ri";
 //import Add3 from "../ImageSection/add_3.webp";
-import Slider2 from "../ImageSection/Slider_2.webp";
+//import Slider2 from "../ImageSection/Slider_2.webp";
 import { useState, useEffect } from "react";
 
 

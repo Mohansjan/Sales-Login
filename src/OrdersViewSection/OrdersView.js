@@ -8,14 +8,19 @@ import Slider3 from "../ImageSection/Slider_3.webp";
 import Slider6 from "../ImageSection/Slider_6.webp";
 import Slider7 from "../ImageSection/Slider_7.webp";
 import './OrdersView.css';
+import { API_URL } from "../api.js";
 
 const OrdersViewSection = () => {
     const [customerOrders, setCustomerOrders] = useState([]);
+    const [searchTerm, setSearchTerm] = useState('');
+    const [searchText, setSearchText] = useState('');
+    const [Product, setProduct] = useState([]);
+    const [filteredProduct, setFilteredProduct] = useState([]);
 
     useEffect(() => {
         const fetchData = debounce(async () => {
             try {
-                const promises = [1, 2, 3, 4, 5, 6,7].map(async (id) => {
+                const promises = [1, 2, 3, 4, 5, 6, 7].map(async (id) => {
                     const response = await fetch(`https://dev-mohansjan.gateway.apiplatform.io/v1/YuvaStore/${id}`, {
                         method: 'GET',
                         headers: {
@@ -38,14 +43,47 @@ const OrdersViewSection = () => {
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
-        }, 1000); // Debounce for 1 second (1000ms)
+        }, 1000);
 
-        fetchData(); // Initial call to fetchData
+        fetchData();
 
         return () => {
-            fetchData.cancel(); // Cancel the debounce on component unmount
+            fetchData.cancel();
         };
     }, []);
+
+    const getRestaurants = async () => {
+        const data = await fetch(API_URL)
+        const jsonData = await data.json();
+        setProduct(jsonData?.data?.Product_Name);
+        setFilteredProduct(jsonData?.data?.Product_Name);
+    }
+
+    const handleSearch = () => {
+        // Check if customerOrders is not initialized or empty
+        if (!customerOrders || customerOrders.length === 0) {
+            return;
+        }
+    
+        // Flatten customerOrders array of arrays into a single array of orders
+        const allOrders = customerOrders.flatMap(order => order.orders);
+    
+        // Filter orders based on searchTerm
+        const filteredOrders = allOrders.filter(order => order.Product_Name.toLowerCase().includes(searchTerm.toLowerCase()));
+    
+        // Group filtered orders back into customerOrders structure
+        const groupedOrders = customerOrders.map(order => ({
+            ...order,
+            orders: order.orders.filter(data => filteredOrders.includes(data))
+        }));
+    
+        setCustomerOrders(groupedOrders);
+    };
+    
+        // setCustomerOrders(filteredOrders);
+        // console.log(filteredOrders);
+    
+
 
     return (
         <div className="container-4">
@@ -53,6 +91,17 @@ const OrdersViewSection = () => {
                 <div className="aod-1">
                     <div className="ovj-1">
                         <h2 className="ovjh-1">Your Orders</h2>
+                    </div>
+
+                    <div className='ibtn-1'>
+                        <input
+                            type='text'
+                            name='ibt'
+                            placeholder='Search Product'
+                            value={searchTerm}
+                            onChange={(e) => setSearchTerm(e.target.value)}
+                        />
+                        <button className="ibt-1" onClick={handleSearch}>Search</button>
                     </div>
 
                     {customerOrders.map((orders, index) => (
@@ -65,7 +114,7 @@ const OrdersViewSection = () => {
                                     {index === 3 && <img className="ovji" src={Add2} alt="Add2" />}
                                     {index === 4 && <img className="ovji" src={Add5} alt="Add5" />}
                                     {index === 5 && <img className="ovji" src={Slider6} alt="Slider6" />}
-                                    {index === 6 && <img className="ovji" src={Slider7} alt="Slider6" />}
+                                    {index === 6 && <img className="ovji" src={Slider7} alt="Slider7" />}
                                 </div>
                                 <div className="ovj-3">
                                     <div className="ovjs-7">

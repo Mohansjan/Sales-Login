@@ -48,7 +48,7 @@ const CategorySection = () => {
             <div>
               <div className="categoryRooter">
                 <div className="categoryImager">
-                  <img className="category-Img" src={Slider2} />
+                  <img className="category-Img" src={Slider2} alt="Slider2"/>
                 </div>
                 <span className="categoryCaption">Mobiles</span>
               </div>
@@ -56,7 +56,7 @@ const CategorySection = () => {
             <div>
               <div className="categoryRooter">
                 <div className="categoryImager">
-                  <img className="category-Img" src={Slider3} />
+                  <img className="category-Img" src={Slider3} alt="Slider3"/>
                 </div>
                 <span className="categoryCaption">Mobiles</span>
               </div>
@@ -64,7 +64,7 @@ const CategorySection = () => {
             <div>
               <div className="categoryRooter">
                 <div className="categoryImager">
-                  <img className="category-Img" src={Slider4} />
+                  <img className="category-Img" src={Slider4} alt="Slider4"/>
                 </div>
                 <span className="categoryCaption">Mobiles</span>
               </div>
@@ -72,7 +72,7 @@ const CategorySection = () => {
             <div>
               <div className="categoryRooter">
                 <div className="categoryImager">
-                  <img className="category-Img" src={Slider5} />
+                  <img className="category-Img" src={Slider5} alt="Slider5"/>
                 </div>
                 <span className="categoryCaption">Mobiles</span>
               </div>
@@ -80,7 +80,7 @@ const CategorySection = () => {
             <div>
               <div className="categoryRooter">
                 <div className="categoryImager">
-                  <img className="category-Img" src={Slider6} />
+                  <img className="category-Img" src={Slider6} alt="Slider6"/>
                 </div>
                 <span className="categoryCaption">Mobiles</span>
               </div>
@@ -88,7 +88,7 @@ const CategorySection = () => {
             <div>
               <div className="categoryRooter">
                 <div className="categoryImager">
-                  <img className="category-Img" src={Slider3} />
+                  <img className="category-Img" src={Slider3} alt="Slider3"/>
                 </div>
                 <span className="categoryCaption">Mobiles</span>
               </div>
@@ -96,7 +96,7 @@ const CategorySection = () => {
             <div>
               <div className="categoryRooter">
                 <div className="categoryImager">
-                  <img className="category-Img" src={Slider2} />
+                  <img className="category-Img" src={Slider2} alt="Slider2"/>
                 </div>
                 <span className="categoryCaption">Mobiles</span>
               </div>
@@ -104,7 +104,7 @@ const CategorySection = () => {
             <div>
               <div className="categoryRooter">
                 <div className="categoryImager">
-                  <img className="category-Img" src={Slider3} />
+                  <img className="category-Img" src={Slider3} alt="Slider3"/>
                 </div>
                 <span className="categoryCaption">Mobiles</span>
               </div>

@@ -33,7 +33,7 @@ const CusIOrder = () => {
             console.log('Order created:', response.data);
             alert('Product Ordered');
             
-            window.location.href = '/ShowCustomer';
+            window.location.href = '/Ikall';
 
         } catch (error) {
             console.error('Error:', error.response ? error.response.data : error.message);
@@ -132,9 +132,9 @@ const CusIOrder = () => {
 
                                     {error && <div className="error-message">{error}</div>}
 
-                                    <button className="submit-button-1" type="submit" disabled={loading}>
+                                   <a href="/Ikall"><button className="submit-button-1" type="submit" disabled={loading}>
                                         {loading ? 'Submitting...' : 'Submit'}
-                                    </button>
+                                    </button></a>
                                 </form>
                             </div>
                         </div>

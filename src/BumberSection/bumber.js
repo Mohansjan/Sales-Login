@@ -4,8 +4,8 @@ import Slider1 from "../ImageSection/Slider_1.webp";
 import Slider2 from "../ImageSection/Slider_2.webp";
 import Slider3 from "../ImageSection/Slider_3.webp";
 import Slider4 from "../ImageSection/Slider_4.webp";
-import Slider5 from "../ImageSection/Slider_5.webp";
-import Slider6 from "../ImageSection/Slider_6.webp";
+//import Slider5 from "../ImageSection/Slider_5.webp";
+//import Slider6 from "../ImageSection/Slider_6.webp";
 
 const BumberSection = () => {
   const settings = {
@@ -40,7 +40,7 @@ const BumberSection = () => {
             <div>
               <div className="bumberRooter">
                 <div className="bumberImager">
-                 <a href="/shop"> <img className="bumpImg" src={Slider1} /></a>
+                 <a href="/shop"> <img className="bumpImg" src={Slider1} alt="Slider1"/></a>
                 </div>
                 <div className="bumberCaption">
                   <div className="bumberTitle">Mobile collection</div>
@@ -53,7 +53,7 @@ const BumberSection = () => {
             <div>
               <div className="bumberRooter">
                 <div className="bumberImager">
-                 <a href="/shop"> <img className="bumpImg" src={Slider2} /></a>
+                 <a href="/shop"> <img className="bumpImg" src={Slider2} alt="Slider2"/></a>
                 </div>
                 <div className="bumberCaption">
                   <div className="bumberTitle">Mobile collection</div>
@@ -66,7 +66,7 @@ const BumberSection = () => {
             <div>
               <div className="bumberRooter">
                 <div className="bumberImager">
-                 <a href="/shop"> <img className="bumpImg" src={Slider3} /></a>
+                 <a href="/shop"> <img className="bumpImg" src={Slider3} alt="Slider3"/></a>
                 </div>
                 <div className="bumberCaption">
                   <div className="bumberTitle">Mobile collection</div>
@@ -79,7 +79,7 @@ const BumberSection = () => {
             <div>
               <div className="bumberRooter">
                 <div className="bumberImager">
-                <a href="/shop"> <img className="bumpImg" src={Slider4} /></a>
+                <a href="/shop"> <img className="bumpImg" src={Slider4} alt="Slider4"/></a>
                 </div>
                 <div className="bumberCaption">
                   <div className="bumberTitle">Mobile collection</div>

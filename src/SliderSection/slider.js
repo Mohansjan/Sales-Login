@@ -15,7 +15,7 @@ const SliderSection = () => {
             <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
               <div className="SliderRooter">
                 <div className="slider-imager">
-                  <a href="/shop"><img className="silder-Image" src={Slider1} /></a>
+                  <a href="/shop"><img className="silder-Image" src={Slider1} alt="Slider1" /></a>
                 </div>
                 <div className="sliderCaption">
                   <span className="sliderDesc">
@@ -28,7 +28,7 @@ const SliderSection = () => {
             <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
               <div className="SliderRooter">
                 <div className="slider-imager">
-                <a href="/shop"><img className="silder-Image" src={Slider2} /></a>
+                <a href="/shop"><img className="silder-Image" src={Slider2} alt="Slider2"/></a>
                 </div>
                 <div className="sliderCaption">
                   <span className="sliderDesc">
@@ -43,7 +43,7 @@ const SliderSection = () => {
             <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12">
               <div className="SliderRooter">
                 <div className="slider-imager">
-                <a href="/shop"><img className="silder-Image" src={Slider3} /></a>
+                <a href="/shop"><img className="silder-Image" src={Slider3} alt="Slider3"/></a>
                 </div>
                 <div className="sliderCaption2">
                   <span className="sliderDesc2">Headphone wireless</span>
@@ -54,7 +54,7 @@ const SliderSection = () => {
             <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12">
               <div className="SliderRooter">
                 <div className="slider-imager">
-                <a href="/shop"><img className="silder-Image" src={Slider4} /></a>
+                <a href="/shop"><img className="silder-Image" src={Slider4} alt="Slider4"/></a>
                 </div>
                 <div className="sliderCaption2">
                   <span className="sliderDesc2">
@@ -67,7 +67,7 @@ const SliderSection = () => {
             <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12">
               <div className="SliderRooter">
                 <div className="slider-imager">
-                <a href="/shop"><img className="silder-Image" src={Slider5} /></a>
+                <a href="/shop"><img className="silder-Image" src={Slider5} alt="Slider5"/></a>
                 </div>
                 {/* <div className="sliderCaption2">
                   <span className="sliderDesc2">
@@ -80,7 +80,7 @@ const SliderSection = () => {
             <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12">
               <div className="SliderRooter">
                 <div className="slider-imager">
-                <a href="/shop"><img className="silder-Image" src={Slider6} /></a>
+                <a href="/shop"><img className="silder-Image" src={Slider6} alt="Slider6"/></a>
                 </div>
                 <div className="sliderCaption2">
                   <span className="sliderDesc2">

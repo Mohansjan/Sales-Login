@@ -9,7 +9,7 @@ const FooterSection = () => {
           <div className="topFooter row">
             <div className="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12">
               <div className="footerLogo-imager">
-                <img className="footerLogo" src={FooterLogo} />
+                <img className="footerLogo" src={FooterLogo} alt="FooterLogo"/>
               </div>
             </div>
             <div className="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-xs-12">

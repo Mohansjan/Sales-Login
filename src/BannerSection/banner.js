@@ -9,7 +9,7 @@ const BannerSection = () => {
         <div className="col-12">
           <div className="BannerRooter">
             <div className="bannerImager">
-              <img className="banner-imager" src={Banner} alt="Banner Image" />
+              <img className="banner-imager" src={Banner} alt="Banner" />
             </div>
             <div className="BannerCaption">
               <div className="bannerTitle">

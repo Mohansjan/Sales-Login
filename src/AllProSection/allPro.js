@@ -114,7 +114,7 @@ const AllProSection = () => {
                               : index === 4
                               ? Slider5
                               : Slider7
-                          }
+                          } alt="Slider1"
                         />
                         <div className="eyeSymbol">
                           <BsEye className="SvgEye" />

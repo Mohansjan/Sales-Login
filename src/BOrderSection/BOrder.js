@@ -1,5 +1,5 @@
 import React from "react";
-import Slider1 from "../ImageSection/Slider_1.webp";
+//import Slider1 from "../ImageSection/Slider_1.webp";
 import "./BOrder.css";
 import { SiConvertio } from "react-icons/si";
 import { RiCaravanFill } from "react-icons/ri";
@@ -46,7 +46,7 @@ const BOrderSection = () => {
         <div class="order-1">
             <div class="row orderRow-1">
                 <div class="col-4">
-                    <img className="OrdImage-1" src={Slider3} />
+                    <img className="OrdImage-1" src={Slider3} alt="Slider3"/>
                     <div className="offer">
                         <div className="offerOff-1">
                     <p className="off-1">Add To Cart</p>

@@ -62,7 +62,7 @@ const TopSellerSection = () => {
             </div>
             <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
               <div className="topSellRightSec">
-                <a
+                <a 
                   onClick={() => handleSection("section 1")}
                   className={`headingTopSeller ${
                     section === "section 1" ? "active" : ""
@@ -70,7 +70,7 @@ const TopSellerSection = () => {
                 >
                   Airpods
                 </a>
-                <a
+                <a 
                   onClick={() => handleSection("section 2")}
                   className={`headingTopSeller ${
                     section === "section 2" ? "active" : ""
@@ -197,7 +197,7 @@ const TopSellerSection = () => {
                                 : index === 4
                                 ? Slider5
                                 : Slider7
-                            }
+                            } alt="Slider1"
                           />
                         </div>
                         <div className="productDetail">

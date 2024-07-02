@@ -33,7 +33,7 @@ const CustomerBOrder = () => {
             console.log('Order created:', response.data);
             alert('Product Ordered');
             
-            window.location.href = '/ShowCustomer';
+            window.location.href = '/Iball';
 
         } catch (error) {
             console.error('Error:', error.response ? error.response.data : error.message);
@@ -81,7 +81,7 @@ const CustomerBOrder = () => {
                                         <input
                                             type="text"
                                             name="Product_Category"
-                                            value={formData.Product_Category}  
+                                            value={formData.Product_Category}  k
                                             onChange={handleChange}
                                             readOnly  
                                         />
@@ -93,7 +93,7 @@ const CustomerBOrder = () => {
                                             type="text"
                                             name="Customer_Name"
                                             placeholder="Enter Name"
-                                            // value={formData.Customer_Name}
+                                             value={formData.Customer_Name}
                                             onChange={handleChange}
                                         />
                                     </div>
@@ -103,7 +103,7 @@ const CustomerBOrder = () => {
                                             type="text"
                                             name="Customer_Address"
                                             placeholder="Enter Address"
-                                            // value={formData.Customer_Address}
+                                            value={formData.Customer_Address}
                                             onChange={handleChange}
                                         />
                                     </div>
@@ -114,7 +114,7 @@ const CustomerBOrder = () => {
                                             type="text"
                                             name="Customer_PNumber"
                                             placeholder="Enter Mobile Number"
-                                            // value={formData.Customer_PNumber}
+                                            value={formData.Customer_PNumber}
                                             onChange={handleChange}
                                         />
                                     </div>

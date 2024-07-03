@@ -33,7 +33,7 @@ const ContactSection = () => {
             });
             console.log('Customer Added:', response.data);
             alert('Customer Added');
-            // window.location.href = '/ShowCustomer';
+            window.location.href = '/CustomerAdded';
 
 
         } catch (error) {

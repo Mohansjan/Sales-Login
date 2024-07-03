@@ -29,6 +29,7 @@ import CartSection from "./CartSection/Cart.js"
 import IkallCustomer from "./IkallCustomer/Ikall.js";
 import ReturnSection from "./ReturnSection/Return.js";
 import IballCustomer from "./IballCustomer/Iball.js";
+import CustomerAddedSection from "./CustomerAddedSection/CustomerAdded.js";
 
 
 function App() {
@@ -117,6 +118,10 @@ function App() {
           <Route
             path="/Iball"
             element={<IballCustomer/>}
+          />
+           <Route
+            path="/CustomerAdded"
+            element={<CustomerAddedSection/>}
           />
         </Routes>
 

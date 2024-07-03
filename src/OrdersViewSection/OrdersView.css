@@ -143,8 +143,17 @@ img.ovji-1 {
 .ibt-1{
     height: 50px;
     width: 80px;
+    border-radius: 10px;
 }
-.ibt{
-    height: 51px;
-    width: 290px;
+input .ibt{
+    height: 50px;
+    width: 295px;
+    margin-left: 21px;
+    border-radius: 10px;
+}
+#btn{
+    height: 50px;
+    width: 295px;
+    margin-left: 35px;
+    border-radius: 10px;
 }

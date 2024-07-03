@@ -1,25 +1,25 @@
 import React, { useEffect, useState } from 'react';
-import './Ikall.css';
+import './CustomerAdded.css';
 
-const IkallCustomer = () => {
+const CustomerAddedSection = () => {
     const [customerOrders, setCustomerOrders] = useState([]);
     const [loading, setLoading] = useState(false);
     const [editOrderId, setEditOrderId] = useState(null);
     const [editFormData, setEditFormData] = useState({
-        Product_Name: '',
-        Product_Price: '',
-        Product_Category: '',
-        Cus_Name: '',
-        Cus_Address: '',
-        Cus_PNumber: '',
-        Delivery_date: ''
+        Customer_Name: '',
+        Customer_Age: '',
+        Customer_Address: '',
+        Customer_Email: '',
+        Phone_Number: '',
+        Pin_Code: '',
+        Customer_district: ''
     });
 
     const [showModal, setShowModal] = useState(false);
 
 
     const fetchData = async () => {
-        const apiUrl = ' https://dev-mohansjan.gateway.apiplatform.io/v1/IOrder';
+        const apiUrl = ' https://dev-mohansjan.gateway.apiplatform.io/v1/CustomerDetails';
         try {
             setLoading(true);
             const response = await fetch(apiUrl, {
@@ -54,13 +54,13 @@ const IkallCustomer = () => {
             setEditOrderId(orderId);
            
             setEditFormData({
-                Product_Name: orderToEdit.Product_Name,
-                Product_Price: orderToEdit.Product_Price,
-                Product_category: orderToEdit.Product_Category,
-                Cus_Name: orderToEdit.Cus_Name,
-                Cus_Address: orderToEdit.Cus_Address,
-                Cus_PNumber: orderToEdit.Cus_PNumber,
-                Delivery_date: orderToEdit.Delivery_date,
+                Customer_Name: orderToEdit.Customer_Name,
+                Customer_Age: orderToEdit.Customer_Age,
+                Customer_Address: orderToEdit.Customer_Address,
+                Customer_Email: orderToEdit.Customer_Email,
+                Phone_Number: orderToEdit.Phone_Number,
+                Pin_Code: orderToEdit.Pin_Code,
+                Customer_district: orderToEdit.Customer_district,
             });
             console.log(orderToEdit)
            // alert('HELOOOOOOOOOOOOOOO')
@@ -72,7 +72,7 @@ const IkallCustomer = () => {
 
     const handleSaveEdit = async () => {
         try {
-            const apiUrl = ` https://dev-mohansjan.gateway.apiplatform.io/v1/IOrder/${editOrderId}`;
+            const apiUrl = `  https://dev-mohansjan.gateway.apiplatform.io/v1/CustomerDetails/${editOrderId}`;
             const response = await fetch(apiUrl, {
                 method: 'PUT',
                 headers: {
@@ -108,7 +108,7 @@ const IkallCustomer = () => {
 
     const handleDelete = async (orderId) => {
         try {
-            const apiUrl = ` https://dev-mohansjan.gateway.apiplatform.io/v1/IOrder/${orderId}`;
+            const apiUrl = ` https://dev-mohansjan.gateway.apiplatform.io/v1/CustomerDetails/${orderId}`;
             const response = await fetch(apiUrl, {
                 method: 'DELETE',
                 headers: {
@@ -145,30 +145,30 @@ const IkallCustomer = () => {
                         <div className="row justify-content-center">
                             <div className="col-12">
                                 <div className="table-responsive">
-                                    <h2 className='sw-1'>Customer Details</h2>
+                                    <h2 className='sw-10'>Customer Details</h2>
                                     <table className="table table-dark table-bordered mb-0">
                                         <thead>
                                             <tr>
-                                                <th scope="col">Product Name</th>
-                                                <th scope="col">Product Price</th>
-                                                <th scope="col">Product Category</th>
                                                 <th scope="col">Customer Name</th>
+                                                <th scope="col">Customer Age</th>
                                                 <th scope="col">Customer Address</th>
-                                                <th scope="col">Customer PNumber</th>
-                                                <th scope='col'>Delivery Date</th>
+                                                <th scope="col">Customer Email</th>
+                                                <th scope="col">Phone Number</th>
+                                                <th scope="col">Pin Code</th>
+                                                <th scope='col'>Customer_district</th>
                                                 <th scope='col'>Actions</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             {customerOrders.map((order) => (
                                                 <tr key={order.id}>
-                                                    <td>{order.Product_Name}</td>
-                                                    <td>{order.Product_Price}</td>
-                                                    <td>{order.Product_Category}</td>
-                                                    <td>{order.Cus_Name}</td>
-                                                    <td>{order.Cus_Address}</td>
-                                                    <td>{order.Cus_PNumber}</td>
-                                                    <td>{order.Delivery_date}</td>
+                                                    <td>{order.Customer_Name}</td>
+                                                    <td>{order.Customer_Age}</td>
+                                                    <td>{order.Customer_Address}</td>
+                                                    <td>{order.Customer_Email}</td>
+                                                    <td>{order.Phone_Number}</td>
+                                                    <td>{order.Pin_Code}</td>
+                                                    <td>{order.Customer_district}</td>
                                                     <td>
                                                         <button className="btn btn-primary btn-sm" onClick={() => handleEdit(order.id)}>Edit</button>
                                                         <button className="btn btn-danger btn-sm ms-1" onClick={() => handleDelete(order.id)}>Delete</button>
@@ -196,32 +196,32 @@ const IkallCustomer = () => {
                             <div className="modal-body">
                                 <form>
                                     <div className="mb-3">
-                                        <label htmlFor="Product_Name" className="form-label">Product Name</label>
-                                        <input type="text" className="form-control" id="Product_Name" name="Product_Name" value={editFormData.Product_Name} onChange={handleEditFormChange} />
+                                        <label htmlFor="Customer_Name" className="form-label">Customer_Name</label>
+                                        <input type="text" className="form-control" id="Customer_Name" name="Customer_Name" value={editFormData.Customer_Name} onChange={handleEditFormChange} />
                                     </div>
                                     <div className="mb-3">
-                                        <label htmlFor="Product_Price" className="form-label">Product Price</label>
-                                        <input type="text" className="form-control" id="Product_Price" name="Product_Price" value={editFormData.Product_Price} onChange={handleEditFormChange} />
+                                        <label htmlFor="Customer_Age" className="form-label">Customer_Age</label>
+                                        <input type="text" className="form-control" id="Customer_Age" name="Customer_Age" value={editFormData.Customer_Age} onChange={handleEditFormChange} />
                                     </div>
                                     <div className="mb-3">
-                                        <label htmlFor="Product_category" className="form-label">Product Category</label>
-                                        <input type="text" className="form-control" id="Product_category" name="Product_category" value={editFormData.Product_Category} onChange={handleEditFormChange} />
+                                        <label htmlFor="Customer_Address" className="form-label">Customer Address</label>
+                                        <input type="text" className="form-control" id="Customer_Address" name="Customer_Address" value={editFormData.Customer_Address} onChange={handleEditFormChange} />
                                     </div>
                                     <div className="mb-3">
-                                        <label htmlFor="Cus_Name" className="form-label">Customer Name</label>
-                                        <input type="text" className="form-control" id="Cus_Name" name="Cus_Name" value={editFormData.Cus_Name} onChange={handleEditFormChange} />
+                                        <label htmlFor="Customer_Email" className="form-label">Customer Email</label>
+                                        <input type="text" className="form-control" id="Customer_Email" name="Customer_Email" value={editFormData.Customer_Email} onChange={handleEditFormChange} />
                                     </div>
                                     <div className="mb-3">
-                                        <label htmlFor="Cus_Address" className="form-label">Customer Address</label>
-                                        <input type="text" className="form-control" id="Cus_Address" name="Cus_Address" value={editFormData.Cus_Address} onChange={handleEditFormChange} />
+                                        <label htmlFor="Phone_Number" className="form-label">Phone Number</label>
+                                        <input type="text" className="form-control" id="Phone_Number" name="Phone_Number" value={editFormData.Phone_Number} onChange={handleEditFormChange} />
                                     </div>
                                     <div className="mb-3">
-                                        <label htmlFor="Cus_PNumber" className="form-label">Customer Phone Number</label>
-                                        <input type="text" className="form-control" id="Cus_PNumber" name="Cus_PNumber" value={editFormData.Cus_PNumber} onChange={handleEditFormChange} />
+                                        <label htmlFor="Pin_Code" className="form-label">Pin Code</label>
+                                        <input type="text" className="form-control" id="Pin_Code" name="Pin_Code" value={editFormData.Pin_Code} onChange={handleEditFormChange} />
                                     </div>
                                     <div className="mb-3">
-                                        <label htmlFor="Delivary_date" className="form-label">Delivery Date</label>
-                                        <input type="date" className="form-control" id="Delivery_date" name="Delivery_date" value={editFormData.Delivery_date} onChange={handleEditFormChange} />
+                                        <label htmlFor="Customer_district" className="form-label">Customer_district</label>
+                                        <input type="date" className="form-control" id="Customer_district" name="Customer_district" value={editFormData.Customer_district} onChange={handleEditFormChange} />
                                     </div>
                                 </form>
                             </div>
@@ -237,4 +237,4 @@ const IkallCustomer = () => {
     );
 };
 
-export default IkallCustomer;
+export default CustomerAddedSection;

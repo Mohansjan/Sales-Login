@@ -13,12 +13,11 @@ import { API_URL } from "../api.js";
 const OrdersViewSection = () => {
     const [customerOrders, setCustomerOrders] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
-    const [searchText, setSearchText] = useState('');
-    const [Product, setProduct] = useState([]);
-    const [filteredProduct, setFilteredProduct] = useState([]);
+    const [filteredOrders, setFilteredOrders] = useState([]);
+    
 
     useEffect(() => {
-        const fetchData = debounce(async () => {
+        const fetchData = async () => {
             try {
                 const promises = [1, 2, 3, 4, 5, 6, 7].map(async (id) => {
                     const response = await fetch(`https://dev-mohansjan.gateway.apiplatform.io/v1/YuvaStore/${id}`, {
@@ -43,47 +42,50 @@ const OrdersViewSection = () => {
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
-        }, 1000);
+        };
 
-        fetchData();
+        const debouncedFetchData = debounce(fetchData, 1000);
+        debouncedFetchData();
 
         return () => {
-            fetchData.cancel();
+            debouncedFetchData.cancel();
         };
     }, []);
 
-    const getRestaurants = async () => {
-        const data = await fetch(API_URL)
-        const jsonData = await data.json();
-        setProduct(jsonData?.data?.Product_Name);
-        setFilteredProduct(jsonData?.data?.Product_Name);
-    }
+    const fetchProductData = async () => {
+        try {
+            const response = await fetch(API_URL, {
+                method: 'GET',
+                headers: {
+                    'pkey': '3fcc20cdc093c0403fc55b721aab6f3c',
+                    'apikey': 'ZdzwOIDYW0AKYVD6BkZqyBbHcjb3pyGc',
+                    'Content-Type': 'application/json',
+                },
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to fetch product data');
+            }
+
+            const jsonData = await response.json();
+            const productNames = jsonData?.map(item => item.Product_Name) || [];
+            setFilteredOrders(productNames);
+            console.log(productNames)
+        } catch (error) {
+            console.error('Error fetching product data:', error);
+        }
+    };
 
     const handleSearch = () => {
-        // Check if customerOrders is not initialized or empty
-        if (!customerOrders || customerOrders.length === 0) {
-            return;
-        }
-    
-        // Flatten customerOrders array of arrays into a single array of orders
-        const allOrders = customerOrders.flatMap(order => order.orders);
-    
-        // Filter orders based on searchTerm
-        const filteredOrders = allOrders.filter(order => order.Product_Name.toLowerCase().includes(searchTerm.toLowerCase()));
-    
-        // Group filtered orders back into customerOrders structure
-        const groupedOrders = customerOrders.map(order => ({
-            ...order,
-            orders: order.orders.filter(data => filteredOrders.includes(data))
-        }));
-    
-        setCustomerOrders(groupedOrders);
+        const filtered = filteredOrders.filter(productNames =>
+            productNames.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+        setFilteredOrders(filtered);
     };
-    
-        // setCustomerOrders(filteredOrders);
-        // console.log(filteredOrders);
-    
 
+    useEffect(() => {
+        fetchProductData();
+    }, []);
 
     return (
         <div className="container-4">
@@ -97,9 +99,14 @@ const OrdersViewSection = () => {
                         <input
                             type='text'
                             name='ibt'
+                            id='btn'
                             placeholder='Search Product'
                             value={searchTerm}
-                            onChange={(e) => setSearchTerm(e.target.value)}
+                            onChange={(e) => {
+                                setSearchTerm(e.target.value);
+                                console.log('searchTerm:', e.target.value);
+                                // alert('HELOOOOOOOOOOOOOOOOO')
+                            }}
                         />
                         <button className="ibt-1" onClick={handleSearch}>Search</button>
                     </div>

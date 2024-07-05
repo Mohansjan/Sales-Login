@@ -30,6 +30,7 @@ import IkallCustomer from "./IkallCustomer/Ikall.js";
 import ReturnSection from "./ReturnSection/Return.js";
 import IballCustomer from "./IballCustomer/Iball.js";
 import CustomerAddedSection from "./CustomerAddedSection/CustomerAdded.js";
+import MapSection from "./mapSection/maps.js";
 
 
 function App() {
@@ -123,6 +124,11 @@ function App() {
             path="/CustomerAdded"
             element={<CustomerAddedSection/>}
           />
+
+          <Route
+            path="/maps"
+            element={<MapSection/>}
+            />
         </Routes>
 
       </BrowserRouter>

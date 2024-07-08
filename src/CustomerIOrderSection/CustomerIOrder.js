@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import axios from 'axios';
-import "./CustomerBOrder.css";
+import "./CustomerIOrder.css";
 
-const CustomerBOrder = () => {
+const CusIOrder = () => {
     const [formData, setFormData] = useState({
-        Product_Name: 'IBall Bluetooth Portable Speaker ',  
-        Product_Price:'₹2,999',
-        Product_Category: 'Speaker',  
-        Customer_Name: '',
-        Customer_Address:'',
-        Customer_PNumber:'',
-        Delivery_Date:''
+        Product_Name: 'IKALL S3 Pro Smartphone ',  
+        Product_Price:'₹10,999',
+        Product_Category: 'Mobiles',  
+        Cus_Name: '',
+        Cus_Address:'',
+        Cus_PNumber:'',
+        Delivery_date:''
     });
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
@@ -21,7 +21,7 @@ const CustomerBOrder = () => {
 
         try {
             const formDataCopy = { ...formData };
-            let url = ' https://dev-mohansjan.gateway.apiplatform.io/v1/BOrder';
+            let url = ' https://dev-mohansjan.gateway.apiplatform.io/v1/IOrder';
 
             const response = await axios.post(url, formDataCopy, {
                 headers: {
@@ -33,7 +33,7 @@ const CustomerBOrder = () => {
             console.log('Order created:', response.data);
             alert('Product Ordered');
             
-            window.location.href = '/Iball';
+            window.location.href = '/Ikall';
 
         } catch (error) {
             console.error('Error:', error.response ? error.response.data : error.message);
@@ -81,7 +81,7 @@ const CustomerBOrder = () => {
                                         <input
                                             type="text"
                                             name="Product_Category"
-                                            value={formData.Product_Category}  k
+                                            value={formData.Product_Category}  
                                             onChange={handleChange}
                                             readOnly  
                                         />
@@ -91,9 +91,9 @@ const CustomerBOrder = () => {
                                         <label>Customer Name:</label>
                                         <input
                                             type="text"
-                                            name="Customer_Name"
+                                            name="Cus_Name"
                                             placeholder="Enter Name"
-                                             value={formData.Customer_Name}
+                                            value={formData.Cus_Name}
                                             onChange={handleChange}
                                         />
                                     </div>
@@ -101,9 +101,9 @@ const CustomerBOrder = () => {
                                         <label>Customer Address:</label>
                                         <input
                                             type="text"
-                                            name="Customer_Address"
+                                            name="Cus_Address"
                                             placeholder="Enter Address"
-                                            value={formData.Customer_Address}
+                                            value={formData.Cus_Address}
                                             onChange={handleChange}
                                         />
                                     </div>
@@ -112,9 +112,9 @@ const CustomerBOrder = () => {
                                         <label>Mobile number:</label>
                                         <input
                                             type="text"
-                                            name="Customer_PNumber"
+                                            name="Cus_PNumber"
                                             placeholder="Enter Mobile Number"
-                                            value={formData.Customer_PNumber}
+                                            value={formData.Cus_PNumber}
                                             onChange={handleChange}
                                         />
                                     </div>
@@ -123,18 +123,18 @@ const CustomerBOrder = () => {
                                         <label>Delivery date:</label>
                                         <input
                                             type="date"
-                                            name="Delivery_Date"
+                                            name="Delivery_date"
                                             placeholder="Pick Delivery Date"
-                                            // value={formData.Delivery_Date}
+                                            value={formData.Delivery_date}
                                             onChange={handleChange}
                                         />
                                     </div>
 
                                     {error && <div className="error-message">{error}</div>}
 
-                                    <button className="submit-button-1" type="submit" disabled={loading}>
+                                   <a href="/Ikall"><button className="submit-button-1" type="submit" disabled={loading}>
                                         {loading ? 'Submitting...' : 'Submit'}
-                                    </button>
+                                    </button></a>
                                 </form>
                             </div>
                         </div>
@@ -145,4 +145,4 @@ const CustomerBOrder = () => {
     );
 };
 
-export default CustomerBOrder;
+export default CusIOrder;

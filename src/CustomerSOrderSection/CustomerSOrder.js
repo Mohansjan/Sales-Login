@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import axios from 'axios';
-import "./CusIOrder.css";
+import "./CustomerSOrder.css";
 
-const CusIOrder = () => {
+const CustomerSOrderSection = () => {
     const [formData, setFormData] = useState({
-        Product_Name: 'IKALL S3 Pro Smartphone ',  
-        Product_Price:'₹10,999',
-        Product_Category: 'Mobiles',  
-        Cus_Name: '',
-        Cus_Address:'',
-        Cus_PNumber:'',
-        Delivery_date:''
+        Product_Name: 'Samsung Galaxy Buds2 Pro',  
+        Product_Price:'₹1,899',
+        Product_Category: 'AirDopes',  
+        Customer_Name: '',
+        Customer_Address:'',
+        Customer_PNumber:'',
+        Delivery_Date:''
     });
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
@@ -21,7 +21,7 @@ const CusIOrder = () => {
 
         try {
             const formDataCopy = { ...formData };
-            let url = ' https://dev-mohansjan.gateway.apiplatform.io/v1/IOrder';
+            let url = ' https://dev-mohansjan.gateway.apiplatform.io/v1/SOrder';
 
             const response = await axios.post(url, formDataCopy, {
                 headers: {
@@ -33,7 +33,7 @@ const CusIOrder = () => {
             console.log('Order created:', response.data);
             alert('Product Ordered');
             
-            window.location.href = '/Ikall';
+            
 
         } catch (error) {
             console.error('Error:', error.response ? error.response.data : error.message);
@@ -54,7 +54,7 @@ const CusIOrder = () => {
                     <div className="row">
                         <div className="col">
                             <div className='header-1'>
-                                <h2 className='ac-1'>Customer Details</h2>
+                                <h2 className='ac-1'>Product Order</h2>
                                 <form onSubmit={handleSubmit}>
                                     <div className="form-groupData">
                                     <div className="form-group">
@@ -81,7 +81,7 @@ const CusIOrder = () => {
                                         <input
                                             type="text"
                                             name="Product_Category"
-                                            value={formData.Product_Category}  
+                                            value={formData.Product_Category}  k
                                             onChange={handleChange}
                                             readOnly  
                                         />
@@ -91,9 +91,9 @@ const CusIOrder = () => {
                                         <label>Customer Name:</label>
                                         <input
                                             type="text"
-                                            name="Cus_Name"
+                                            name="Customer_Name"
                                             placeholder="Enter Name"
-                                            value={formData.Cus_Name}
+                                             value={formData.Customer_Name}
                                             onChange={handleChange}
                                         />
                                     </div>
@@ -101,9 +101,9 @@ const CusIOrder = () => {
                                         <label>Customer Address:</label>
                                         <input
                                             type="text"
-                                            name="Cus_Address"
+                                            name="Customer_Address"
                                             placeholder="Enter Address"
-                                            value={formData.Cus_Address}
+                                            value={formData.Customer_Address}
                                             onChange={handleChange}
                                         />
                                     </div>
@@ -112,9 +112,9 @@ const CusIOrder = () => {
                                         <label>Mobile number:</label>
                                         <input
                                             type="text"
-                                            name="Cus_PNumber"
+                                            name="Customer_PNumber"
                                             placeholder="Enter Mobile Number"
-                                            value={formData.Cus_PNumber}
+                                            value={formData.Customer_PNumber}
                                             onChange={handleChange}
                                         />
                                     </div>
@@ -123,18 +123,18 @@ const CusIOrder = () => {
                                         <label>Delivery date:</label>
                                         <input
                                             type="date"
-                                            name="Delivery_date"
+                                            name="Delivery_Date"
                                             placeholder="Pick Delivery Date"
-                                            value={formData.Delivery_date}
+                                            // value={formData.Delivery_Date}
                                             onChange={handleChange}
                                         />
                                     </div>
 
                                     {error && <div className="error-message">{error}</div>}
 
-                                   <a href="/Ikall"><button className="submit-button-1" type="submit" disabled={loading}>
+                                    <button className="submit-button-1" type="submit" disabled={loading}>
                                         {loading ? 'Submitting...' : 'Submit'}
-                                    </button></a>
+                                    </button>
                                 </form>
                             </div>
                         </div>
@@ -145,4 +145,4 @@ const CusIOrder = () => {
     );
 };
 
-export default CusIOrder;
+export default CustomerSOrderSection;

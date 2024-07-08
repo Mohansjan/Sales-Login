@@ -1,5 +1,4 @@
 import React from "react";
-//import Slider1 from "../ImageSection/Slider_1.webp";
 import "./BOrder.css";
 import { SiConvertio } from "react-icons/si";
 import { RiCaravanFill } from "react-icons/ri";
@@ -7,8 +6,6 @@ import { MdOutlineContactPhone } from "react-icons/md";
 import { GiTakeMyMoney } from "react-icons/gi";
 import { GrStatusGood } from "react-icons/gr";
 import { RiCaravanLine } from "react-icons/ri";
-//import Add3 from "../ImageSection/add_3.webp";
-//import Slider2 from "../ImageSection/Slider_2.webp";
 import { useState,useEffect } from "react";
 import Slider3 from "../ImageSection/Slider_3.webp";
 const BOrderSection = () => {
@@ -29,8 +26,7 @@ const BOrderSection = () => {
                 throw new Error('Network response was not ok');
             }
             const data = await response.json();
-            //console.log(customerOrders);
-            // alert('hi')
+            
             setCustomerOrders(data);
         } catch (error) {
             console.error('Error fetching data:', error);

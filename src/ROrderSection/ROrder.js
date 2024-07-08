@@ -1,23 +1,20 @@
 import React from "react";
-//import Slider1 from "../ImageSection/Slider_1.webp";
-import Add2 from "../ImageSection/add_2.webp";
-import "./WOrder.css";
+import "./ROrder.css";
 import { SiConvertio } from "react-icons/si";
 import { RiCaravanFill } from "react-icons/ri";
 import { MdOutlineContactPhone } from "react-icons/md";
 import { GiTakeMyMoney } from "react-icons/gi";
 import { GrStatusGood } from "react-icons/gr";
 import { RiCaravanLine } from "react-icons/ri";
-//import Add3 from "../ImageSection/add_3.webp";
-//import Slider2 from "../ImageSection/Slider_2.webp";
 import { useState, useEffect } from "react";
+import Add5 from "../ImageSection/add_5.webp";
 
 
-const WOrderSection = () => {
+const ROrderSection = () => {
     const [customerOrders, setCustomerOrders] = useState([]);
     console.log(customerOrders);
     const fetchData = async () => {
-        const apiUrl = ' https://dev-mohansjan.gateway.apiplatform.io/v1/YuvaStore/4';
+        const apiUrl = ' https://dev-mohansjan.gateway.apiplatform.io/v1/YuvaStore/5';
         try {
             const response = await fetch(apiUrl, {
                 method: 'GET',
@@ -48,24 +45,24 @@ const WOrderSection = () => {
         <div class="order-1">
             <div class="row orderRow-1">
                 <div class="col-4">
-                    <img className="OrdImage-1" src={Add2} alt="add2"/>
+                    <img className="OrdImage-1" src={Add5} alt="add2"/>
                     <div className="offer">
                         <div className="offerOff-1">
                             <p className="off-1">Add To Cart</p>
                         </div>
                         <div className="offerOff-2">
-                            <a href="CustomerWOrder"> <p className="off-2">Buy Now</p></a>
+                            <a href="CustomerROrder"> <p className="off-2">Buy Now</p></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-8">
                     <section className="dtc-1">
                         <div className="dt">
-                            <p className="dt-1">Kratos SW18 Smart Watch with 2.01'' Large LCD Display, Wireless Charging, 
-                            AI Voice Assistant, Smart Watch for Men with Metal Body, 50+ Sports Modes, 24/7 Health Tracking, BT Calling, 200+ Watch Faces</p>
+                            <p className="dt-1">Portronics SoundDrum 10W Portable Bluetooth Stereo Speaker with Powerful Bass, 3.5mm AUX, USB Music,
+                             In-Built Mic, In-Built FM, 6-7 Hrs Playtime(Blue)</p>
 
-                            <a href="/shop">  <p className="dt-2">Visit The Kratos Store</p></a>
-                            <p className="dt-3">3K+ bought in past month</p>
+                            <a href="/shop">  <p className="dt-2">Visit The Portronics Store</p></a>
+                            <p className="dt-3">12K+ bought in past month</p>
                             <hr></hr>
                         </div>
                     </section>
@@ -81,7 +78,7 @@ const WOrderSection = () => {
                                 </p>
                             ))}
                             <p className="dd-4">Inclusive of all taxes</p>
-                            <p className="dd-5">EMI starts at ₹88 per month</p>
+                            <p className="dd-5">EMI starts at ₹78 per month</p>
                             <hr className="dpdd"></hr>
                         </div>
                     </section>
@@ -111,28 +108,28 @@ const WOrderSection = () => {
 
                         <p className="Prds-1">Product Details</p>
                         <div className="ddsp-1">
-                            <p className="prds-2">Brand</p>
-                            <p className="prds-3">Kratos</p>
+                            <p className="prds-21">Brand</p>
+                            <p className="prds-31">Portronics</p>
                         </div>
 
                         <div className="ddsp-2">
-                            <p className="prds-4">Model Name</p>
-                            <p className="prds-5">KR SW18 ORANGE</p>
+                            <p className="prds-41">Weight</p>
+                            <p className="prds-51">331 grams</p>
                         </div>
 
                         <div className="ddsp-3">
-                            <p className="prds-6">Operating System</p>
-                            <p className="prdsl-7">Android</p>
+                            <p className="prds-61">Audio</p>
+                            <p className="prds-71">Stereo</p>
                         </div>
 
                         <div className="ddsp-4">
-                            <p className="prds-8">connectivity</p>
-                            <p className="prdsa-9">Bluetooth</p>
+                            <p className="prds-81">connectivity</p>
+                            <p className="prds-91">Bluetooth, Auxiliary, USB</p>
                         </div>
 
                         <div className="ddsp-5">
-                            <p className="prds-10">Display Type</p>
-                            <p className="prdsl-11">LCD </p>
+                            <p className="prds-101">Battery</p>
+                            <p className="prds-111">1800mAh </p>
                         </div>
 
                     </div>
@@ -143,4 +140,4 @@ const WOrderSection = () => {
     );
 };
 
-export default WOrderSection;
+export default ROrderSection;

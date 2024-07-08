@@ -4,9 +4,9 @@ import "./CustomerOrder.css";
 
 const CustomerOrderSection = () => {
     const [formData, setFormData] = useState({
-        Product_Name: 'boAt Airdopes 125 TWS Earbuds',  // Fixed product name
-        Product_Price: '₹1299',  // Fixed product price
-        Product_category: 'AirDopes',  // Fixed product category
+        Product_Name: 'boAt Airdopes 125 TWS Earbuds',  
+        Product_Price: '₹1299',  
+        Product_category: 'AirDopes',  
         Cus_Name: '',
         Cus_Address:'',
         Cus_PNumber:'',
@@ -32,8 +32,6 @@ const CustomerOrderSection = () => {
             });
             console.log('Order created:', response.data);
             alert('Product Ordered');
-            // Assuming you want to redirect after successful submission
-            // You can use react-router-dom or window.location.href as you did
             window.location.href = '/ShowCustomer';
 
         } catch (error) {
@@ -55,7 +53,7 @@ const CustomerOrderSection = () => {
                     <div className="row">
                         <div className="col">
                             <div className='header-1'>
-                                <h2 className='ac-1'>Customer Details</h2>
+                                <h2 className='ac-1'>Product Order</h2>
                                 <form onSubmit={handleSubmit}>
                                     <div className="form-groupData">
                                     <div className="form-group">
@@ -63,18 +61,18 @@ const CustomerOrderSection = () => {
                                         <input
                                             type="text"
                                             name="Product_Name"
-                                            value={formData.Product_Name}  // Use value from state
+                                            value={formData.Product_Name}  
                                             onChange={handleChange}
-                                            readOnly  // Make it readonly since it's fixed
+                                            readOnly  
                                         />
 
                                         <label>Product Price:</label>
                                         <input
                                             type="text"
                                             name="Product_Price"
-                                            value={formData.Product_Price}  // Use value from state
+                                            value={formData.Product_Price} 
                                             onChange={handleChange}
-                                            readOnly  // Make it readonly since it's fixed
+                                            readOnly  
                                         />
                                     </div>
                                     <div className="form-group">
@@ -82,9 +80,9 @@ const CustomerOrderSection = () => {
                                         <input
                                             type="text"
                                             name="Product_category"
-                                            value={formData.Product_category}  // Use value from state
+                                            value={formData.Product_category}  
                                             onChange={handleChange}
-                                            readOnly  // Make it readonly since it's fixed
+                                            readOnly  
                                         />
                                     </div>
                                     </div>

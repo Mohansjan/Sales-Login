@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import axios from 'axios';
-import "./CustomerBOrder.css";
+import "./CustomerWOrder.css";
 
-const CustomerBOrder = () => {
+const CustomerWOrderSection = () => {
     const [formData, setFormData] = useState({
-        Product_Name: 'IBall Bluetooth Portable Speaker ',  
-        Product_Price:'₹2,999',
-        Product_Category: 'Speaker',  
+        Product_Name: 'Kratos SW18 Smart Watch ',  
+        Product_Price:'₹1,799',
+        Product_Category: 'Smart Watch',  
         Customer_Name: '',
         Customer_Address:'',
         Customer_PNumber:'',
@@ -21,7 +21,7 @@ const CustomerBOrder = () => {
 
         try {
             const formDataCopy = { ...formData };
-            let url = ' https://dev-mohansjan.gateway.apiplatform.io/v1/BOrder';
+            let url = ' https://dev-mohansjan.gateway.apiplatform.io/v1/WOrder';
 
             const response = await axios.post(url, formDataCopy, {
                 headers: {
@@ -33,7 +33,7 @@ const CustomerBOrder = () => {
             console.log('Order created:', response.data);
             alert('Product Ordered');
             
-            window.location.href = '/Iball';
+            
 
         } catch (error) {
             console.error('Error:', error.response ? error.response.data : error.message);
@@ -145,4 +145,4 @@ const CustomerBOrder = () => {
     );
 };
 
-export default CustomerBOrder;
+export default CustomerWOrderSection;

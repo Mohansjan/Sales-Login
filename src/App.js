@@ -1,36 +1,43 @@
+//Basic Section
+import HomeSection from "./home";
 import "./App.css";
-//import HeaderSection from "./HeaderSection/header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
-// import SliderSection from "./SliderSection/slider";
-// import SpinnerSection from "./FlashSpinnerSection/spinner";
-// import CategorySection from "./CategorySection/category";
-// import BumberSection from "./BumberSection/bumber";
-// import TopSellerSection from "./TopSellerSection/topSeller";
-// import AllProSection from "./AllProSection/allPro";
-// import AddsSection from "./AddsSection/adds";
-// import FooterSection from "./FooterSection/footer";
-import HomeSection from "./home";
+
+// Features
 import LoginSection from "./LoginSection/login";
-import CustomerSection from "./CustomerSection/Customer";
 import ShoppingSection from "./ShoppingSection/Shop";
-import OrderSection from "./OrderSection/Order";
-import CustomerOrderSection from "./CustomerOrderSection/CustomerOrder";
-import ShowCustomerSection from "./ShowCustomerSection/ShowCustomer";
 import OrdersViewSection from "./OrdersViewSection/OrdersView";
+import ContactSection from "./ContactSection/Contact.js";
+import CartSection from "./CartSection/Cart.js";
+import MapSection from "./mapSection/maps.js";
+import CustomerAddedSection from "./CustomerAddedSection/CustomerAdded.js";
+import CustomerSection from "./CustomerSection/Customer";
+import ReturnSection from "./ReturnSection/Return.js";
+
+//Product view Details
 import IOrderSection from "./IOrderSection/IOrder.js";
 import BOrderSection from "./BOrderSection/BOrder.js";
-import ContactSection from "./ContactSection/Contact.js";
-import CusIOrder from "./CustomerIOrder/CusIOrder.js";
 import WOrderSection from "./WOrderSection/WOrder.js";
-import CustomerBOrderSection from "./CustomerBOrderSection/CustomerBOrder.js";
-import CategorySection from "./CategorySection/category.js";
-import CartSection from "./CartSection/Cart.js"
+import ROrderSection from "./ROrderSection/ROrder.js";
+import VOrderSection from "./VOrderSection/VOrder.js";
+import SOrderSection from "./SOrderSection/SOrder.js";
+import OrderSection from "./OrderSection/Order";
+
+//View Product and Customer details
 import IkallCustomer from "./IkallCustomer/Ikall.js";
-import ReturnSection from "./ReturnSection/Return.js";
 import IballCustomer from "./IballCustomer/Iball.js";
-import CustomerAddedSection from "./CustomerAddedSection/CustomerAdded.js";
-import MapSection from "./mapSection/maps.js";
+import ShowCustomerSection from "./ShowCustomerSection/ShowCustomer";
+
+//Prouct Order Section
+import CustomerOrderSection from "./CustomerOrderSection/CustomerOrder";
+import CustomerIOrderSection from "./CustomerIOrderSection/CustomerIOrder.js";
+import CustomerBOrderSection from "./CustomerBOrderSection/CustomerBOrder.js";
+import CustomerWOrderSection from "./CustomerWOrderSection/CustomerWOrder.js";
+import CustomerROrderSection from "./CustomerROrderSection/CustomerROrder.js";
+import CustomerVOrderSection from "./CustomerVOrderSection/CustomerVOrder.js";
+import CustomerSOrderSection from "./CustomerSOrderSection/CustomerSOrder.js";
+
 
 
 function App() {
@@ -38,26 +45,43 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<HomeSection />} />
+          <Route path="/"
+            element={<HomeSection />}
+          />
+
           <Route
             path="/login"
             element={<LoginSection />}
           />
+
           <Route
             path="/Customer"
             element={<CustomerSection />}
           />
+
           <Route
             path="/Shop"
             element={<ShoppingSection />}
           />
+
           <Route
-            path="/Order"
-            element={<OrderSection />}
+            path="/Return"
+            element={<ReturnSection />}
           />
+
           <Route
-            path="/CustomerOrder"
-            element={<CustomerOrderSection />}
+            path="/Contact"
+            element={<ContactSection />}
+          />
+
+          <Route
+            path="/CustomerAdded"
+            element={<CustomerAddedSection />}
+          />
+
+          <Route
+            path="/maps"
+            element={<MapSection />}
           />
 
           <Route
@@ -66,8 +90,23 @@ function App() {
           />
 
           <Route
+            path="/Ikall"
+            element={<IkallCustomer />}
+          />
+
+          <Route
+            path="/Iball"
+            element={<IballCustomer />}
+          />
+
+          <Route
             path="/OrdersView"
             element={<OrdersViewSection />}
+          />
+
+          <Route
+            path="/Order"
+            element={<OrderSection />}
           />
 
           <Route
@@ -81,18 +120,34 @@ function App() {
           />
 
           <Route
-            path="/Contact"
-            element={<ContactSection />}
-          />
-
-          <Route
-            path="/CusIOrder"
-            element={<CusIOrder />}
-          />
-
-          <Route
             path="/WOrder"
             element={<WOrderSection />}
+          />
+
+          <Route
+            path="ROrder"
+            element={<ROrderSection />}
+          />
+
+          <Route
+            path="VOrder"
+            element={<VOrderSection />}
+          />
+
+          <Route
+            path="SOrder"
+            element={<SOrderSection />}
+          />
+
+          <Route
+            path="/CustomerOrder"
+            element={<CustomerOrderSection />}
+          />
+
+
+          <Route
+            path="/CustomerIOrder"
+            element={<CustomerIOrderSection />}
           />
 
           <Route
@@ -100,35 +155,31 @@ function App() {
             element={<CustomerBOrderSection />}
           />
 
+          <Route
+            path="CustomerWOrder"
+            element={<CustomerWOrderSection />}
+          />
+
+          <Route
+            path="/CustomerROrder"
+            element={<CustomerROrderSection />}
+          />
+
+          <Route
+            path="/CustomerVorder"
+            element={<CustomerVOrderSection />}
+          />
+
+          <Route
+            path="/CustomerSOrder"
+            element={<CustomerSOrderSection />}
+          />
 
           <Route
             path="/Cart"
             element={<CartSection />}
           />
 
-          <Route
-            path="/Ikall"
-            element={<IkallCustomer />}
-          />
-
-          <Route
-            path="/Return"
-            element={<ReturnSection />}
-          />
-
-          <Route
-            path="/Iball"
-            element={<IballCustomer/>}
-          />
-           <Route
-            path="/CustomerAdded"
-            element={<CustomerAddedSection/>}
-          />
-
-          <Route
-            path="/maps"
-            element={<MapSection/>}
-            />
         </Routes>
 
       </BrowserRouter>

@@ -45,10 +45,12 @@ button.ad-1 {
     display: inline-block;
     border: none;
     border-bottom-left-radius: 20px;
-    background-color:#f4511e;
+    background-color:darkkhaki;
     color: white;
     opacity: 1;
     transition: 0.3s;
+    text-shadow: 2px 2px 5px #000000;
+
 }
 button.ad-1:hover{
     opacity: 0.6;
@@ -59,10 +61,12 @@ button.ad-2 {
     height: 50px;
     border: none;
     border-bottom-right-radius: 20px;
-    background-color:#f4511e;
+    background-color:darkkhaki;
     color: white;
     opacity: 1;
     transition: 0.3s;
+    text-shadow: 2px 2px 5px #000000;
+
 }
 button.ad-2:hover{
    opacity: 0.6;

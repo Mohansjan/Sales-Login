@@ -26,7 +26,7 @@ const ShoppingSection = () => {
             <a className="linkMenu">Blog</a>
             <a className="linkMenu">Shop</a>
             <a href="/customer" className="linkMenu">Contact</a>
-            <a className="linkMenu">Images</a>
+            <a href="/maps" className="linkMenu">Maps</a>
             <a href="Return" className="linkMenu">Return</a>
             <a href="/OrdersView" className="linkMenu">Orders</a>
             <a href="/Contact" className="linkMenu">Customers</a>
@@ -99,7 +99,7 @@ const ShoppingSection = () => {
               <button className="ad-1">Add to Cart</button>
             </div>
             <div className="ads-2">
-              <a href="/Order"> <button className="ad-2">Buy Now</button></a>
+              <a href="/ROrder"> <button className="ad-2">Buy Now</button></a>
             </div>
           </div>
         </div>
@@ -113,7 +113,7 @@ const ShoppingSection = () => {
               <button className="ad-1">Add to Cart</button>
             </div>
             <div className="ads-2">
-              <a href="/Order"> <button className="ad-2">Buy Now</button></a>
+              <a href="/VOrder"> <button className="ad-2">Buy Now</button></a>
 
             </div>
           </div>
@@ -129,7 +129,7 @@ const ShoppingSection = () => {
               <button className="ad-1">Add to Cart</button>
             </div>
             <div className="ads-2">
-              <button className="ad-2">Buy Now</button>
+              <a href="SOrder"><button className="ad-2">Buy Now</button></a>
             </div>
           </div>
         </div>

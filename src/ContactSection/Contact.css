@@ -43,7 +43,7 @@
   }
   
   /* Button styles */
-  .button {
+  /* .button {
     display: inline-block;
     background-color: #4CAF50;
     color: white;
@@ -53,10 +53,10 @@
     border-radius: 4px;
     transition: background-color 0.3s ease;
   }
-  
-  .button:hover {
+   */
+  /* .button:hover {
     background-color: #45a049;
-  }
+  } */
   
   /* Footer styles */
   footer {
@@ -104,7 +104,7 @@
     border-radius: 4px;
   }
   
-  .submit-button {
+  .submit-button-5 {
     display: block;
     width: 100%;
     padding: 10px;
@@ -135,11 +135,11 @@
     color: var(--bs-heading-color);
     margin-left: 169px;
 }
-button.submit-button {
-    margin-top: 40px;
-    width: 543px;
-    background-color: darkcyan;
-    color: black;
-    margin-left: 20px;
+button.submit-button-5 {
+  margin-top: 40px;
+  width: 564px;
+  background-color: darkcyan;
+  color: black;
+  margin-left: 13px;
 }
   

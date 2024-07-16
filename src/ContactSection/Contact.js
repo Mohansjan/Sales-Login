@@ -11,7 +11,7 @@ const ContactSection = () => {
         Phone_Number: '',
         Pin_Code: '',
         Customer_district: '',
-      
+
     });
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
@@ -126,7 +126,7 @@ const ContactSection = () => {
 
                     {error && <div className="error-message">{error}</div>}
 
-                    <button className="submit-button" type="submit" disabled={loading}>
+                    <button className="submit-button-5" type="submit" disabled={loading}>
                         {loading ? 'Submitting...' : 'Submit'}
                     </button>
                 </form>

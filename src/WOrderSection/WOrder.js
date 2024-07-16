@@ -51,7 +51,7 @@ const WOrderSection = () => {
                     <img className="OrdImage-1" src={Add2} alt="add2"/>
                     <div className="offer">
                         <div className="offerOff-1">
-                            <p className="off-1">Add To Cart</p>
+                            <a href="/Cart"><p className="off-1">Add To Cart</p></a>
                         </div>
                         <div className="offerOff-2">
                             <a href="CustomerWOrder"> <p className="off-2">Buy Now</p></a>
@@ -66,8 +66,9 @@ const WOrderSection = () => {
 
                             <a href="/shop">  <p className="dt-2">Visit The Kratos Store</p></a>
                             <p className="dt-3">3K+ bought in past month</p>
-                            <hr></hr>
+                            <hr className="dpdp"></hr>
                         </div>
+
                     </section>
                     <section className="dtc-2">
                         <div className="dd">

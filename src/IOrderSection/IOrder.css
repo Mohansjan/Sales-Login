@@ -8,6 +8,7 @@
     margin-top: 40px;
     width: 1750px;
     background-color: white;
+    box-shadow: 10px 10px 10px 10px;
 }
 .col-1 {
     width: 500px;
@@ -45,8 +46,9 @@ p.dt-3 {
     width: 1000px;
     height: 160px;
 }
-hr {
-    margin-left: 79px;
+hr.dpdp {
+    margin-left: 61px;
+    width: 930px;
 }
 .dd {
     
@@ -79,7 +81,8 @@ p.dd-5 {
     color: darkgreen;
 }
 hr.dpdd {
-    margin-right: 140px;
+    margin-left: 61px;
+    width: 930px;
 }
 .dds-1 {
     margin-left: 80px;
@@ -194,12 +197,17 @@ p.off-1 {
     display: inline-block;
     margin-left: 86px;
     margin-top: 15px;
+    color: black;
+    text-shadow: 1px 1px 1px #000,
+    3px 3px 5px ;
 }
 p.off-2{
     display: inline-block;
     margin-left: 70px;
     margin-top: 15px;
     color: black;
+    text-shadow: 1px 1px 1px #000,
+    3px 3px 5px ;
 }
 p.off-1:hover{
      cursor: pointer;

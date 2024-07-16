@@ -51,7 +51,7 @@ import { useState,useEffect } from "react";
                     <img className="OrdImage-1" src={Add3} />
                     <div className="offer">
                         <div className="offerOff-1">
-                            <p className="off-1">Add To Cart</p>
+                           <a href="/Cart"> <p className="off-1">Add To Cart</p></a>
                         </div>
                         <div className="offerOff-2">
                             <a href="CustomerOrder"> <p className="off-2">Buy Now</p></a>
@@ -65,7 +65,7 @@ import { useState,useEffect } from "react";
                                 BEASTᵀᴹ Mode with 50 ms Low Latency,BTv5.3, IPX5(Mystic Black)</p>
                             <a href="/shop">  <p className="dt-2">Visit The Boat Store</p></a>
                             <p className="dt-3">5K+ bought in past month</p>
-                            <hr></hr>
+                            <hr className="dpdp"></hr>
                         </div>
                     </section>
                     <section className="dtc-2">

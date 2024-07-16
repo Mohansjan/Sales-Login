@@ -36,7 +36,7 @@ const CustomerAddedSection = () => {
             const data = await response.json();
             setCustomerOrders(data);
             console.log(customerOrders)
-            // alert('GSDASJHDAKSD')
+            
         } catch (error) {
             console.error('Error fetching data:', error);
         } finally {
@@ -63,7 +63,6 @@ const CustomerAddedSection = () => {
                 Customer_district: orderToEdit.Customer_district,
             });
             console.log(orderToEdit)
-           // alert('HELOOOOOOOOOOOOOOO')
             setShowModal(true); 
         } else {
             console.error('Order not found for editing');

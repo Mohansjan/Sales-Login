@@ -87,7 +87,7 @@ const HeaderSection = () => {
             <a className="linkMenu">Shop</a>
             <a className="linkMenu">Contact</a>
             <a href="/maps" className="linkMenu">Maps</a>
-            <a className="linkMenu">Return</a>
+            <a href="Return" className="linkMenu">Return</a>
             <a href="/OrdersView" className="linkMenu">Orders</a>
             <a href="/Contact" className="linkMenu">Customers</a>
             <a href="/Cart" className="linkMenu">Cart</a>

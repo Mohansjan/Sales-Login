@@ -144,8 +144,10 @@ const ShowCustomerSection = () => {
                     <div className="container-12">
                         <div className="row justify-content-center">
                             <div className="col-12">
+                                <div className='space'>
+                            <h2 className='sw-1'>Customer Details</h2>
                                 <div className="table-responsive">
-                                    <h2 className='sw-1'>Customer Details</h2>
+                                   
                                     <table className="table table-dark table-bordered mb-0">
                                         <thead>
                                             <tr>
@@ -182,6 +184,7 @@ const ShowCustomerSection = () => {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
 
           

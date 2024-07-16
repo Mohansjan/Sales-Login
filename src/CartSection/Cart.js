@@ -116,24 +116,7 @@ const CartSection = () => {
   return (
 
     <div className="Shopping">
-      <div className="bottomHeaderSec row">
-        <div className="col-10">
-          <div className="MenuSec">
-            <a className="linkMenu">Home</a>
-            <a className="linkMenu">About</a>
-            <a className="linkMenu">Blog</a>
-            <a className="linkMenu">Shop</a>
-            <a href="/customer" className="linkMenu">Contact</a>
-            <a className="linkMenu">Images</a>
-            <a href="Return" className="linkMenu">Return</a>
-            <a href="/OrdersView" className="linkMenu">Orders</a>
-            <a href="/Contact" className="linkMenu">Customers</a>
-            <a href="/Cart" className="linkMenu">Cart</a>
-          </div>
-        </div>
-      </div>
-
-
+      
       <div className="add-to-cart">
         <div className="atc-1">
         <h6 className="tit-1">Cart Collections</h6>
@@ -155,6 +138,7 @@ const CartSection = () => {
         </div>
       ))}
         <hr className="hr-1"></hr>
+
         {cartItems2.map(item =>(
         <div key={item.id} className="product-1">
           <img className="irc-2" id="ircd" src={Slider2} alt="Slider2" />
@@ -169,12 +153,12 @@ const CartSection = () => {
                    
            <a href="IOrder"> <button className="bn-3" id="dg">Buy Now</button></a>
             <button className="bn-4" id="dg-1" onClick={() => handleRemoveItem2(item.id)}>
-              Remove</button>
-            
+              Remove</button>   
           </div>
         </div>
         ))}
         <hr className="hr-2"></hr>
+
         {cartItems3.map(item=>(
         <div key={item.id} className="product-2">
           <img className="irc-3" id="ircd" src={Slider3} alt="Slider3" />
@@ -184,13 +168,10 @@ const CartSection = () => {
                             <p className="dtcn-1">IBall Bluetooth Portable Speaker</p>
                             <p className="ddn-2">-69%</p>
                             <p className="ddn-3">₹2,999</p>
-                        </div>
-                    
-                   
+                        </div>      
             <a href="BOrder"><button className="bn-5"id="dg">Buy Now</button></a>
             <button className="bn-6" id="dg-1" onClick={()=>handleRemoveItem3(item.id)}>
               Remove</button>
-            
           </div>
         </div>
         ))}
@@ -270,8 +251,11 @@ const CartSection = () => {
                     
                    
             <a href="SOrder"><button className="bn-9"id="dg">Buy Now</button></a>
-            <button className="bn-10" id="dg-1" onClick={()=>handleRemoveItem7(item.id)}>Remove</button>
+            <button className="bn-10" id="dg-1" onClick={()=>handleRemoveItem7(item.id)}>
+              Remove</button>
             
+            
+
           </div>
         </div>
         ))}

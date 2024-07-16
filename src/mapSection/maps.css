@@ -1,12 +1,31 @@
-iframe {
-    margin-left: 500px;
-    margin-top: 124px;
-    width: 800px;
-    height: 700px;
-    border-radius: 50%;
-    box-shadow: 10px 10px 10px 10px;
-}
-.google-map{
-    height: 1000px;
-    background-color: skyblue;
-}
+.maps {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .google-map {
+    width: 600px;
+    height: 450px;
+    overflow: hidden; /* Ensure iframe does not overflow */
+    position: relative;
+  }
+  
+  .google-map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    animation: rotateEarth 60s linear infinite; /* Animation for rotation */
+  
+    /* Optional: Adjust perspective for a 3D effect */
+    transform: perspective(1000px);
+  }
+  
+  @keyframes rotateEarth {
+    from {
+      transform: perspective(1000px) rotateY(0deg);
+    }
+    to {
+      transform: perspective(1000px) rotateY(360deg);
+    }
+  }
+  

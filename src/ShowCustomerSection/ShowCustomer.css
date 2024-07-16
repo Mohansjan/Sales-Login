@@ -48,6 +48,10 @@ h2.sw-1 {
   font-size: 45px;
   font-family: monospace;
   color: darkorange;
-  margin-top: 50px;
+  margin-top: 120px;
   
+}
+.table-responsive {
+  margin-top: 20px; 
+  width: 1750px;/* Ensure there is some space above the table */
 }

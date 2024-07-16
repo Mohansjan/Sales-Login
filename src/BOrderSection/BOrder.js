@@ -5,7 +5,7 @@ import { RiCaravanFill } from "react-icons/ri";
 import { MdOutlineContactPhone } from "react-icons/md";
 import { GiTakeMyMoney } from "react-icons/gi";
 import { GrStatusGood } from "react-icons/gr";
-import { RiCaravanLine } from "react-icons/ri";
+import { RiCaravanLine } from "react-icons/ri"; 
 import { useState,useEffect } from "react";
 import Slider3 from "../ImageSection/Slider_3.webp";
 const BOrderSection = () => {
@@ -45,7 +45,7 @@ const BOrderSection = () => {
                     <img className="OrdImage-1" src={Slider3} alt="Slider3"/>
                     <div className="offer">
                         <div className="offerOff-1">
-                    <p className="off-1">Add To Cart</p>
+                    <a href="Cart"><p className="off-1">Add To Cart</p></a>
                     </div>
                     <div className="offerOff-2">
                    <a href="CustomerBOrder"> <p className="off-2">Buy Now</p></a>
@@ -58,7 +58,7 @@ const BOrderSection = () => {
                             <p className="dt-1">IBall Sound Melon Bluetooth Portable Speaker</p>
                             <a href="/shop">  <p className="dt-2">Visit The IBALL Store</p></a>
                             <p className="dt-3">2K+ bought in past month</p>
-                            <hr></hr>
+                            <hr className="dpdp"></hr>
                         </div>
                     </section>
                     <section className="dtc-2">

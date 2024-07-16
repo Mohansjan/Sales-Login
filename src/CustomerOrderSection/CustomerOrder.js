@@ -32,6 +32,10 @@ const CustomerOrderSection = () => {
             });
             console.log('Order created:', response.data);
             alert('Product Ordered');
+             
+           
+
+
             window.location.href = '/ShowCustomer';
 
         } catch (error) {
@@ -139,7 +143,7 @@ const CustomerOrderSection = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>                
         </div>
     );
 };

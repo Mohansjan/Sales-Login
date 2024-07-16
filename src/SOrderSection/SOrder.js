@@ -48,7 +48,7 @@ const SOrderSection = () => {
                     <img className="OrdImage-1" src={Add4} alt="Add4"/>
                     <div className="offer">
                         <div className="offerOff-1">
-                            <p className="off-1">Add To Cart</p>
+                            <a href="/Cart"><p className="off-1">Add To Cart</p></a>
                         </div>
                         <div className="offerOff-2">
                             <a href="CustomerSOrder"> <p className="off-2">Buy Now</p></a>
@@ -62,8 +62,9 @@ const SOrderSection = () => {
 
                             <a href="/shop">  <p className="dt-2">Visit The Samsung Store</p></a>
                             <p className="dt-3">20K+ bought in past month</p>
-                            <hr></hr>
+                            <hr className="dpdp"></hr>
                         </div>
+
                     </section>
                     <section className="dtc-2">
                         <div className="dd">

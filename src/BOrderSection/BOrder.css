@@ -4,9 +4,9 @@
 }
 .order-1 {
     height: 1700px;
-    margin-left: 40px;
-    margin-top: 40px;
-    width: 1750px;
+    margin-left: 125px;
+    margin-top: 60px;
+    width: 1600px;
     background-color: white;
 }
 .col-1 {
@@ -45,8 +45,9 @@ p.dt-3 {
     width: 1000px;
     height: 160px;
 }
-hr {
-    margin-left: 79px;
+hr.dpdp {
+    margin-left: 61px;
+    width: 930px;
 }
 .dd {
     
@@ -79,7 +80,8 @@ p.dd-5 {
     color: darkgreen;
 }
 hr.dpdd {
-    margin-right: 140px;
+    margin-left: 61px;
+    width: 930px;
 }
 .dds-1 {
     margin-left: 80px;
@@ -194,12 +196,16 @@ p.off-1 {
     display: inline-block;
     margin-left: 86px;
     margin-top: 15px;
+    text-shadow: 1px 1px 1px #000,
+    3px 3px 5px ;
 }
 p.off-2{
     display: inline-block;
     margin-left: 70px;
     margin-top: 15px;
     color: black;
+    text-shadow: 1px 1px 1px #000,
+    3px 3px 5px ;
 }
 p.off-1:hover{
      cursor: pointer;
@@ -209,7 +215,15 @@ p.off-2:hover{
     cursor: pointer;
     color: darkgray;
 }
-
+section.dtc-2 {
+    margin-left: 22px;
+}
+section.dtc-1 {
+    margin-left: 22px;
+}
+.dds-2 {
+    margin-left: 20px;
+}
 
 
 

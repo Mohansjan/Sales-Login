@@ -7,6 +7,7 @@ import Slider5 from "../ImageSection/Slider_5.webp";
 import Slider6 from "../ImageSection/Slider_6.webp";
 
 const SliderSection = () => {
+
   return (
     <div className="SliderWrapper">
       <div className="SliderSec row">

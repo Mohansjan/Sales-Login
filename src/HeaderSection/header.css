@@ -125,3 +125,59 @@ svg {
   cursor: pointer;
   color: black;
 }
+.HeaderWrapper {
+  position: relative;
+}
+
+.popup {
+  position: fixed;
+  bottom: 630px;
+  right: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 20px;
+  z-index: 1000;
+  max-width: 300px; /* Adjust max-width as needed */
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.close-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  height: 40px;
+}
+
+.close-btn:hover {
+  background-color: #d32f2f;
+}
+
+.Logout-btn {
+  margin-left: 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  height: 40px;
+}
+
+.Logout-btn:hover {
+  background-color: #d32f2f;
+}
+svg.user-icon {
+  width: 45px;
+  height: 40px;
+  margin-bottom: 12px;
+}
+

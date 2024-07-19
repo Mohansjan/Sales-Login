@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from 'axios';
 import "./CustomerBOrder.css";
+import { useNavigate } from "react-router-dom";
 
 const CustomerBOrder = () => {
     const [formData, setFormData] = useState({
@@ -12,6 +13,7 @@ const CustomerBOrder = () => {
         Customer_PNumber:'',
         Delivery_Date:''
     });
+    const navigate = useNavigate();
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
 
@@ -32,8 +34,8 @@ const CustomerBOrder = () => {
             });
             console.log('Order created:', response.data);
             alert('Product Ordered');
-            
-            window.location.href = '/Iball';
+            navigate('/OrdersView');
+            //window.location.href = '/OrdersView';
 
         } catch (error) {
             console.error('Error:', error.response ? error.response.data : error.message);

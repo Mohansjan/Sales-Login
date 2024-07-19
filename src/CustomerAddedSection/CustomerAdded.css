@@ -33,6 +33,9 @@
     background-color: #454d55;
     border-color: #454d55;
 }
+thead {
+    height: 75px;
+}
 
 .table th,
 .table td {
@@ -138,4 +141,9 @@
     color: darkorange;
     margin-top: 50px;
     margin-left: 600px;
+}
+
+.table-responsive {
+    margin-top: 70px;
+    width: 1750px;
 }

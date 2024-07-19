@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../HeaderSection/header.css";
 import { FaAngleDown } from "react-icons/fa";
 import { GiCancel } from "react-icons/gi";
@@ -7,8 +7,15 @@ import { BsSearch } from "react-icons/bs";
 import logo from "../ImageSection/logo.webp";
 import { IoMdContact } from "react-icons/io";
 import { IoBagOutline } from "react-icons/io5";
+import { FaCircleUser } from "react-icons/fa6";
 
 const HeaderSection = () => {
+  const [showPopup, setShowPopup] = useState(false);
+
+  const togglePopup = () => {
+    setShowPopup(!showPopup);
+  };
+
   return (
     <div className="HeaderWrapper">
       <div className="topHeader row">
@@ -55,7 +62,7 @@ const HeaderSection = () => {
           <div className="headerLogo-sec">
             <RiMenu2Line className="header-toggle" />
             <div className="logo-imager">
-              <img className="logoBrand" src={logo} />
+              <img className="logoBrand" src={logo} alt="Logo" />
             </div>
           </div>
         </div>
@@ -73,7 +80,7 @@ const HeaderSection = () => {
         </div>
         <div className="col-xl-2 col-lg-2 col-md-3 col-sm-6 col-xs-6">
           <div className="midHeader-rightSec">
-            <a href="/login"><IoMdContact className="Mid-Svg2" /></a>
+            <IoMdContact className="Mid-Svg2" onClick={togglePopup} />
             <IoBagOutline className="Mid-Svg" />
           </div>
         </div>
@@ -85,7 +92,7 @@ const HeaderSection = () => {
             <a className="linkMenu">About</a>
             <a className="linkMenu">Blog</a>
             <a className="linkMenu">Shop</a>
-            <a className="linkMenu">Contact</a>
+            <a href="/CustomerAdded" className="linkMenu">Contact</a>
             <a href="/maps" className="linkMenu">Maps</a>
             <a href="Return" className="linkMenu">Return</a>
             <a href="/OrdersView" className="linkMenu">Orders</a>
@@ -94,7 +101,26 @@ const HeaderSection = () => {
           </div>
         </div>
       </div>
+      {/* Popup Window */}
+      {showPopup && (
+        <div className="popup">
+          <div className="popup-content">
+          <FaCircleUser className="user-icon"/>
+            <p>Mohan</p>
+            <p>Mohan@example.com</p>
+            <button className="close-btn" onClick={togglePopup}>
+              Close
+            </button>
+
+            <a href="login"><button className="Logout-btn" onClick={togglePopup}>
+              Logout
+            </button></a>
+
+          </div>
+        </div>
+      )}
     </div>
   );
 };
+
 export default HeaderSection;

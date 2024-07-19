@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from 'axios';
 import "./CustomerIOrder.css";
+import { useNavigate } from "react-router-dom";
 
 const CusIOrder = () => {
     const [formData, setFormData] = useState({
@@ -12,6 +13,7 @@ const CusIOrder = () => {
         Cus_PNumber:'',
         Delivery_date:''
     });
+    const navigate = useNavigate();
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
 
@@ -32,8 +34,8 @@ const CusIOrder = () => {
             });
             console.log('Order created:', response.data);
             alert('Product Ordered');
-            
-            window.location.href = '/Ikall';
+            navigate('/OrdersView');
+            //window.location.href = '/OrdersView';
 
         } catch (error) {
             console.error('Error:', error.response ? error.response.data : error.message);

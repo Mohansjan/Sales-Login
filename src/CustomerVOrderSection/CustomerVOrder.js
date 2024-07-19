@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from 'axios';
 import "./CustomerVOrder.css";
+import { useNavigate } from "react-router-dom";
 
 const CustomerVOrderSection = () => {
     const [formData, setFormData] = useState({
@@ -12,6 +13,7 @@ const CustomerVOrderSection = () => {
         Customer_PNumber:'',
         Delivery_Date:''
     });
+    const navigate= useNavigate();
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
 
@@ -32,6 +34,7 @@ const CustomerVOrderSection = () => {
             });
             console.log('Order created:', response.data);
             alert('Product Ordered');
+            navigate('/OrdersView')
             
             
 

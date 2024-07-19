@@ -37,7 +37,7 @@ import CustomerWOrderSection from "./CustomerWOrderSection/CustomerWOrder.js";
 import CustomerROrderSection from "./CustomerROrderSection/CustomerROrder.js";
 import CustomerVOrderSection from "./CustomerVOrderSection/CustomerVOrder.js";
 import CustomerSOrderSection from "./CustomerSOrderSection/CustomerSOrder.js";
-
+import SignupSection from "./SignupSection/Signup.js";
 
 
 function App() {
@@ -45,9 +45,13 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/"
+          <Route path="/home"
             element={<HomeSection />}
           />
+           
+          <Route path="/"
+           element={<SignupSection/>}
+           />
 
           <Route
             path="/login"

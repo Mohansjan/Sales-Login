@@ -74,6 +74,8 @@
     align-items: center;
     height: 1000px;
     background-color: #f0f0f0;
+    background-image: url("/home/mohan/sales-login/src/ImageSection/Background.webp");
+    
   }
   
   .form-container {
@@ -82,6 +84,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 620px;
+    opacity: 0.8;
   }
   
   

@@ -1,4 +1,10 @@
 /* Top-headerSec */
+
+
+/* .Home{
+  background-image: url("/home/mohan/sales-login/src/ImageSection/Background.webp");
+  color: white;
+} */
 .topHeader.row {
   background-image: url("../ImageSection/headerBanner.webp");
   background-position: center;
@@ -145,7 +151,7 @@ svg {
   text-align: center;
 }
 
-.close-btn {
+.close-btn-1 {
   background-color: #f44336;
   color: white;
   border: none;
@@ -154,9 +160,10 @@ svg {
   cursor: pointer;
   margin-top: 10px;
   height: 40px;
+  width: 93px;
 }
 
-.close-btn:hover {
+.close-btn-1:hover {
   background-color: #d32f2f;
 }
 
@@ -170,6 +177,7 @@ svg {
   cursor: pointer;
   margin-top: 10px;
   height: 40px;
+  width: 93px;
 }
 
 .Logout-btn:hover {
@@ -180,4 +188,9 @@ svg.user-icon {
   height: 40px;
   margin-bottom: 12px;
 }
-
+.poppins-1{
+  font-family: poppins;
+}
+.poppins-2{
+  font-family: poppins;
+}

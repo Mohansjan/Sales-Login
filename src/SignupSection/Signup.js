@@ -7,6 +7,7 @@ import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { emailValidator, passwordValidator } from "../LoginSection/validator";
 import { useNavigate } from 'react-router-dom';
 import FooterLogo from "../ImageSection/bottom_logo.webp";
+import { TiShoppingCart } from "react-icons/ti";
 
 const SignupSection = () => {
   const navigate = useNavigate();
@@ -81,7 +82,7 @@ const SignupSection = () => {
         <div className="col-md-4 text-center company__in11">
           <span className="company__logoo">
             <h2 className="lgo">
-              <FontAwesomeIcon icon={faAndroid} />
+            <TiShoppingCart  className="llggoo"/>
             </h2>
           </span>
           {/* <h4 className="company_titles">YUVA STORE</h4> */}

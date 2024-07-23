@@ -1,11 +1,17 @@
 .intro {
     padding: 20px;
+    
 }
 
-.gradient-custom-2 {
-    background: linear-gradient(45deg, #051937, #004d7a);
+.gradient-custom-10 {
+    /* background: linear-gradient(45deg, #051937, #004d7a); */
     height: 100%;
+    background-image:url("/home/mohan/sales-login/src/ImageSection/Background.webp");
+    background-size: 284vh 100vw;
+    background-repeat: no-repeat;
+    
 }
+
 
 .mask {
     background-color: rgba(0, 0, 0, 0.6);
@@ -144,6 +150,8 @@ thead {
 }
 
 .table-responsive {
-    margin-top: 70px;
+    margin-top: 75px;
     width: 1750px;
+    margin-left: -10px;
+    
 }

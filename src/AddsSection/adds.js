@@ -5,6 +5,7 @@ import Add3 from "../ImageSection/add_3.webp";
 import Add4 from "../ImageSection/add_4.webp";
 import Add5 from "../ImageSection/add_5.webp";
 
+
 const AddsSection = () => {
   return (
     <div className="AddsWrapper">

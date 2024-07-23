@@ -8,19 +8,26 @@ import logo from "../ImageSection/logo.webp";
 import { IoMdContact } from "react-icons/io";
 import { IoBagOutline } from "react-icons/io5";
 import { FaCircleUser } from "react-icons/fa6";
+import AdminPanel from "./AdminPanel.js";
+
 
 const HeaderSection = () => {
   const [showPopup, setShowPopup] = useState(false);
+  const [showAdminPanel, setShowAdminPanel] = useState(false); // State for admin panel
 
   const togglePopup = () => {
     setShowPopup(!showPopup);
+  };
+
+  const toggleAdminPanel = () => {
+    setShowAdminPanel(!showAdminPanel);
   };
 
   return (
     <div className="HeaderWrapper">
       <div className="topHeader row">
         <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-          <div class="dropdown">
+          <div className="dropdown">
             <a
               type="button"
               id="dropdownMenuButton1"
@@ -29,19 +36,19 @@ const HeaderSection = () => {
             >
               Eng <FaAngleDown className="header-arrow" />
             </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li>
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Tamil
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Malayalam
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Hindi
                 </a>
               </li>
@@ -60,7 +67,7 @@ const HeaderSection = () => {
       <div className="midHeaderSec row">
         <div className="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
           <div className="headerLogo-sec">
-            <RiMenu2Line className="header-toggle" />
+            <RiMenu2Line className="header-toggle" onClick={toggleAdminPanel} />
             <div className="logo-imager">
               <img className="logoBrand" src={logo} alt="Logo" />
             </div>
@@ -68,10 +75,10 @@ const HeaderSection = () => {
         </div>
         <div className="col-xl-7 col-lg-7 col-md-6 col-sm-12 col-xs-12">
           <div className="search-grp">
-            <div class="input-group mb-3">
+            <div className="input-group mb-3">
               <input
                 type="text"
-                class="form-control searcher"
+                className="form-control searcher"
                 placeholder="Search for articles"
               />
             </div>
@@ -105,20 +112,22 @@ const HeaderSection = () => {
       {showPopup && (
         <div className="popup">
           <div className="popup-content">
-          <FaCircleUser className="user-icon"/>
-            <p>Mohan</p>
-            <p>Mohan@example.com</p>
-            <button className="close-btn" onClick={togglePopup}>
+            <FaCircleUser className="user-icon" />
+            <p className="poppins-1">Mohan</p>
+            <p className="poppins-2">Mohan@gmail.com</p>
+            <button className="close-btn-1" onClick={togglePopup}>
               Close
             </button>
-
-            <a href="login"><button className="Logout-btn" onClick={togglePopup}>
-              Logout
-            </button></a>
-
+            <a href="login">
+              <button className="Logout-btn" onClick={togglePopup}>
+                Logout
+              </button>
+            </a>
           </div>
         </div>
       )}
+      {/* Admin Panel */}
+      <AdminPanel isOpen={showAdminPanel} togglePanel={toggleAdminPanel} />
     </div>
   );
 };

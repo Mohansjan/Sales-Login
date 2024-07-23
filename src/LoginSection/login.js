@@ -7,6 +7,8 @@ import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';  // Corre
 import { emailValidator, passwordValidator } from "../LoginSection/validator";
 import { useNavigate } from 'react-router-dom';
 import FooterLogo from "../ImageSection/bottom_logo.webp";
+import { TiShoppingCart } from "react-icons/ti";
+
 
 const LoginSection = () => {
   const navigate = useNavigate();
@@ -73,7 +75,7 @@ const LoginSection = () => {
         <div className="col-md-4 text-center company__in10">
           <span className="company__logo">
             <h2>
-              <FontAwesomeIcon icon={faAndroid} />
+              <TiShoppingCart  className="llggoo"/>
             </h2>
           </span>
           {/* <h4 className="company_title">YUVA STORE</h4> */}

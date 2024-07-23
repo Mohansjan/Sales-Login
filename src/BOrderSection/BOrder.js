@@ -42,6 +42,7 @@ const BOrderSection = () => {
         <div class="order-1">
             <div class="row orderRow-1">
                 <div class="col-4">
+                <div className="order-sec">
                     <img className="OrdImage-1" src={Slider3} alt="Slider3"/>
                     <div className="offer">
                         <div className="offerOff-1">
@@ -49,6 +50,7 @@ const BOrderSection = () => {
                     </div>
                     <div className="offerOff-2">
                    <a href="CustomerBOrder"> <p className="off-2">Buy Now</p></a>
+                    </div>
                     </div>
                     </div>
                 </div>

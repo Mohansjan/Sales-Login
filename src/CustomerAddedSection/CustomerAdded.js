@@ -138,7 +138,7 @@ const CustomerAddedSection = () => {
 
     return (
         <section className="intro">
-            <div className="gradient-custom-2 h-100">
+            <div className="gradient-custom-10 h-100">
                 <div className="mask d-flex align-items-center h-100">
                     <div className="container-12">
                         <div className="row justify-content-center">

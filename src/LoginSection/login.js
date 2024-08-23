@@ -72,7 +72,7 @@ const LoginSection = () => {
   return (
     <div className="container-login">
       <div className="row main-con10 text-center">
-        <div className="col-md-4 text-center company__in10">
+        <div className="col-md-3 text-center company__in10">
           <span className="company__logo">
             <h2>
               <TiShoppingCart  className="llggoo"/>
@@ -81,10 +81,10 @@ const LoginSection = () => {
           {/* <h4 className="company_title">YUVA STORE</h4> */}
           <img className="company-titles" src={FooterLogo} alt="FooterLogo"/>
         </div>
-        <div className="col-md-8 col-xs-12 col-sm-12 login_form ">
+        <div className="col-md-9 col-xs-12 col-sm-12 login_form ">
           <div className="container-fluid">
             <div className="row">
-              <h2>Log In</h2>
+              <h2 className="lgooo">Log In</h2>
             </div>
             <div className="row-in">
               <form onSubmit={handleSubmit} className="form-control login">
@@ -110,7 +110,6 @@ const LoginSection = () => {
                   />
                 </div>
                 <div className="row-input">
-                  <span className="fa fa-lock"></span>
                   <input
                     type={passwordVisible ? "text" : "password"}
                     name="Password"

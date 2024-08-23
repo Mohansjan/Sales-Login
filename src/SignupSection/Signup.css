@@ -1,148 +1,166 @@
 
- .container-login23{
-    margin-left:22%;
-    margin-top: 7%;
+.container-login23 {
+    margin-left: 18%;
+    margin-top: 3%;
 }
- .main-con11{
-	width: 1000px;
-    height: 730px;
-	border-radius: 20px;
-	/* box-shadow: 0 5px 5px rgba(0,0,0,.4); */
-	margin: 5em auto;
-	display: flex;
-	box-shadow: 10px 10px 10px 10px black;
+
+.main-con11 {
+    width: 875px;
+    height: 615px;
+    border-radius: 20px;
+    /* box-shadow: 0 5px 5px rgba(0,0,0,.4); */
+    margin: 5em auto;
+    display: flex;
+    box-shadow: 10px 10px 10px 10px black;
 }
-.company__in11{
-	background-color: #008080;
+
+.company__in11 {
+    background-color: #008080;
     width: 230px;
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	color: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+.row.main-con11.text-center {
+    height: auto;
+    height: 680px;
 }
 img.company-titles {
-    width: 200px;
-    height: 50px;
-    margin-left: 55px;
+    width: 170px;
+    height: 45px;
+    margin-left: 10px;
 }
-.fa-android{
-	font-size:3em;
+
+.fa-android {
+    font-size: 3em;
 }
-@media screen and (max-width: 640px) {
-	.main-content{width: 90%;}
-	.company__info{
-		display: none;
-	}
-	.login_form{
-		border-top-left-radius:20px;
-		border-bottom-left-radius:20px;
-	}
+
+.row > h2 {
+    color: #008080;
 }
-@media screen and (min-width: 642px) and (max-width:800px){
-	.main-content{width: 70%;}
+
+h2.lgooo {
+    margin-right: 10px;
+    margin-top: 15px;
 }
-.row > h2{
-	color:#008080;
+
+@media (min-width: 768px) {
+    .col-md-9 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
 }
-.login_forms{
-	background-color: #fff;
-	border-top-right-radius:20px;
-	border-bottom-right-radius:20px;
-	border-top:1px solid #ccc;
-	border-right:1px solid #ccc;
+
+.login_forms {
+    background-color: #fff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+   
     width: 500px;
 }
+
 form.form-controls.login {
     border: 1px solid white;
     width: 500px;
     margin-left: 80px;
-    margin-top: 40px;
 }
-.form-users{
-	width: 85%;
-	border:0px solid transparent;
-	border-radius: 0;
-	border-bottom: 1px solid #aaa;
-	padding: 1em .5em .5em;
-	padding-left: 1em;
-	outline:none;
-	margin:1.5em auto;
-	transition: all .5s ease;
+
+.form-users {
+    width: 85%;
+    border: 0px solid transparent;
+    border-radius: 0;
+    border-bottom: 1px solid #aaa;
+    padding: 1em .5em .5em;
+    padding-left: 1em;
+    outline: none;
+    margin: 1em auto;
+    transition: all .5s ease;
 }
-.form-users:focus{
-	border-bottom-color: #008080;
-	box-shadow: 0 0 5px rgba(0,80,80,.4); 
-	border-radius: 4px;
+
+.form-users:focus {
+    border-bottom-color: #008080;
+    box-shadow: 0 0 5px rgba(0, 80, 80, .4);
+    border-radius: 4px;
 }
-.btn-saves{
-	transition: all .5s ease;
-	width: 450px;
-	border-radius: 30px;
-	color:#008080;
-	font-weight: 600;
-	background-color: #fff;
-	border: 1px solid #008080;
-	margin-top: 20px;
-	margin-bottom: 1em;
+
+.btn-saves {
+    transition: all .5s ease;
+    width: 450px;
+    border-radius: 30px;
+    color: #008080;
+    font-weight: 600;
+    background-color: #fff;
+    border: 1px solid #008080;
+    margin-top: 20px;
+    margin-bottom: 1em;
     margin-left: 5px;
     height: 40px;
 }
-.btn-saves:hover, .btn:focus{
-	background-color: #008080;
-	color:#fff;
+
+.btn-saves:hover, .btn:focus {
+    background-color: #008080;
+    color: #fff;
 }
-.container-fluids{
-   
+
+.container-fluids {
     width: 100%;
-    height: 520px;
+    height: auto;
 }
+
 label.form-userLists {
     display: inline-block;
     width: 150px;
     margin-top: 24px;
 }
+
 input.form-userlists {
     display: inline-block;
     width: 20px;
     margin-top: 24px;
 }
+
 .roweds {
-	
-		width: 174px;
-		margin-bottom: 8px;
-		margin-left: 35px;
-	
+    width: 174px;
+    margin-bottom: 8px;
+    margin-left: 35px;
 }
+
 h4.company_title {
     font-family: monospace;
 }
-.form-inputs{
-	    position: relative;
-		width: 85%;
-		border:0px solid transparent;
-		border-radius: 0;
-		border-bottom: 1px solid #aaa;
-		padding: 1em .5em .5em;
-		padding-left: 1em;
-		outline:none;
-		margin:1.5em auto;
-		transition: all .5s ease;
-		
-	
+
+.form-inputs {
+    position: relative;
+    width: 85%;
+    border: 0px solid transparent;
+    border-radius: 0;
+    border-bottom: 1px solid #aaa;
+    padding: 1em .5em .5em;
+    padding-left: 1em;
+    outline: none;
+    margin: 1.5em auto;
+    transition: all .5s ease;
 }
+
 span.visible-1 {
     position: absolute;
     margin-top: 43px;
-
 }
+
 span.visible-2 {
     position: absolute;
     margin-top: 43px;
-
 }
+
 svg.llggoo {
     width: 77px;
     height: 71px;
 }
+
+/* Media Queries */
+
+/* For screens up to 640px (mobile phones) */

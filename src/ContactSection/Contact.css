@@ -74,7 +74,7 @@
     align-items: center;
     height: 1000px;
     background-color: #f0f0f0;
-    background-image: url("/home/mohan/sales-login/src/ImageSection/Background.webp");
+   
     
   }
   
@@ -145,4 +145,16 @@ button.submit-button-5 {
   color: black;
   margin-left: 13px;
 }
-  
+
+@media screen and (min-width: 1024px) and (min-height: 1320px) {
+  .product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 142px;
+}
+hr.hr-1 {
+  width: 715px;
+  margin-left: 106px;
+}
+}

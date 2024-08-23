@@ -60,15 +60,15 @@ const IOrderSection = () => {
                     </div>
                 </div>
                 <div class="col-8">
-                    <section className="dtc-1">
+                    <section className="dtcc-1">
                         <div className="dt">
                             <p className="dt-1">IKALL S3 Pro Smartphone 6.8 inch, InCell Full HD+ Display 6GB, 128GB</p>
                             <a href="/shop">  <p className="dt-2">Visit The IKALL Store</p></a>
                             <p className="dt-3">10K+ bought in past month</p>
-                            <hr className="dpdp"></hr>
+                            <hr className="dpdpj"></hr>
                         </div>
                     </section>
-                    <section className="dtc-2">
+                    <section className="dtcc-2">
                         <div className="dd">
                             <p className="dd-1">
                                 Limited time deal
@@ -81,7 +81,7 @@ const IOrderSection = () => {
                             ))}
                             <p className="dd-4">Inclusive of all taxes</p>
                             <p className="dd-5">EMI starts at ₹100 per month</p>
-                            <hr className="dpdd"></hr>
+                            <hr className="dpddj"></hr>
                         </div>
                     </section>
                 </div>

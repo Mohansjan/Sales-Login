@@ -88,7 +88,7 @@ const OrdersViewSection = () => {
     }, []);
 
     return (
-        <div className="container-4">
+        <div className="container-4 col-lg-12 col-xl-12 col-md-12 col-sm-12 col-xs-12">
             <div className="addr-1">
                 <div className="aod-1">
                     <div className="ovj-1">
@@ -110,11 +110,12 @@ const OrdersViewSection = () => {
                         />
                         <button className="ibt-1" onClick={handleSearch}>Search</button>
                     </div>
-
+                    
+                    <div className='gri'>
                     {customerOrders.map((orders, index) => (
                         orders.length > 0 && (
                             <div className={`aod-${index + 2}`} key={index}>
-                                <div className="ovj-4">
+                                <div className="ovj-4 col-lg-4 col-xl-4 col-sm-4 col-xs-4">
                                     {index === 0 && <img className="ovji" src={Add3} alt="Add3" />}
                                     {index === 1 && <img className="ovji" src={Slider2} alt="Slider2" />}
                                     {index === 2 && <img className="ovji" src={Slider3} alt="Slider3" />}
@@ -140,6 +141,7 @@ const OrdersViewSection = () => {
                     ))}
                 </div>
             </div>
+        </div>
         </div>
     );
 };

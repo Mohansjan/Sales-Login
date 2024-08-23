@@ -7,7 +7,7 @@
     height: auto;
     margin-left: 125px;
     margin-top: 40px;
-    width: 1600px;
+    width: 80%;
     background-color: white;
 }
 .col-4 {
@@ -23,14 +23,24 @@
 }
 
 img.OrdImage-1 {
-    width: 441px;
-    height: 250px;
+    width: 300px;
+    height: 150px;
     display: inline-block;
     margin-left: 16px;
     margin-top: 15px;
 }
+
+section.dtc-1 {
+    margin-left: 110px;
+}
+
+section.dtc-2 {
+    margin-left: 110px;
+    margin-top: 80px;
+}
+
 p.dt-1 {
-    width: 900px;
+    width: 520px;
     margin-left: 80px;
     margin-top: 55px;
     font-family: fangsong;
@@ -50,7 +60,7 @@ p.dt-3 {
 }
 
 .dt {
-    width: 1000px;
+    width: 622px;
     height: 160px;
 }
 
@@ -61,7 +71,7 @@ hr.dpdp {
 
 .dd {
 
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 p.dd-1 {
@@ -78,12 +88,14 @@ p.dd-2 {
     font-size: 22px;
     margin-left: 80px;
     color: lightcoral;
+    margin-bottom: 0px;
 }
 
 p.dd-3 {
     display: inline-block;
     margin-left: 22px;
     font-size: 22px;
+    margin-bottom: 0px;
 }
 
 p.dd-4 {
@@ -102,7 +114,11 @@ hr.dpdd {
 
 .dds-1 {
     margin-left: 80px;
-    margin-top: 35px;
+    width: 200px;
+    
+}
+.dds-2 {
+    margin-left: -100px;
 }
 
 svg.icon-1 {
@@ -135,7 +151,7 @@ p.iic-6 {
 }
 
 .row.OrderRow-2 {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 p.Prds-1 {
@@ -219,14 +235,14 @@ p.prds-9 {
 
 .offer {
     margin-left: 16px;
-    width: 441px;
+    width: 300px;
     height: 55px;
     background-color: white;
 }
 
 .offerOff-1 {
-    width: 212px;
-    height: 55px;
+    width: 145px;
+    height: 45px;
     display: inline-block;
     background-color: royalblue;
     text-align: center;
@@ -234,26 +250,24 @@ p.prds-9 {
 
 .offerOff-2 {
     display: inline-block;
-    height: 55px;
-    width: 212px;
+    height: 45px;
+    width: 145px;
     background-color: brown;
-    margin-left: 16px;
+    margin-left: 10px;
     margin-top: 10px;
 }
 p.off-1 {
     display: inline-block;
     margin-left: 0px;
-    margin-top: 15px;
-    color: black;
-    text-shadow: 1px 1px 1px #000, 3px 3px 5px;
+    margin-top: 12px;
+    color: white;
 }
 
 p.off-2 {
     display: inline-block;
-    margin-left: 70px;
-    margin-top: 15px;
-    text-shadow: 1px 1px 1px #000,
-        3px 3px 5px ;
+    margin-left: 30px;
+    margin-top: 12px;
+    color: white;
 
 }
 
@@ -268,8 +282,8 @@ p.off-2:hover {
 }
 .order-sec {
     margin-bottom: 0px;
-    height: 350px;
-    width: 473px;
+    height: 245px;
+    width: 335px;
     margin-left: 69px;
     margin-top: 81px;
     border: 1px solid;

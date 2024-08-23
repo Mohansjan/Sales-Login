@@ -79,7 +79,7 @@ const SignupSection = () => {
   return (
     <div className="container-login23">
       <div className="row main-con11 text-center">
-        <div className="col-md-4 text-center company__in11">
+        <div className="col-md-3 col-sm-12 col-xs-12 text-center company__in11">
           <span className="company__logoo">
             <h2 className="lgo">
             <TiShoppingCart  className="llggoo"/>
@@ -88,7 +88,7 @@ const SignupSection = () => {
           {/* <h4 className="company_titles">YUVA STORE</h4> */}
           <img className="company-titles" src={FooterLogo} alt="FooterLogo"/>
         </div>
-        <div className="col-md-8 col-xs-12 col-sm-12 login_forms ">
+        <div className="col-md-9 col-xs-12 col-sm-12 login_forms ">
           <div className="container-fluids">
             <div className="rowed">
               <h2 className="lgooo">SIGN UP</h2>

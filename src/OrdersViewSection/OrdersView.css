@@ -12,9 +12,17 @@
     height: 700px;
 }
 
+.gri {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: fit-content;
+    grid-column-gap: 85px;
+    grid-row-gap: 50px;
+}
+
 h2.ovjh-1 {
-    margin-left: 800px;
-    margin-top: 30px;
+    margin-left: 30%;
+    margin-top: 10px;
     font-size: 40px;
     color: black;
     text-shadow: 2px 2px 5px;
@@ -56,37 +64,39 @@ h6.ovjs-6 {
 }
 
 h6.ovjs-3 {
-    font-size: 23px;
+    font-size: 20px;
     font-family: ui-monospace;
     color: #504d4d;
 }
 
 .aod-2 {
-    margin-left: 10px;
-    width: 411px;
-    height: 338px;
+    
+    width: 350px;
+    height: 300px;
     background-color: snow;
     box-shadow: 10px 10px lightgrey;
     display: inline-block;
     margin-top: 20px;
+   
     border-radius: 25px;
 }
 
 .aod-3 {
-    margin-left: 50px;
-    width: 411px;
-    height: 338px;
+    
+    width: 350px;
+    height: 300px;
     background-color: snow;
     box-shadow: 10px 10px lightgrey;
-    display: inline-block;
     margin-top: 20px;
+    display: inline-block;
+
     border-radius: 25px;
 }
 
 .aod-4 {
-    margin-left: 50px;
-    width: 411px;
-    height: 338px;
+    
+    width: 350px;
+    height: 300px;
     background-color: snow;
     box-shadow: 10px 10px lightgrey;
     display: inline-block;
@@ -96,9 +106,9 @@ h6.ovjs-3 {
 
 img.ovji {
     margin-left: 26px;
-    width: 357px;
+    width: 300px;
     margin-top: 27px;
-    height: 173px;
+    height: 150px;
 }
 
 .ovjs-7 {
@@ -113,51 +123,51 @@ img.ovji-1 {
 }
 
 .ovjs-7 {
-    margin-left: 55px;
-    margin-top: 30px;
+    margin-left: 40px;
+    margin-top: 15px;
 }
 
 .aod-5 {
-    margin-left: 50px;
-    width: 411px;
-    height: 338px;
+   
+    width: 350px;
+    height: 300px;
     background-color: snow;
     box-shadow: 10px 10px lightgrey;
     display: inline-block;
-    margin-top: 20px;
+  
     border-radius: 25px;
 }
 
 .aod-6 {
-    margin-left: 10px;
-    width: 411px;
-    height: 338px;
+    
+    width: 350px;
+    height: 300px;
     background-color: snow;
     box-shadow: 10px 10px lightgrey;
     display: inline-block;
-    margin-top: 60px;
+   
     border-radius: 25px;
 }
 
 .aod-7 {
-    margin-left: 50px;
-    width: 411px;
-    height: 338px;
+  
+    width: 350px;
+    height: 300px;
     background-color: snow;
     box-shadow: 10px 10px lightgrey;
     display: inline-block;
-    margin-top: 60px;
+   
     border-radius: 25px;
 }
 
 .aod-8 {
-    margin-left: 50px;
-    width: 411px;
-    height: 338px;
+   
+    width: 350px;
+    height: 300px;
     background-color: snow;
     box-shadow: 10px 10px lightgrey;
     display: inline-block;
-    margin-top: 60px;
+   
     border-radius: 25px;
 }
 

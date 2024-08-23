@@ -25,8 +25,14 @@ img.OrdImage-1 {
     margin-left: 70px;
     margin-top: 60px;
 }
+section.dtcc-1 {
+    margin-left: 50px;
+}
+section.dtcc-2 {
+    margin-left: 50px;
+}
 p.dt-1{
-    width: 900px;
+    width: 520px;
     margin-left: 80px;
     margin-top: 55px;
     font-family: fangsong;
@@ -43,7 +49,7 @@ p.dt-3 {
 }
 
 .dt {
-    width: 1000px;
+    width: 622px;
     height: 160px;
 }
 hr.dpdp {
@@ -52,7 +58,7 @@ hr.dpdp {
 }
 .dd {
     
-    margin-top: 30px;
+    margin-top: 20px;
 }
 p.dd-1 {
     height: 30px;
@@ -80,9 +86,12 @@ p.dd-5 {
     margin-left: 80px;
     color: darkgreen;
 }
-hr.dpdd {
+hr.dpddj {
     margin-left: 61px;
-    width: 930px;
+    width: 525px;
+}
+hr.dpdpj {
+    width: 525px;
 }
 .dds-1 {
     margin-left: 80px;
@@ -171,11 +180,14 @@ p.prdsl-9{
 }
 .prds-10{
     display: inline-block;
+    position: relative;
 
 }
 .prds-11{
     display: inline-block;
-    margin-left: 164px;
+    margin-left: 160px;
+    position: absolute;
+    width: 370px;
 }
 .offer {
     margin-left: 70px;
@@ -197,17 +209,16 @@ p.off-1 {
     display: inline-block;
     margin-left: 86px;
     margin-top: 15px;
-    color: black;
-    text-shadow: 1px 1px 1px #000,
-    3px 3px 5px ;
+    color: white;
+
+    
 }
 p.off-2{
     display: inline-block;
     margin-left: 70px;
     margin-top: 15px;
-    color: black;
-    text-shadow: 1px 1px 1px #000,
-    3px 3px 5px ;
+    color: white;
+   
 }
 p.off-1:hover{
      cursor: pointer;
@@ -217,6 +228,7 @@ p.off-2:hover{
     cursor: pointer;
     color: darkgray;
 }
+
 
 
 

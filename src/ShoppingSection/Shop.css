@@ -193,7 +193,7 @@ a{
   }
   
   .sidebar {
-    width: 200px;
+    width: 150px;
     padding: 20px;
     background-color: #f4f4f4;
     border-right: 1px solid #ccc;
@@ -237,6 +237,11 @@ a{
     color: black;
   }
 
+  .bumber {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
   .bi-1 {
     height: 250px;
     width: 365px;
@@ -245,8 +250,8 @@ a{
     display: inline-block;
 }
 img.bumpImg-1 {
-    width: 365px;
-    height: 200px;
+    width: 300px;
+    height: 150px;
     border-radius: 10px;
    
 }
@@ -257,10 +262,9 @@ img.bumpImg-1 {
 
 .bumberImager-1 {
     display: inline-block;
-    margin-left: 135px;
     margin-top: 25px;
-    width: 401px;
-    height: 294px;
+    width: 335px;
+    height: 242px;
     /* border: 1px solid lightgray; */
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.12),
 0px 2px 2px 0px rgba(0,0,0,0.12),
@@ -274,10 +278,9 @@ border-radius: 10px;
     /* display: inline-block;
     width: 450px; */
     display: inline-block;
-    margin-left: 80px;
     margin-top: 25px;
-    width: 401px;
-    height: 294px;
+    width: 335px;
+    height: 242px;
     /* border: 1px solid lightgray; */
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.12),
 0px 2px 2px 0px rgba(0,0,0,0.12),
@@ -288,10 +291,9 @@ border-radius: 10px;
 }
 .bumberImager-3 {
     display: inline-block;
-    margin-left: 80px;
     margin-top: 25px;
-    width: 401px;
-    height: 294px;
+    width: 335px;
+    height: 242px;
     /* border: 1px solid lightgray; */
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.12),
 0px 2px 2px 0px rgba(0,0,0,0.12),
@@ -302,10 +304,9 @@ border-radius: 10px;
 }
 .bumberImager-4 {
     display: inline-block;
-    margin-left: 135px;
-    margin-top: 50px;
-    width: 401px;
-    height: 294px;
+    margin-top: 25px;
+    width: 335px;
+    height: 242px;
     /* border: 1px solid lightgray; */
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.12),
 0px 2px 2px 0px rgba(0,0,0,0.12),
@@ -316,10 +317,9 @@ border-radius: 10px;
 }
 .bumberImager-5 {
     display: inline-block;
-    margin-left: 80px;
     margin-top: 25px;
-    width: 401px;
-    height: 294px;
+    width: 335px;
+    height: 242px;
     /* border: 1px solid lightgray; */
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.12),
 0px 2px 2px 0px rgba(0,0,0,0.12),
@@ -330,10 +330,9 @@ border-radius: 10px;
 }
 .bumberImager-6 {
     display: inline-block;
-    margin-left: 80px;
     margin-top: 25px;
-    width: 401px;
-    height: 294px;
+    width: 335px;
+    height: 242px;
     /* border: 1px solid lightgray; */
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.12),
 0px 2px 2px 0px rgba(0,0,0,0.12),
@@ -345,10 +344,9 @@ border-radius: 10px;
 
 .bumberImager-7 {
     display: inline-block;
-    margin-left: 135px;
-    margin-top: 50px;
-    width: 401px;
-    height: 294px;
+    margin-top: 25px;
+    width: 335px;
+    height: 242px;
     /* border: 1px solid lightgray; */
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.12),
 0px 2px 2px 0px rgba(0,0,0,0.12),
@@ -359,10 +357,9 @@ border-radius: 10px;
 }
 .bumberImager-8 {
     display: inline-block;
-    margin-left: 80px;
     margin-top: 25px;
-    width: 401px;
-    height: 294px;
+    width: 335px;
+    height: 242px;
     /* border: 1px solid lightgray; */
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.12),
 0px 2px 2px 0px rgba(0,0,0,0.12),
@@ -373,10 +370,9 @@ border-radius: 10px;
 }
 .bumberImager-9 {
     display: inline-block;
-    margin-left: 80px;
     margin-top: 25px;
-    width: 401px;
-    height: 294px;
+    width: 335px;
+    height: 242px;
     /* border: 1px solid lightgray; */
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.12),
 0px 2px 2px 0px rgba(0,0,0,0.12),
@@ -387,10 +383,9 @@ border-radius: 10px;
 }
 .bumberImager-10 {
     display: inline-block;
-    margin-left: 135px;
-    margin-top: 50px;
-    width: 401px;
-    height: 294px;
+    margin-top: 25px;
+    width: 335px;
+    height: 242px;
     /* border: 1px solid lightgray; */
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.12),
 0px 2px 2px 0px rgba(0,0,0,0.12),
@@ -401,10 +396,9 @@ border-radius: 10px;
 }
 .bumberImager-11 {
     display: inline-block;
-    margin-left: 80px;
     margin-top: 25px;
-    width: 401px;
-    height: 294px;
+    width: 335px;
+    height: 242px;
     /* border: 1px solid lightgray; */
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.12),
 0px 2px 2px 0px rgba(0,0,0,0.12),
@@ -415,10 +409,9 @@ border-radius: 10px;
 }
 .bumberImager-12 {
     display: inline-block;
-    margin-left: 80px;
     margin-top: 25px;
-    width: 401px;
-    height: 294px;
+    width: 335px;
+    height: 242px;
     /* border: 1px solid lightgray; */
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.12),
 0px 2px 2px 0px rgba(0,0,0,0.12),
@@ -434,8 +427,8 @@ border-radius: 10px;
     margin-top: 10px;
 }
 button.ad-1 {
-    width: 170px;
-    height: 50px;
+    width: 140px;
+    height: 45px;
     display: inline-block;
     border: none;
     background-color:royalblue;
@@ -451,15 +444,15 @@ button.ad-1:hover{
 }
 button.ad-2 {
     display: inline-block;
-    width: 170px;
-    height: 50px;
+    width: 140px;
+    height: 45px;
     border: none;
     background-color:brown;
     color: white;
     opacity: 1;
     transition: 0.3s;
     text-shadow: 2px 2px 5px #000000;
-    margin-left: 25px;
+    margin-left: 20px;
     border-radius: 10px;
 }
 button.ad-2:hover{
@@ -471,10 +464,7 @@ button.ad-2:hover{
 .ads-2 {
     display: inline-block;
 }
-  
 
-
- 
   
   
   

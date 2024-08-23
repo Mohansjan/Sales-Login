@@ -54,7 +54,7 @@ const CustomerOrderSection = () => {
             <div className="cds-1">
                 <div className="container-1">
                     <div className="row">
-                        <div className="col">
+                        <div className="col-lg-12 col-xl-12 col-sm-12 col-xs-12 ">
                             <div className='header-1'>
                                 <h2 className='ac-1'>Product Order</h2>
                                 <form onSubmit={handleSubmit}>

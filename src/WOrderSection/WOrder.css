@@ -25,7 +25,7 @@ img.OrdImage-1 {
     margin-top: 60px;
 }
 p.dt-1{
-    width: 900px;
+    width: 520px;
     margin-left: 80px;
     margin-top: 55px;
     font-family: fangsong;
@@ -42,7 +42,7 @@ p.dt-3 {
 }
 
 .dt {
-    width: 1000px;
+    width: 622px;
     height: 160px;
 }
 hr.dpdp {
@@ -51,7 +51,7 @@ hr.dpdp {
 }
 .dd {
     
-    margin-top: 30px;
+    margin-top: 20px;
 }
 p.dd-1 {
     height: 30px;
@@ -196,17 +196,15 @@ p.off-1 {
     display: inline-block;
     margin-left: 86px;
     margin-top: 15px;
-    color: black;
-    text-shadow: 1px 1px 1px #000,
-    3px 3px 5px ;
+    color: white;
+    
 }
 p.off-2{
     display: inline-block;
     margin-left: 70px;
     margin-top: 15px;
-    color: black;
-    text-shadow: 1px 1px 1px #000,
-    3px 3px 5px ;
+    color: white;
+   
 }
 p.off-1:hover{
      cursor: pointer;

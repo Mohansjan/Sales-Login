@@ -70,6 +70,8 @@ const ShoppingSection = () => {
           </div>
         </div>
 
+
+           <div className="bumber">
         {filteredImages.map((image, index) => (
           <div key={index} className={`bumberImager-${index + 1}`}>
             <div className="bi-1 ">
@@ -86,6 +88,7 @@ const ShoppingSection = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };

@@ -47,7 +47,7 @@ import { useState,useEffect } from "react";
 
         <div class="order-1">
             <div class="row orderRow-1">
-                <div class="col-4">
+                <div class="col-lg-3 col-xl-3 col-mg-6 col-sm-12 col-xs-12 ">
                     <div className="order-sec">
                     <img className="OrdImage-1" src={Add3} />
                     <div className="offer">
@@ -55,12 +55,12 @@ import { useState,useEffect } from "react";
                            <a href="/Cart"> <p className="off-1">Add To Cart</p></a>
                         </div>
                         <div className="offerOff-2">
-                            <a href="CustomerOrder"> <p className="off-2">Buy Now</p></a>
+                            <a href="/CustomerOrder"> <p className="off-2">Buy Now</p></a>
                         </div>
                     </div>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-lg-9 col-xl-9 col-md-6 col-sm-12 col-xs-12">
                     <section className="dtc-1">
                         <div className="dt">
                             <p className="dt-1">boAt Airdopes 125 TWS Earbuds with 50 hrs Playtime,Quad Mics with ENxᵀᴹ Tech,ASAPᵀᴹ Charging,IWPᵀᴹ Tech,

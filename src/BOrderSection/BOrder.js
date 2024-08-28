@@ -55,15 +55,15 @@ const BOrderSection = () => {
                     </div>
                 </div>
                 <div class="col-8">
-                    <section className="dtc-1">
+                    <section className="dtcb-1">
                         <div className="dt">
                             <p className="dt-1">IBall Sound Melon Bluetooth Portable Speaker</p>
                             <a href="/shop">  <p className="dt-2">Visit The IBALL Store</p></a>
                             <p className="dt-3">2K+ bought in past month</p>
-                            <hr className="dpdp"></hr>
+                            <hr className="dpdk"></hr>
                         </div>
                     </section>
-                    <section className="dtc-2">
+                    <section className="dtcb-2">
                         <div className="dd">
                             <p className="dd-1">
                                 Limited time deal
@@ -76,7 +76,7 @@ const BOrderSection = () => {
                             ))}
                             <p className="dd-4">Inclusive of all taxes</p>
                             <p className="dd-5">EMI starts at ₹100 per month</p>
-                            <hr className="dpdd"></hr>
+                            <hr className="dpdk"></hr>
                         </div>
                     </section>
                 </div>

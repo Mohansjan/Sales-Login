@@ -108,15 +108,11 @@ const CartSection = () => {
   const handleRemoveItem7 = (id) =>{
     const updatedCartItems = cartItems7.filter((item) => item.id !==id);
     setCartItems7(updatedCartItems);
-  }
-  
-
-  
+  } 
 
   return (
 
     <div className="Shopping">
-      
       <div className="add-to-cart">
         <div className="atc-1">
         <h6 className="tit-1">Cart Collections</h6>

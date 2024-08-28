@@ -1,13 +1,11 @@
 iframe {
 
-    margin-left: 400px;
-    margin-top: 54px;
-    width: 1000px;
-    height: 750px;
-    margin-left: 500px;
-    margin-top: 124px;
-    width: 800px;
-    height: 800px;
+ 
+   
+    margin-left: 260px;
+    margin-top: 30px;
+    width: 700px;
+    height: 700px;
     border-radius: 50%;
     box-shadow: 10px 10px 10px 10px;
 }

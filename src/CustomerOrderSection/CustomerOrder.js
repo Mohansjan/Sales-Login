@@ -132,6 +132,7 @@ const CustomerOrderSection = () => {
                                         />
                                     </div>
 
+
                                     {error && <div className="error-message">{error}</div>}
 
                                     <button className="submit-button-1" type="submit" disabled={loading}>

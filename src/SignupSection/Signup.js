@@ -24,14 +24,13 @@ const SignupSection = () => {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    // Update form data
     setFormData({ ...formData, [name]: value });
-    // Clear error message when any input changes
     setError('');
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+
     if (!emailValidator(formData.Email)) {
       return setError('Please enter a valid email ID');
     }
@@ -47,15 +46,39 @@ const SignupSection = () => {
     setLoading(true);
 
     try {
-      const formDataCopy = { ...formData };
+      // Fetch existing users to check if username or email already exists
+      const signupResponse = await axios.get('https://dev-mohansjan.gateway.apiplatform.io/v1/Signup',{
+        headers:{
+          'apikey' : 'ZdzwOIDYW0AKYVD6BkZqyBbHcjb3pyGc',
+          'pkey' : '3fcc20cdc093c0403fc55b721aab6f3c',
+          "Content-Type" : 'application/json'
+        }
+      });
+      const existingUsers = signupResponse.data;
 
-      const response = await axios.post('https://dev-mohansjan.gateway.apiplatform.io/v1/Signup', formDataCopy, {
+      const isUserNameTaken = existingUsers.some(user => user.UserName === formData.UserName);
+      const isEmailTaken = existingUsers.some(user => user.Email === formData.Email);
+
+      if (isUserNameTaken || isEmailTaken) {
+        setLoading(false);
+        if (isUserNameTaken && isEmailTaken) {
+          return setError('Username and Email already declared');
+        } else if (isUserNameTaken) {
+          return setError('Username already declared');
+        } else {
+          return setError('Email already declared');
+        }
+      }
+
+      // Proceed with signup if no conflicts
+      const response = await axios.post('https://dev-mohansjan.gateway.apiplatform.io/v1/Signup', formData, {
         headers: {
           'apikey': 'ZdzwOIDYW0AKYVD6BkZqyBbHcjb3pyGc',
           'pkey': '3fcc20cdc093c0403fc55b721aab6f3c',
           'Content-Type': 'application/json'
         }
       });
+
       console.log('Account Created', response.data);
       alert('Account Created');
       navigate('/login');
@@ -82,11 +105,10 @@ const SignupSection = () => {
         <div className="col-md-3 col-sm-12 col-xs-12 text-center company__in11">
           <span className="company__logoo">
             <h2 className="lgo">
-            <TiShoppingCart  className="llggoo"/>
+              <TiShoppingCart className="llggoo" />
             </h2>
           </span>
-          {/* <h4 className="company_titles">YUVA STORE</h4> */}
-          <img className="company-titles" src={FooterLogo} alt="FooterLogo"/>
+          <img className="company-titles" src={FooterLogo} alt="FooterLogo" />
         </div>
         <div className="col-md-9 col-xs-12 col-sm-12 login_forms ">
           <div className="container-fluids">

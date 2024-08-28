@@ -17,7 +17,6 @@ const ShowCustomerSection = () => {
 
     const [showModal, setShowModal] = useState(false);
 
-
     const fetchData = async () => {
         const apiUrl = 'https://dev-mohansjan.gateway.apiplatform.io/v1/YuvaStoreOrd';
         try {
@@ -35,8 +34,6 @@ const ShowCustomerSection = () => {
             }
             const data = await response.json();
             setCustomerOrders(data);
-            console.log(customerOrders)
-            // alert('GSDASJHDAKSD')
         } catch (error) {
             console.error('Error fetching data:', error);
         } finally {
@@ -52,7 +49,6 @@ const ShowCustomerSection = () => {
         const orderToEdit = customerOrders.find(order => order.id === orderId);
         if (orderToEdit) {
             setEditOrderId(orderId);
-           
             setEditFormData({
                 Product_Name: orderToEdit.Product_Name,
                 Product_Price: orderToEdit.Product_Price,
@@ -62,9 +58,7 @@ const ShowCustomerSection = () => {
                 Cus_PNumber: orderToEdit.Cus_PNumber,
                 Delivery_date: orderToEdit.Delivery_date,
             });
-            console.log(orderToEdit)
-           // alert('HELOOOOOOOOOOOOOOO')
-            setShowModal(true); 
+            setShowModal(true);
         } else {
             console.error('Order not found for editing');
         }
@@ -86,15 +80,13 @@ const ShowCustomerSection = () => {
                 throw new Error(`Failed to update order: ${response.status} - ${response.statusText}`);
             }
             alert('Order updated successfully');
-
-           
             setCustomerOrders(prevOrders =>
                 prevOrders.map(order =>
                     order.id === editOrderId ? { ...order, ...editFormData } : order
                 )
             );
-            setEditOrderId(null); 
-            setShowModal(false); 
+            setEditOrderId(null);
+            setShowModal(false);
         } catch (error) {
             console.error('Error updating order:', error);
             alert('Failed to update order. Please try again.');
@@ -102,8 +94,8 @@ const ShowCustomerSection = () => {
     };
 
     const handleCancelEdit = () => {
-        setEditOrderId(null); 
-        setShowModal(false); 
+        setEditOrderId(null);
+        setShowModal(false);
     };
 
     const handleDelete = async (orderId) => {
@@ -121,7 +113,6 @@ const ShowCustomerSection = () => {
                 throw new Error('Failed to delete order');
             }
             alert('Order deleted successfully');
-
             setCustomerOrders(prevOrders => prevOrders.filter(order => order.id !== orderId));
         } catch (error) {
             console.error('Error deleting order:', error);
@@ -138,58 +129,56 @@ const ShowCustomerSection = () => {
     };
 
     return (
-        <section className="intro">
-            <div className="gradient-custom-2 h-100">
+        <section className="customer-section col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 ">
+            <div className="custom-gradient h-100">
                 <div className="mask d-flex align-items-center h-100">
-                    <div className="container-12">
+                    <div className="container-custom">
                         <div className="row justify-content-center">
                             <div className="col-12">
-                                <div className='space'>
-                            <h2 className='sw-1'>Customer Details</h2>
-                                <div className="table-responsive">
-                                   
-                                    <table className="table table-dark table-bordered mb-0">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">Product Name</th>
-                                                <th scope="col">Product Price</th>
-                                                <th scope="col">Product Category</th>
-                                                <th scope="col">Customer Name</th>
-                                                <th scope="col">Customer Address</th>
-                                                <th scope="col">Customer Phone Number</th>
-                                                <th scope='col'>Delivery Date</th>
-                                                <th scope='col'>Actions</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            {customerOrders.map((order) => (
-                                                <tr key={order.id}>
-                                                    <td>{order.Product_Name}</td>
-                                                    <td>{order.Product_Price}</td>
-                                                    <td>{order.Product_category}</td>
-                                                    <td>{order.Cus_Name}</td>
-                                                    <td>{order.Cus_Address}</td>
-                                                    <td>{order.Cus_PNumber}</td>
-                                                    <td>{order.Delivery_date}</td>
-                                                    <td>
-                                                        <button className="btn btn-primary btn-sm" onClick={() => handleEdit(order.id)}>Edit</button>
-                                                        <button className="btn btn-danger btn-sm ms-1" onClick={() => handleDelete(order.id)}>Delete</button>
-                                                    </td>
+                                <div className='customer-details'>
+                                    <h2 className='title'>Customer Details</h2>
+                                    <div className="table-responsive">
+                                        <table className="table custom-table">
+                                            <thead className="table-head">
+                                                <tr>
+                                                    <th className="table-cell">Product Name</th>
+                                                    <th className="table-cell">Product Price</th>
+                                                    <th className="table-cell">Product Category</th>
+                                                    <th className="table-cell">Customer Name</th>
+                                                    <th className="table-cell">Customer Address</th>
+                                                    <th className="table-cell">Customer Phone Number</th>
+                                                    <th className="table-cell">Delivery Date</th>
+                                                    <th className="table-cell">Actions</th>
                                                 </tr>
-                                            ))}
-                                        </tbody>
-                                    </table>
+                                            </thead>
+                                            <tbody className="table-body">
+                                                {customerOrders.map((order) => (
+                                                    <tr key={order.id}>
+                                                        <td className="table-cell">{order.Product_Name}</td>
+                                                        <td className="table-cell">{order.Product_Price}</td>
+                                                        <td className="table-cell">{order.Product_category}</td>
+                                                        <td className="table-cell">{order.Cus_Name}</td>
+                                                        <td className="table-cell">{order.Cus_Address}</td>
+                                                        <td className="table-cell">{order.Cus_PNumber}</td>
+                                                        <td className="table-cell">{order.Delivery_date}</td>
+                                                        <td className="table-cell">
+                                                            <button className="btn btn-primary btn-sm custom-edit-btn" onClick={() => handleEdit(order.id)}>Edit</button>
+                                                            <button className="btn btn-danger btn-sm custom-delete-btn ms-1" onClick={() => handleDelete(order.id)}>Delete</button>
+                                                        </td>
+                                                    </tr>
+                                                ))}
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
 
-          
             {showModal && (
-                <div className="modal" style={{ display: 'block' }}>
+                <div className="modal custom-modal" style={{ display: 'block' }}>
                     <div className="modal-dialog">
                         <div className="modal-content">
                             <div className="modal-header">
@@ -223,7 +212,7 @@ const ShowCustomerSection = () => {
                                         <input type="text" className="form-control" id="Cus_PNumber" name="Cus_PNumber" value={editFormData.Cus_PNumber} onChange={handleEditFormChange} />
                                     </div>
                                     <div className="mb-3">
-                                        <label htmlFor="Delivary_date" className="form-label">Delivery Date</label>
+                                        <label htmlFor="Delivery_date" className="form-label">Delivery Date</label>
                                         <input type="date" className="form-control" id="Delivery_date" name="Delivery_date" value={editFormData.Delivery_date} onChange={handleEditFormChange} />
                                     </div>
                                 </form>

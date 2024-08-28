@@ -2,13 +2,11 @@ import React, { useState } from "react";
 import "./login.css";
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAndroid } from '@fortawesome/free-brands-svg-icons';
-import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';  // Corrected import
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { emailValidator, passwordValidator } from "../LoginSection/validator";
 import { useNavigate } from 'react-router-dom';
 import FooterLogo from "../ImageSection/bottom_logo.webp";
 import { TiShoppingCart } from "react-icons/ti";
-
 
 const LoginSection = () => {
   const navigate = useNavigate();
@@ -29,31 +27,63 @@ const LoginSection = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+
     if (!emailValidator(formData.Email)) {
-      return setError('invalid Email or Password');
+      return setError('Invalid Email or Password');
     }
 
     if (!passwordValidator(formData.Password)) {
       return setError('Invalid Email or Password');
     }
 
-    if (formData.Email !== 'Mohan@gmail.com' || formData.Password !== 'Mohan@123') {
-      return setError('Invalid Email or Password');
-    }
-
     setLoading(true);
 
     try {
-      const formDataCopy = { ...formData };
+      
+      const signupResponse = await axios.get('https://dev-mohansjan.gateway.apiplatform.io/v1/Signup',{
+        headers: {
+          'apikey' : 'ZdzwOIDYW0AKYVD6BkZqyBbHcjb3pyGc',
+          'pkey' : '3fcc20cdc093c0403fc55b721aab6f3c',
+          'Content-Type' : 'application/json'
+        }
+      });
+      const signupData = signupResponse.data;
+      console.log(signupData);
 
-      const response = await axios.post('https://dev-mohansjan.gateway.apiplatform.io/v1/login', formDataCopy, {
+   
+      // const user = signupData.find(user =>
+      //   user.UserName === formData.UserName &&
+      //   user.Email === formData.Email &&
+      //   user.Password === formData.Password
+      // );
+
+      // if (!user) {
+      //   setLoading(false);
+      //   return setError('Invalid username or password, Please try again.');
+      // }
+
+      
+      const loginResponse = await axios.post('https://dev-mohansjan.gateway.apiplatform.io/v1/login', formData, {
         headers: {
           'apikey': 'ZdzwOIDYW0AKYVD6BkZqyBbHcjb3pyGc',
           'pkey': '3fcc20cdc093c0403fc55b721aab6f3c',
           'Content-Type': 'application/json'
         }
       });
-      console.log('Login successful:', response.data);
+
+      
+      const user = signupData.find(user =>
+        user.UserName === formData.UserName &&
+        user.Email === formData.Email &&
+        user.Password === formData.Password
+      );
+
+      if (!user) {
+        setLoading(false);
+        return setError('Invalid username or password, Please try again.');
+      }
+
+      console.log('Login successful:', loginResponse.data);
       alert('Login successful');
       navigate('/home');
     } catch (error) {
@@ -78,7 +108,6 @@ const LoginSection = () => {
               <TiShoppingCart  className="llggoo"/>
             </h2>
           </span>
-          {/* <h4 className="company_title">YUVA STORE</h4> */}
           <img className="company-titles" src={FooterLogo} alt="FooterLogo"/>
         </div>
         <div className="col-md-9 col-xs-12 col-sm-12 login_form ">
@@ -113,7 +142,6 @@ const LoginSection = () => {
                   <input
                     type={passwordVisible ? "text" : "password"}
                     name="Password"
-                   
                     className="form-input"
                     placeholder="Password"
                     value={formData.Password}

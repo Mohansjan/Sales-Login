@@ -54,7 +54,7 @@ const IOrderSection = () => {
                            <a href="/cart"> <p className="off-1">Add To Cart</p></a>
                         </div>
                         <div className="offerOff-2">
-                            <a href="CusIOrder"> <p className="off-2">Buy Now</p></a>
+                            <a href="CustomerIOrder"> <p className="off-2">Buy Now</p></a>
                         </div>
                     </div>
                     </div>

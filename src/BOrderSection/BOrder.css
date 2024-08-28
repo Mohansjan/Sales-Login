@@ -79,9 +79,9 @@ p.dd-5 {
     margin-left: 80px;
     color: darkgreen;
 }
-hr.dpdd {
-    margin-left: 61px;
-    width: 930px;
+hr.dpdk {
+    width: 510px;
+    margin-left: 50px;
 }
 .dds-1 {
     margin-left: 80px;
@@ -213,12 +213,12 @@ p.off-2:hover{
     cursor: pointer;
     color: darkgray;
 }
-section.dtc-2 {
-    margin-left: 110px;
-    margin-top: 80px;
+section.dtcb-2 {
+    margin-left: 80px;
+    margin-top: -22px;
 }
-section.dtc-1 {
-    margin-left: 110px;
+section.dtcb-1 {
+    margin-left: 80px;
 }
 .dds-2 {
     margin-left: 20px;

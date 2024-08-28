@@ -64,9 +64,9 @@ const SignupSection = () => {
         if (isUserNameTaken && isEmailTaken) {
           return setError('Username and Email already declared');
         } else if (isUserNameTaken) {
-          return setError('Username already declared');
+          return setError('Username already taken');
         } else {
-          return setError('Email already declared');
+          return setError('Email already taken');
         }
       }
 

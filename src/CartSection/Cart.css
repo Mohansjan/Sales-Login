@@ -165,3 +165,93 @@ hr.hr-6{
     width: 800px;
     margin-left: 50px;
 }
+@media only screen and (max-width: 768px) {
+    .add-to-cart {
+        width: 90%;
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    h6.tit-1 {
+        font-size: 24px;
+    }
+
+    .atc-1 {
+        font-size: 20px;
+        padding: 8px 16px;
+    }
+
+    .product, .product-1, .product-2, .product-3, .product-4, .product-5 {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product img, .product img.irc-1, .product img.irc-2, .product img.irc-3, .product img.irc-4, .product img.irc-5, .product img.irc-6 {
+        width: 150px;
+        height: 85px;
+    }
+
+    .product-details {
+        margin-left: 0;
+    }
+
+    p.dtcn-1, p.ddn-2, p.ddn-3 {
+        font-size: 18px;
+    }
+
+    button#dg, button#dg-1 {
+        padding: 8px 16px;
+    }
+
+    hr.hr-1, hr.hr-2, hr.hr-3, hr.hr-4, hr.hr-5, hr.hr-6 {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .add-to-cart {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h6.tit-1 {
+        font-size: 20px;
+    }
+
+    .atc-1 {
+        font-size: 18px;
+        padding: 6px 12px;
+    }
+
+    .product img, .product img.irc-1, .product img.irc-2, .product img.irc-3, .product img.irc-4, .product img.irc-5, .product img.irc-6 {
+        width: 120px;
+        height: 70px;
+    }
+
+    p.dtcn-1, p.ddn-2, p.ddn-3 {
+        font-size: 16px;
+    }
+
+    button#dg, button#dg-1 {
+        padding: 6px 12px;
+    }
+
+    hr.hr-1, hr.hr-2, hr.hr-3, hr.hr-4, hr.hr-5, hr.hr-6 {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 1250px) {
+        .product,.product-1,.product-2,.product-3,.product-4,.product-5{
+            margin-left: 0px;
+        }  
+        hr.hr-1, hr.hr-2, hr.hr-3, hr.hr-4, hr.hr-5, hr.hr-6 {
+            width: 100%;
+            margin-left: 0;
+        }
+        .product-details{
+            margin-left: 80px;
+        }
+}

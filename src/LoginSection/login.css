@@ -38,7 +38,7 @@
 }
 form.form-control.login {
     border: 1px solid white;
-    width: 534px;
+    width: auto;
     margin-left: 56px;
 }
 .form-user{
@@ -110,4 +110,68 @@ h4.company_title {
 span.pass-visible {
     position: absolute;
     margin-top: 37px;
+}
+svg.llggo {
+    width: 100%;
+    height: 71px;
+}
+@media (max-width: 768px) {
+    .container-login {
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+    .main-con10 {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+    .company__in10, .login_form {
+        width: 100%;
+        border-radius: 20px;
+        align-items: center;
+    }
+    .form-user, .form-input {
+        padding: 1em;
+    }
+    .btn-save {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-login {
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+    .main-con10 {
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+    }
+    .company__in10, .login_form {
+        width: 100%;
+        border-radius: 20px;
+    }
+    .btn-save {
+        width: 85%;
+        margin-left: 7.5%;
+    }
+    label.form-userList, input.form-userlist {
+        margin-top: 10px;
+        width: auto;
+    }
+    .rows {
+        width: auto;
+        margin-bottom: 12px;
+    }
+}
+@media (min-width: 769px) and (max-width:1070px){
+    .row.main-con10.text-center {
+        
+        width: fit-content;
+    }
+    .container-fluid {
+        margin-left: -41px;
+    }
 }

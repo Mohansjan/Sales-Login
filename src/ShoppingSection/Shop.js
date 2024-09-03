@@ -54,7 +54,7 @@ const ShoppingSection = () => {
 
       <div className="content">
         <div className="bottomHeaderSec row">
-          <div className="col-10">
+          <div className="col-md-12 col-xs-12 col-sm-12 col-lg-12 col-xl-12">
             <div className="MenuSec">
               <a className="linkMenu">Home</a>
               <a className="linkMenu">About</a>

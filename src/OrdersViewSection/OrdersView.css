@@ -16,7 +16,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: fit-content;
-    grid-column-gap: 85px;
+    grid-column-gap: 45px;
     grid-row-gap: 50px;
 }
 
@@ -77,7 +77,7 @@ h6.ovjs-3 {
     box-shadow: 10px 10px lightgrey;
     display: inline-block;
     margin-top: 20px;
-   
+   margin-left: 40px;
     border-radius: 25px;
 }
 
@@ -134,7 +134,7 @@ img.ovji-1 {
     background-color: snow;
     box-shadow: 10px 10px lightgrey;
     display: inline-block;
-  
+   margin-left: 40px;
     border-radius: 25px;
 }
 
@@ -167,7 +167,7 @@ img.ovji-1 {
     background-color: snow;
     box-shadow: 10px 10px lightgrey;
     display: inline-block;
-   
+   margin-left: 40px;
     border-radius: 25px;
 }
 
@@ -198,3 +198,99 @@ input .ibt {
     box-Sizing: border-box;
     margin-left: 60px;
 }
+
+@media (max-width: 600px) {
+    .container-4 {
+        height: auto;
+    }
+
+    .addr-1, .aod-1 {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .gri {
+        grid-template-columns: 1fr; 
+        grid-column-gap: 20px;
+        grid-row-gap: 30px;
+        width: 100%; 
+    }
+
+    h2.ovjh-1 {
+        margin-left: 5%;
+        margin-top: 10px;
+        font-size: 24px; 
+    }
+
+    img.ovji {
+        width: 100%; 
+        margin-left: 0;
+        margin-top: 20px;
+        height: auto;
+    }
+
+    .aod-2, .aod-3, .aod-4, .aod-5, .aod-6, .aod-7, .aod-8 {
+        width: 100%;
+        height: auto;
+        margin-left: 0; 
+    }
+
+    img.ovji-1 {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .ibt-1, #btn {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container-4 {
+        height: auto;
+    }
+
+    .addr-1, .aod-1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .gri {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 40px;
+    }
+
+    h2.ovjh-1 {
+        margin-left: 10%; 
+        margin-top: 10px;
+        font-size: 32px;
+    }
+
+    img.ovji {
+        width: 100%; 
+        margin-left: 0;
+        margin-top: 30px;
+        height: auto;
+    }
+
+    .aod-2, .aod-3, .aod-4, .aod-5, .aod-6, .aod-7, .aod-8 {
+        width: 100%; 
+        height: auto;
+        margin-left: 0; 
+    }
+
+    img.ovji-1 {
+        width: 100%; 
+        height: auto; 
+        margin-left: 0;
+    }
+
+    .ibt-1, #btn {
+        width: 100%; 
+    }
+}
+
+

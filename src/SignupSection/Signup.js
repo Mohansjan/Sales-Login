@@ -46,7 +46,7 @@ const SignupSection = () => {
     setLoading(true);
 
     try {
-      // Fetch existing users to check if username or email already exists
+     
       const signupResponse = await axios.get('https://dev-mohansjan.gateway.apiplatform.io/v1/Signup',{
         headers:{
           'apikey' : 'ZdzwOIDYW0AKYVD6BkZqyBbHcjb3pyGc',
@@ -70,7 +70,7 @@ const SignupSection = () => {
         }
       }
 
-      // Proceed with signup if no conflicts
+      
       const response = await axios.post('https://dev-mohansjan.gateway.apiplatform.io/v1/Signup', formData, {
         headers: {
           'apikey': 'ZdzwOIDYW0AKYVD6BkZqyBbHcjb3pyGc',

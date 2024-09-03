@@ -1,4 +1,9 @@
-/* Section styling */
+body{
+  /*background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);*/
+  background-color: white;
+
+}
+  /* Section styling */
 .customer-section {
   background-color: #f8f9fa;
  
@@ -88,8 +93,10 @@
 /* Modal styling */
 .custom-modal {
   position: fixed;
-  top: 50%;
-  left: 50%;
+ margin-left: 50%;
+ margin-top: 15%;
+ margin-top: 20%;
+ width: 43%;
   transform: translate(-50%, -50%);
   z-index: 1050;
   background-color: #ffffff;
@@ -99,7 +106,8 @@
 
 .modal-dialog {
   max-width: 600px;
-  margin: auto;
+  margin: 16px;
+
 }
 
 .modal-content {
@@ -114,7 +122,7 @@
 }
 
 .modal-title {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #343a40;
 }
@@ -133,13 +141,14 @@
 .form-control {
   border-radius: 5px;
   padding: 0.5rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   border: 1px solid #ced4da;
 }
 
 .form-label {
   font-weight: bold;
   color: #343a40;
+  font-size: 15px;
 }
 
 /* Close button styling */

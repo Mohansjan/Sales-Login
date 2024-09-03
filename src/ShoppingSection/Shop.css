@@ -1,193 +1,3 @@
-/* .topHeader.row {
-    background-image: url("../ImageSection/headerBanner.webp");
-    background-position: center;
-    background-size: cover;
-    color: #fff;
-    margin: 0;
-    align-items: center;
-    font-size: 14px;
-    padding: 15px;
-  }
-  
-  span.headertop-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  a.remover-header {
-    display: flex;
-    justify-content: flex-end;
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  .bi-1 {
-    height: 295px;
-    width: 365px;
-    margin-top: 40px;
-    margin-left: 43px;
-    display: inline-block;
-}
-img.bumpImg-1 {
-    width: 365px;
-    height: 200px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-.ad {
-    height: 50px;
-    width: 365px;
-}
-button.ad-1 {
-    width: 182px;
-    height: 50px;
-    display: inline-block;
-    border: none;
-    border-bottom-left-radius: 20px;
-    background-color:darkkhaki;
-    color: white;
-    opacity: 1;
-    transition: 0.3s;
-    text-shadow: 2px 2px 5px #000000;
-
-}
-button.ad-1:hover{
-    opacity: 0.6;
-}
-button.ad-2 {
-    display: inline-block;
-    width: 183px;
-    height: 50px;
-    border: none;
-    border-bottom-right-radius: 20px;
-    background-color:darkkhaki;
-    color: white;
-    opacity: 1;
-    transition: 0.3s;
-    text-shadow: 2px 2px 5px #000000;
-
-}
-button.ad-2:hover{
-   opacity: 0.6;
-}
-.ads-1 {
-    display: inline-block;
-}
-.ads-2 {
-    display: inline-block;
-}
-
-.bumberImager-1 {
-    display: inline-block;
-    margin-left:93px;
-    margin-top: 25px;
-}
-.bumberImager-2 {
-    display: inline-block;
-    margin-left:30px;
-}
-.bumberImager-3 {
-    display: inline-block;
-    margin-left:30px;
-}
-.bumberImager-4 {
-    display: inline-block;
-    margin-left:30px;
-}
-.bumberImager-5 {
-    display: inline-block;
-    margin-left:93px;
-}
-.bumberImager-6 {
-    display: inline-block;
-    margin-left:35px;
-}
-
-.bumberImager-7 {
-    display: inline-block;
-    margin-left:30px;
-}
-.bumberImager-8 {
-    display: inline-block;
-    margin-left:30px;
-}
-.bumberImager-9 {
-    display: inline-block;
-    margin-left:93px;
-}
-.bumberImager-10 {
-    display: inline-block;
-    margin-left:30px;
-}
-.bumberImager-11 {
-    display: inline-block;
-    margin-left:30px;
-}
-.bumberImager-12 {
-    display: inline-block;
-    margin-left:30px;
-}
-.ads-2{
-    text-decoration: none;
-}
-.ads-2 a {
-    color: black;
-    text-decoration: none;
-}
-/* .ads-1 :active{
-    background-color: blanchedalmond;
-} *
-.App{
-    background-color: #fff;
-}
-a{
-    text-decoration: none;
-}
-.ads-1 a{
-    text-decoration: none;
-}
-.bumberImagers {
-    display: inline-block;
-    margin-left: 35px;
-}
-.bumberImager {
-    height: 100%;
-    display: inline-block;
-    margin-left: 34px;
-}
-.filterIcon {
-    font-size: 24px;
-    cursor: pointer;
-    top: 10px;
-    left: 10px;
-    z-index: 1000;
-  }
-
-  .accordionMenu {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    width: 100px;
-    height: 123px;
-    background: black;
-    color:chocolate;
-    z-index: 1000;
-  }
-  .linkMenu:hover {
-    background-color: #db1e1e;
-  }
-  .linkMenu {
-    padding: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
-    
-  } */
-
-  /* Shop.css */
-
 .Shopping {
     display: flex;
   }
@@ -195,7 +5,7 @@ a{
   .sidebar {
     width: 150px;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color:linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     border-right: 1px solid #ccc;
   }
   
@@ -243,8 +53,8 @@ a{
 }
 
   .bi-1 {
-    height: 250px;
-    width: 365px;
+    height: 226px;
+    width: 317px;
     margin-top: 17px;
     margin-left: 18px;
     display: inline-block;
@@ -265,23 +75,20 @@ img.bumpImg-1 {
     margin-top: 25px;
     width: 335px;
     height: 242px;
-    /* border: 1px solid lightgray; */
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.12),
 0px 2px 2px 0px rgba(0,0,0,0.12),
 0px 4px 4px 0px rgba(0,0,0,0.12),
 0px 8px 8px 0px rgba(0,0,0,0.12),
 0px 16px 16px 0px rgba(0,0,0,0.12);
 border-radius: 10px;
+background-color: white;
 }
     
 .bumberImager-2 {
-    /* display: inline-block;
-    width: 450px; */
     display: inline-block;
     margin-top: 25px;
     width: 335px;
     height: 242px;
-    /* border: 1px solid lightgray; */
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.12),
 0px 2px 2px 0px rgba(0,0,0,0.12),
 0px 4px 4px 0px rgba(0,0,0,0.12),
@@ -294,7 +101,6 @@ border-radius: 10px;
     margin-top: 25px;
     width: 335px;
     height: 242px;
-    /* border: 1px solid lightgray; */
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.12),
 0px 2px 2px 0px rgba(0,0,0,0.12),
 0px 4px 4px 0px rgba(0,0,0,0.12),
@@ -307,7 +113,6 @@ border-radius: 10px;
     margin-top: 25px;
     width: 335px;
     height: 242px;
-    /* border: 1px solid lightgray; */
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.12),
 0px 2px 2px 0px rgba(0,0,0,0.12),
 0px 4px 4px 0px rgba(0,0,0,0.12),
@@ -320,7 +125,6 @@ border-radius: 10px;
     margin-top: 25px;
     width: 335px;
     height: 242px;
-    /* border: 1px solid lightgray; */
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.12),
 0px 2px 2px 0px rgba(0,0,0,0.12),
 0px 4px 4px 0px rgba(0,0,0,0.12),
@@ -333,7 +137,6 @@ border-radius: 10px;
     margin-top: 25px;
     width: 335px;
     height: 242px;
-    /* border: 1px solid lightgray; */
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.12),
 0px 2px 2px 0px rgba(0,0,0,0.12),
 0px 4px 4px 0px rgba(0,0,0,0.12),
@@ -347,7 +150,6 @@ border-radius: 10px;
     margin-top: 25px;
     width: 335px;
     height: 242px;
-    /* border: 1px solid lightgray; */
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.12),
 0px 2px 2px 0px rgba(0,0,0,0.12),
 0px 4px 4px 0px rgba(0,0,0,0.12),
@@ -360,7 +162,6 @@ border-radius: 10px;
     margin-top: 25px;
     width: 335px;
     height: 242px;
-    /* border: 1px solid lightgray; */
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.12),
 0px 2px 2px 0px rgba(0,0,0,0.12),
 0px 4px 4px 0px rgba(0,0,0,0.12),
@@ -373,7 +174,6 @@ border-radius: 10px;
     margin-top: 25px;
     width: 335px;
     height: 242px;
-    /* border: 1px solid lightgray; */
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.12),
 0px 2px 2px 0px rgba(0,0,0,0.12),
 0px 4px 4px 0px rgba(0,0,0,0.12),
@@ -386,7 +186,6 @@ border-radius: 10px;
     margin-top: 25px;
     width: 335px;
     height: 242px;
-    /* border: 1px solid lightgray; */
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.12),
 0px 2px 2px 0px rgba(0,0,0,0.12),
 0px 4px 4px 0px rgba(0,0,0,0.12),
@@ -399,7 +198,6 @@ border-radius: 10px;
     margin-top: 25px;
     width: 335px;
     height: 242px;
-    /* border: 1px solid lightgray; */
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.12),
 0px 2px 2px 0px rgba(0,0,0,0.12),
 0px 4px 4px 0px rgba(0,0,0,0.12),
@@ -412,7 +210,6 @@ border-radius: 10px;
     margin-top: 25px;
     width: 335px;
     height: 242px;
-    /* border: 1px solid lightgray; */
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.12),
 0px 2px 2px 0px rgba(0,0,0,0.12),
 0px 4px 4px 0px rgba(0,0,0,0.12),
@@ -465,9 +262,197 @@ button.ad-2:hover{
     display: inline-block;
 }
 
+@media (max-width: 767px) {
   
+  .topHeader.row {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  span.headertop-center {
+    flex-direction: column;
+  }
+
+  a.remover-header {
+    font-size: 16px;
+  }
+
+  .MenuSec{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+ .linkMenu{
+  margin-left: 30px;
+ }
+ 
+  .bi-1 {
+    height: auto;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  img.bumpImg-1 {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+ 
+  .ad {
+    width: 100%;
+    height: auto;
+  }
+
+  .ads-1,.ads-2{
+    width: 48%;
+  }
+
   
+  button.ad-1, button.ad-2 {
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
   
+  .bumberImager-1,
+  .bumberImager-2,
+  .bumberImager-3,
+  .bumberImager-4,
+  .bumberImager-5,
+  .bumberImager-6,
+  .bumberImager-7,
+  .bumberImager-8,
+  .bumberImager-9,
+  .bumberImager-10,
+  .bumberImager-11,
+  .bumberImager-12 {
+    width: 75%;
+    height: auto;
+    margin-left: 13%;
+    margin-top: 15px;
+    display: block;
+
+  }
+
+ 
+  .Shopping {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
   
+  .bumber {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+ 
+  .topHeader.row {
+    font-size: 13px;
+    padding: 12px;
+  }
+
+  span.headertop-center {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  a.remover-header {
+    font-size: 18px;
+  }
+
+  
+  .bi-1 {
+    height: auto;
+    width: 80%;
+    margin-top: 25px;
+    margin-left: 10%;
+  }
+
+  img.bumpImg-1 {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  
+  .ad {
+    width: 100%;
+    height: auto;
+  }
+
+  .ads-1{
+    display: inline-block;
+    width: 47%;
+  }
+
+  .ads-2 {
+    display: inline-block;
+    width: 52%;
+}
+
+ 
+  button.ad-1, button.ad-2 {
+    width: -webkit-fill-available;
+    height: 45px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+ 
+  .bumberImager-1,
+  .bumberImager-2,
+  .bumberImager-3,
+  .bumberImager-4,
+  .bumberImager-5,
+  .bumberImager-6,
+  .bumberImager-7,
+  .bumberImager-8,
+  .bumberImager-9,
+  .bumberImager-10,
+  .bumberImager-11,
+  .bumberImager-12 {
+    width: 100%;
+    height: auto;
+    margin-left: 1%;
+    margin-top: 15px;
+    display: inline-block;
+  }
+
+ 
+  .Shopping {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    width: 200px;
+    border-right: 1px solid #ccc;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+ 
+  .bumber {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+}
+
   
   

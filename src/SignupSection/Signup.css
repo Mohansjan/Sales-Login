@@ -6,9 +6,8 @@
 
 .main-con11 {
     width: 875px;
-    height: 615px;
+    height: 570px;
     border-radius: 20px;
-    /* box-shadow: 0 5px 5px rgba(0,0,0,.4); */
     margin: 5em auto;
     display: flex;
     box-shadow: 10px 10px 10px 10px black;
@@ -27,8 +26,8 @@
 
 .row.main-con11.text-center {
     height: auto;
-    height: 680px;
 }
+
 img.company-titles {
     width: 170px;
     height: 45px;
@@ -46,20 +45,13 @@ img.company-titles {
 h2.lgooo {
     margin-right: 10px;
     margin-top: 15px;
-}
-
-@media (min-width: 768px) {
-    .col-md-9 {
-        flex: 0 0 auto;
-        width: 75%;
-    }
+    color: #008080;
 }
 
 .login_forms {
     background-color: #fff;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-   
     width: 500px;
 }
 
@@ -77,7 +69,7 @@ form.form-controls.login {
     padding: 1em .5em .5em;
     padding-left: 1em;
     outline: none;
-    margin: 1em auto;
+    margin: 0.5em auto;
     transition: all .5s ease;
 }
 
@@ -142,18 +134,18 @@ h4.company_title {
     padding: 1em .5em .5em;
     padding-left: 1em;
     outline: none;
-    margin: 1.5em auto;
+    margin: 0.5em auto;
     transition: all .5s ease;
 }
 
 span.visible-1 {
     position: absolute;
-    margin-top: 43px;
+    margin-top: 30px;
 }
 
 span.visible-2 {
     position: absolute;
-    margin-top: 43px;
+    margin-top: 30px;
 }
 
 svg.llggoo {
@@ -161,6 +153,162 @@ svg.llggoo {
     height: 71px;
 }
 
-/* Media Queries */
 
-/* For screens up to 640px (mobile phones) */
+@media (max-width: 768px) {
+    .container-login23 {
+        margin-left: 5%;
+        margin-top: 5%;
+        padding: 0 5%;
+    }
+    .main-con11 {
+        width: 100%;
+        height: auto;
+        margin: 2em auto;
+        flex-direction: column;
+        box-shadow: none;
+    }
+    .company__in11 {
+        width: 100%;
+        height: auto;
+        border-radius: 20px 20px 0 0;
+        align-items: center;
+    }
+    .login_forms {
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+    }
+    form.form-controls.login {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 10%;
+    }
+    .btn-saves {
+        width: 100%;
+        margin-left: 0;
+    }
+    .form-users, .form-inputs {
+        width: 100%;
+    }
+    .roweds {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+    label.form-userLists {
+        width: auto;
+        margin-top: 0;
+        text-align: left;
+    }
+    svg.llggoo {
+        width: 200%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container-login23 {
+        margin: 0;
+        padding: 0 2%;
+        margin-left: 5%;
+    }
+    .main-con11 {
+        width: 100%;
+        margin: 1em auto;
+        box-shadow: none;
+    }
+    .company__in11 {
+        width: 100%;
+        height: auto;
+        border-radius: 20px 20px 0 0;
+        align-items: center;
+    }
+    img.company-titles {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    svg.llggoo {
+        width: 200%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .login_forms {
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+    }
+    form.form-controls.login {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 5%;
+    }
+    .btn-saves {
+        width: 100%;
+        margin-left: 0;
+    }
+    .form-users, .form-inputs {
+        width: 100%;
+    }
+    .roweds {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+    label.form-userLists {
+        width: auto;
+        margin-top: 0;
+        text-align: left;
+    }
+    .company__in11 {
+        padding: 10px 0;
+    }
+}
+@media (min-width:769px) and (max-width:1060px){
+   
+    .main-con11 {
+        width: 100%;
+        margin: 1em auto;
+        box-shadow: none;
+    }
+    .company__in11 {
+        width: 100%;
+        height: auto;
+        border-radius: 20px 20px 0 0;
+    }
+    img.company-titles {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .login_forms {
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+    }
+    form.form-controls.login {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 5%;
+    }
+    .btn-saves {
+        width: 100%;
+        margin-left: 0;
+    }
+    .form-users, .form-inputs {
+        width: 100%;
+    }
+    .roweds {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+    label.form-userLists {
+        width: auto;
+        margin-top: 0;
+        text-align: left;
+    }
+    .company__in11 {
+        padding: 10px 0;
+    }
+
+}

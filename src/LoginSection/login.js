@@ -49,19 +49,6 @@ const LoginSection = () => {
       });
       const signupData = signupResponse.data;
       console.log(signupData);
-
-   
-      // const user = signupData.find(user =>
-      //   user.UserName === formData.UserName &&
-      //   user.Email === formData.Email &&
-      //   user.Password === formData.Password
-      // );
-
-      // if (!user) {
-      //   setLoading(false);
-      //   return setError('Invalid username or password, Please try again.');
-      // }
-
       
       const loginResponse = await axios.post('https://dev-mohansjan.gateway.apiplatform.io/v1/login', formData, {
         headers: {
@@ -105,7 +92,7 @@ const LoginSection = () => {
         <div className="col-md-3 text-center company__in10">
           <span className="company__logo">
             <h2>
-              <TiShoppingCart  className="llggoo"/>
+              <TiShoppingCart  className="llggo"/>
             </h2>
           </span>
           <img className="company-titles" src={FooterLogo} alt="FooterLogo"/>
@@ -123,7 +110,7 @@ const LoginSection = () => {
                     name="UserName"
                     id="UserName"
                     className="form-user"
-                    placeholder="UserName"
+                    placeholder="User Name"
                     onChange={handleChange}
                   />
                 </div>

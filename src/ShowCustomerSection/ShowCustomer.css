@@ -1,8 +1,4 @@
-body{
-  /*background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);*/
-  background-color: white;
 
-}
   /* Section styling */
 .customer-section {
   background-color: #f8f9fa;
@@ -10,7 +6,7 @@ body{
 }
 
 .custom-gradient {
-  background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgb(193, 42, 72) 100%);
   border-radius: 10px;
 }
 

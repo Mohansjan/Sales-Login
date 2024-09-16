@@ -1,10 +1,10 @@
 .container-login{
-    margin-left: 18%;
+    margin-left: 20%;
     margin-top: 3%;
 }
  .main-con10{
-    width: 875px;
-    height: 500px;
+    width: 75%;
+    height: fit-content;
     border-radius: 20px;
     /* box-shadow: 0 5px 5px rgba(0,0,0,.4); */
     margin: 5em auto;
@@ -39,7 +39,7 @@
 form.form-control.login {
     border: 1px solid white;
     width: auto;
-    margin-left: 56px;
+    margin-left: 15px;
 }
 .form-user{
 	width: 100%;
@@ -117,13 +117,17 @@ svg.llggo {
 }
 @media (max-width: 768px) {
     .container-login {
-        margin-left: 10%;
+        margin-left: 15%;
         margin-top: 5%;
     }
     .main-con10 {
-        width: 90%;
+        width: 75%;
         height: auto;
         flex-direction: column;
+    }
+    img.company-titles {
+        width: 50%;
+        margin-bottom: 2%;
     }
     .company__in10, .login_form {
         width: 100%;
@@ -141,8 +145,8 @@ svg.llggo {
 
 @media (max-width: 480px) {
     .container-login {
-        margin-left: 10%;
-        margin-top: 10%;
+        margin-left: 5%;
+        margin-top: 5%;
     }
     .main-con10 {
         width: 95%;
@@ -167,11 +171,6 @@ svg.llggo {
     }
 }
 @media (min-width: 769px) and (max-width:1070px){
-    .row.main-con10.text-center {
-        
-        width: fit-content;
-    }
-    .container-fluid {
-        margin-left: -41px;
-    }
+
+    
 }

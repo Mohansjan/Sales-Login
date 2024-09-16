@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from 'axios';
 import "./CustomerOrder.css";
 import { useNavigate } from "react-router-dom";
@@ -16,13 +16,54 @@ const CustomerOrderSection = () => {
         Total_Price: 1299
     });
 
-    const navigate = useNavigate();
-    const [error, setError] = useState('');
+    const [errors, setErrors] = useState({
+        Cus_Name: '',
+        Cus_Address: '',
+        Cus_PNumber: '',
+        Delivery_date: '',
+        general: ''
+    });
+
     const [loading, setLoading] = useState(false);
+    const navigate = useNavigate();
+
+    const validateForm = () => {
+        const newErrors = {};
+        let isValid = true;
+
+    
+        if (!formData.Cus_Name) {
+            newErrors.Cus_Name = 'Customer Name is required.';
+            isValid = false;
+        }
+        if (!formData.Cus_Address) {
+            newErrors.Cus_Address = 'Customer Address is required.';
+            isValid = false;
+        }
+        if (!formData.Cus_PNumber) {
+            newErrors.Cus_PNumber = 'Mobile Number is required.';
+            isValid = false;
+        }
+        if (!formData.Delivery_date) {
+            newErrors.Delivery_date = 'Delivery Date is required.';
+            isValid = false;
+        }
+
+        if (!isValid) {
+            setErrors(newErrors);
+        }
+
+        return isValid;
+    };
 
     const handleSubmit = async (event) => {
         event.preventDefault();
         setLoading(true);
+
+        if (!validateForm()) {
+            setLoading(false);
+            return;
+        }
 
         try {
             const url = 'https://dev-mohansjan.gateway.apiplatform.io/v1/YuvaStoreOrd';
@@ -40,7 +81,7 @@ const CustomerOrderSection = () => {
 
         } catch (error) {
             console.error('Error:', error.response ? error.response.data : error.message);
-            setError('Failed Order. Please try again.');
+            setErrors(prevErrors => ({ ...prevErrors, general: 'Failed to place order. Please try again.' }));
         }
         setLoading(false);
     };
@@ -48,6 +89,14 @@ const CustomerOrderSection = () => {
     const handleChange = (event) => {
         const { name, value } = event.target;
         setFormData({ ...formData, [name]: value });
+        
+        setErrors(prevErrors => ({ ...prevErrors, [name]: '' }));
+    };
+
+    const handleFocus = (event) => {
+        const { name } = event.target;
+    
+        setErrors(prevErrors => ({ ...prevErrors, [name]: '' }));
     };
 
     const handleIncreaseQuantity = () => {
@@ -117,7 +166,9 @@ const CustomerOrderSection = () => {
                                             placeholder="Enter Customer Name"
                                             value={formData.Cus_Name}
                                             onChange={handleChange}
+                                            onFocus={handleFocus}
                                         />
+                                        {errors.Cus_Name && <div className="error-message">{errors.Cus_Name}</div>}
                                     </div>
                                     <div className="form-group">
                                         <label>Customer Address:</label>
@@ -127,7 +178,9 @@ const CustomerOrderSection = () => {
                                             placeholder="Enter Customer Address"
                                             value={formData.Cus_Address}
                                             onChange={handleChange}
+                                            onFocus={handleFocus}
                                         />
+                                        {errors.Cus_Address && <div className="error-message">{errors.Cus_Address}</div>}
                                     </div>
 
                                     <div className="form-group">
@@ -138,7 +191,9 @@ const CustomerOrderSection = () => {
                                             placeholder="Enter Mobile Number"
                                             value={formData.Cus_PNumber}
                                             onChange={handleChange}
+                                            onFocus={handleFocus}
                                         />
+                                        {errors.Cus_PNumber && <div className="error-message">{errors.Cus_PNumber}</div>}
                                     </div>
 
                                     <div className="form-group">
@@ -149,7 +204,9 @@ const CustomerOrderSection = () => {
                                             placeholder="Pick Delivery Date"
                                             value={formData.Delivery_date}
                                             onChange={handleChange}
+                                            onFocus={handleFocus}
                                         />
+                                        {errors.Delivery_date && <div className="error-message">{errors.Delivery_date}</div>}
                                     </div>
 
                                     <div className="form-group">
@@ -157,7 +214,8 @@ const CustomerOrderSection = () => {
                                         <div className="quantity-control">
                                             <button type="button" className="btn-sub" onClick={handleDecreaseQuantity}>-</button>
                                             <span className="qty">{formData.Quantity}</span>
-                                            <button type="button" className="btn-add" onClick={handleIncreaseQuantity}>+</button>                                        </div>
+                                            <button type="button" className="btn-add" onClick={handleIncreaseQuantity}>+</button>
+                                        </div>
                                     </div>
 
                                     <div className="form-group">
@@ -169,9 +227,9 @@ const CustomerOrderSection = () => {
                                         />
                                     </div>
 
-                                    {error && <div className="error-message">{error}</div>}
+                                    {errors.general && <div className="error-message">{errors.general}</div>}
 
-                                    <button className="submit-button-1" type="submit" disabled={loading}>
+                                    <button className="submit-buttons-1" type="submit" disabled={loading}>
                                         {loading ? 'Submitting...' : 'Submit'}
                                     </button>
                                 </form>

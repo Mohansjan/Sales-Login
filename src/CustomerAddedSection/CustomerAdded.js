@@ -181,7 +181,7 @@ const CustomerAddedSection = () => {
             
             {showModal && (
     <div className="custom-modal-overlay">
-        <div className="custom-modal">
+        <div className="custom-modals">
             <div className="custom-modal-header">
                 <h5 className="custom-modal-title">Edit Customer Details</h5>
                 <button type="button" className="custom-close-button" onClick={handleCancelEdit}>×</button>

@@ -115,7 +115,7 @@ const OrdersViewSection = () => {
                     {customerOrders.map((orders, index) => (
                         orders.length > 0 && (
                             <div className={`aod-${index + 2}`} key={index}>
-                                <div className="ovj-4 col-lg-4 col-xl-4 col-sm-4 col-xs-4">
+                                <div className="ovj-4 col-lg-12 col-xl-12 col-sm-12 col-xs-4 col-xxl-12 col-md-12">
                                     {index === 0 && <img className="ovji" src={Add3} alt="Add3" />}
                                     {index === 1 && <img className="ovji" src={Slider2} alt="Slider2" />}
                                     {index === 2 && <img className="ovji" src={Slider3} alt="Slider3" />}

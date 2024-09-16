@@ -1,3 +1,4 @@
+
 .cds-1 {
   height: 1200px;
 }
@@ -9,12 +10,13 @@
      font-family: ui-monospace;
      background-color: powderblue;
      box-shadow: 5px 0px 10px 2px aliceblue;
-     background-color:lavenderblush;
+     background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
      border-radius: 10px;
    }
    
    .ac-1{
      margin-left: 500px;
+     color: white;
    }
    .form-group {
      margin-bottom: 1rem;
@@ -49,31 +51,36 @@
     margin-left: 200px;
     margin-bottom: 15px;
     font-family: poppins;
-    color: #5a5151;
+    color: white;
     margin-top: 20px;
 }
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
  .form-group {
    width: 500px;
    margin-left: 40px;
  }
- button.submit-button{
-   margin-top: 40px;
-   width: 600px;
-   background-color: darkcyan;
-   color: black;
- }
+ 
  button.edit-button {
   width: 300px;
   margin-left: 150px;
   height: 35px;
   background-color: darksalmon;
 }
-button.submit-button-1{
+button.submit-buttons-1{
   margin-top: 40px;
   width: 600px;
-  background-color: darkcyan;
-  color: black;
+  background-color:  #dc354573;
+  color: white;
   margin-left: 0px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
 }
 .submit-button-1:hover {
   background-color: #45a049;

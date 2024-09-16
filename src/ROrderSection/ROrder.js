@@ -90,7 +90,7 @@ const ROrderSection = () => {
             </div>
             <div className="row OrderRow-2">
                 <div className="col-2">
-                    <div className="dds-1">
+                    <div className="ddds-1">
                         <SiConvertio />
                         <p className="iic-1">7 Days Replacement</p>
                         <RiCaravanFill />

@@ -1,15 +1,17 @@
 iframe {
-
- 
-   
-    margin-left: 260px;
-    margin-top: 30px;
-    width: 700px;
-    height: 700px;
-    border-radius: 50%;
+    margin-left: 20%;
+    margin-top: 5%;
+    width: 60%;
+    height: 75%;
+    border-radius: 5%;
     box-shadow: 10px 10px 10px 10px;
+    border: 1px solid rgb(149, 212, 237);
 }
 .google-map{
-    height: 1000px;
-    background-color: skyblue;
+    height: 600px;
+    background-color: rgb(149, 212, 237);
+   
+}
+.maps{
+    height: auto;
 }

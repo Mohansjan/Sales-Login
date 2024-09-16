@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
-import "./Return.css"; // Updated stylesheet name
+import "./Return.css";
 import emailjs from '@emailjs/browser';
 
-// Initialize with your actual user ID
+
 emailjs.init('YOUR_ACTUAL_USER_ID');
 
 const ReturnSection = () => {

@@ -46,6 +46,11 @@
 
 .customer-table th {
   background-color: #495057;
+  font-size: 15px;
+}
+
+.customer-table td{
+  font-size: 13px;
 }
 
 thead.customer-thead {
@@ -89,7 +94,7 @@ thead.customer-thead {
 }
 
 /* Modal styling */
-.customer-modal {
+.customer-modals {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -179,7 +184,7 @@ table.customer-table.table-dark.table-bordered.mb-0 {
 }
 
 /* Modal Container */
-.custom-modal {
+.custom-modals {
   background: #fff;
   border-radius: 8px;
   max-width: 600px; /* Adjust as needed */
@@ -189,6 +194,7 @@ table.customer-table.table-dark.table-bordered.mb-0 {
   flex-direction: column;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  
 }
 
 /* Modal Header */

@@ -1,66 +1,13 @@
-/* Return.css
 
-.mail-1 {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin: 10px 0 5px;
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-textarea,
-input[type="file"] {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  margin-bottom: 15px;
-}
-
-textarea {
-  resize: vertical;
-  min-height: 100px;
-}
-
-input[type="submit"] {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-input[type="submit"]:hover {
-  background-color: #0056b3;
-}
-select#return_type {
-  margin-bottom: 23px;
-  padding: 10px;
-} */
 
 .return-section {
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: cadetblue;
+  color: white;
   border-radius: 8px;
   max-width: 600px;
   margin: auto;
+  margin-top: 20px;
 }
 
 .return-section form {
@@ -81,6 +28,7 @@ select#return_type {
   margin-bottom: 15px;
   border: 1px solid #ddd;
   border-radius: 4px;
+  font-family: serif;
 }
 
 .return-section textarea {
@@ -89,7 +37,7 @@ select#return_type {
 }
 
 .return-section input[type="submit"] {
-  background-color: #007bff;
+  background-color: darkslategray;
   color: white;
   border: none;
   padding: 10px;
@@ -98,5 +46,5 @@ select#return_type {
 }
 
 .return-section input[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: rgb(94, 112, 112);
 }

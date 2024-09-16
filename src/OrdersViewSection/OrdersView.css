@@ -215,7 +215,11 @@ input .ibt {
         grid-row-gap: 30px;
         width: 100%; 
     }
-
+    .ovj-1 {
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+    }
     h2.ovjh-1 {
         margin-left: 5%;
         margin-top: 10px;
@@ -223,10 +227,10 @@ input .ibt {
     }
 
     img.ovji {
-        width: 100%; 
-        margin-left: 0;
+        width: 90%; 
+        margin-left: 20px;
         margin-top: 20px;
-        height: auto;
+        
     }
 
     .aod-2, .aod-3, .aod-4, .aod-5, .aod-6, .aod-7, .aod-8 {
@@ -240,18 +244,27 @@ input .ibt {
         height: auto;
         margin-left: 0;
     }
+    .ibtn-1 {
+        width: 50%;
+    }
+    #btn {
+        width: 70%;
+        margin-left: 13px;
+    }
 
-    .ibt-1, #btn {
-        width: 100%;
+    button.ibt-1 {
+        position: absolute;
+        width: auto;
     }
 }
 
 
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 1210px) {
     .container-4 {
+        width: 100%;
         height: auto;
     }
-
+ 
     .addr-1, .aod-1 {
         width: 100%;
         height: auto;
@@ -262,6 +275,11 @@ input .ibt {
         grid-column-gap: 30px;
         grid-row-gap: 40px;
     }
+    .ovj-1 {
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+    }
 
     h2.ovjh-1 {
         margin-left: 10%; 
@@ -270,10 +288,8 @@ input .ibt {
     }
 
     img.ovji {
-        width: 100%; 
-        margin-left: 0;
+        width: 90%;
         margin-top: 30px;
-        height: auto;
     }
 
     .aod-2, .aod-3, .aod-4, .aod-5, .aod-6, .aod-7, .aod-8 {
@@ -288,9 +304,107 @@ input .ibt {
         margin-left: 0;
     }
 
-    .ibt-1, #btn {
-        width: 100%; 
+    .ibtn-1 {
+        width: 50%;
+    }
+    #btn {
+        width: 70%;
+        margin-left: 13px;
+    }
+
+    button.ibt-1 {
+        position: absolute;
+        width: auto;
     }
 }
+@media(min-width:1024px) and (max-width:1210px){
+    img.ovji {
+        margin-left: 26px;
+        width: 85%;
+        margin-top: 27px;
+        height: 150px;
+    }
+}
+@media (min-width:1300px) and (max-width:2500px){
+    .container-4 {
+        height: auto;
+    }
 
+    .addr-1, .aod-1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .gri {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 180px;
+        grid-row-gap: 40px;
+        margin-top: 3%;
+    }
+
+    h2.ovjh-1 {
+        margin-top: 10px;
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+        
+    }
+
+    img.ovji {
+        width: 90%;
+        margin-left: 36px;
+        margin-top: 41px;
+        
+    }
+    .aod-2, .aod-3, .aod-4, .aod-5, .aod-6, .aod-7, .aod-8 {
+        width: 100%; 
+        height: auto;
+        margin-left: 0; 
+    }
+    #btn {
+        width: 40%;
+        display: flex;
+        margin-left: 100px;
+    }
+
+    button.ibt-1 {
+        width: fit-content;
+        margin-left: -18px;
+        position: absolute;
+        margin-top: -40px;
+    }
+    .ibtn-1 {
+        width: 30%;
+        margin-left: 2%;
+    }
+    .ovjs-7 {
+        margin-left: 132px;
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+    }
+    h6.ovjs-3 {
+        font-size: 35px;
+        font-family: ui-monospace;
+        color: #504d4d;
+    }
+    h6.ovjs-4 {
+        display: inline-block;
+        font-size: 40px;
+        color: brown;
+        margin-top: 10px;
+    }
+    h6.ovjs-5 {
+        display: inline-block;
+        margin-left: 75px;
+        margin-top: 4px;
+        font-size: 35px;
+    }
+    h6.ovjs-6 {
+        margin-top: 10px;
+        color: darkcyan;
+        font-size: 28px;
+    }
+}
 

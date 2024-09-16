@@ -1,7 +1,8 @@
 
 .container-login23 {
-    margin-left: 18%;
+    margin-left: 13%;
     margin-top: 3%;
+  
 }
 
 .main-con11 {
@@ -28,7 +29,7 @@
     height: auto;
 }
 
-img.company-titles {
+-titles {
     width: 170px;
     height: 45px;
     margin-left: 10px;
@@ -165,7 +166,7 @@ svg.llggoo {
         height: auto;
         margin: 2em auto;
         flex-direction: column;
-        box-shadow: none;
+        box-shadow: 10px 10px 10px 10px black;
     }
     .company__in11 {
         width: 100%;
@@ -209,14 +210,15 @@ svg.llggoo {
 
 @media (max-width: 480px) {
     .container-login23 {
-        margin: 0;
-        padding: 0 2%;
+        margin-top: 5px;
+        padding: 0.5%;
         margin-left: 5%;
     }
     .main-con11 {
         width: 100%;
         margin: 1em auto;
         box-shadow: none;
+        box-shadow: 10px 10px 10px 10px black;
     }
     .company__in11 {
         width: 100%;
@@ -225,7 +227,7 @@ svg.llggoo {
         align-items: center;
     }
     img.company-titles {
-        width: 100%;
+        width: 60%;
         height: auto;
         margin: 0 auto;
     }
@@ -266,10 +268,17 @@ svg.llggoo {
 }
 @media (min-width:769px) and (max-width:1060px){
    
+    .container-login23 {
+        margin-left: 5%;
+        margin-top: 5%;
+        padding: 0 5%;
+    }
+
     .main-con11 {
         width: 100%;
         margin: 1em auto;
         box-shadow: none;
+        box-shadow: 10px 10px 10px 10px black;
     }
     .company__in11 {
         width: 100%;
@@ -280,10 +289,11 @@ svg.llggoo {
         width: 100%;
         height: auto;
         margin: 0 auto;
+        
     }
     .login_forms {
         width: 100%;
-        border-radius: 0 0 20px 20px;
+        border-radius: 20px;
     }
     form.form-controls.login {
         width: 100%;
